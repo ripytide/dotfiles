@@ -64,8 +64,12 @@ super + l
 	bspc desktop -l next
 
 # set the window state
-super + {t,h,s}
-	bspc node -t {tiled,pseudo_tiled,floating}
+super + t
+    if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \                    
+        bspc node focused -t pseudo_tiled; \                                        
+    else \                                                                      
+        bspc node focused -t tiled; \                                           
+    fi
 
 #
 # wm independent hotkeys
