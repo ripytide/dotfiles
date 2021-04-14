@@ -1,0 +1,11 @@
+super + {h,n,e,l}
+        echo "{heenen,neeeeno,ellla,lananana}" >> /home/ripytide/log.txt
+
+# make sxhkd reload its configuration files:
+super + Escape
+        pkill -USR1 -x sxhkd
+super + space
+	dmenu_run
+
+alt + {h,n,e,l}
+	smartresize {west,south,north,east}

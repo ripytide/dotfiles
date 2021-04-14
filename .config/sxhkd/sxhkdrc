@@ -1,0 +1,97 @@
+#
+#BSPWM keybinds
+#
+
+#
+# resize
+#
+
+# resize window depending on whether its floating/next to the left edge of moniter etc
+super + shift + {y,n,e,o}
+	smartresize {west,south,north,east}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# focus
+#
+
+# focus the older nodes in history n=1, e=2, o=3 nodes ago
+super + {n,e,o}
+	focushistory {2,3,4}
+
+# focus the next/previous window in the current desktop
+super + {u,p}
+	bspc node -f {next,prev}.local.!hidden.window
+
+# focus the given moniter
+super + {1-6}
+	bspc desktop -f ^{1-6}
+
+# focus on the other desktop on the current moniter
+super + f
+	bspc desktop -f last.local
+
+#
+# managing windows
+#
+
+# send to the given desktop
+super + shift + {1-6}
+	bspc node -d ^{1-6} --follow
+
+# close and kill
+super + {_,shift + }q
+	bspc node -{c,k}
+
+# swap the current node and the biggest window
+super + g
+	bspc node -s biggest.window.local --follow
+
+#
+# toggling hiding all windows
+#
+super + k
+	hideallwindows
+#
+# changing layouts
+#
+
+# alternate between the tiled and monocle layout
+super + l
+	bspc desktop -l next
+
+# set the window state
+super + {t,h,s}
+	bspc node -t {tiled,pseudo_tiled,floating}
+
+#
+# wm independent hotkeys
+#
+
+# program launcher
+super + space
+	rofi -show drun
+
+# terminal emulator
+super + Return
+	st
+
+# make sxhkd reload its configuration files:
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# change all backgrounds
+super + g + y
+	changewallpaper 0; changewallpaper 1; changewallpaper 2
+
+#
+# bspwm hotkeys
+#
+
+# quit/restart bspwm
+super + alt + {q,r}
+	bspc {quit,wm -r}
+
