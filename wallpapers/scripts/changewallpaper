@@ -1,0 +1,12 @@
+#! /bin/bash
+
+if [ ! -s /home/ripytide/wallpapers/scripts/originals ]
+then
+	for FILE in /home/ripytide/wallpapers/wallpapers/*
+	do
+		echo $FILE >> /home/ripytide/wallpapers/scripts/originals
+	done
+fi
+PICK=$(shuf -n 1 /home/ripytide/wallpapers/scripts/originals)
+sed -i "\:$PICK:d" /home/ripytide/wallpapers/scripts/originals
+nitrogen "$PICK" --set-zoom-fill --head=$1
