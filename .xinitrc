@@ -52,4 +52,5 @@ xinput --set-prop 14 303 0 1 &
 /home/ripytide/wallpapers/scripts/changewallpaper 0
 /home/ripytide/wallpapers/scripts/changewallpaper 1
 /home/ripytide/wallpapers/scripts/changewallpaper 2
+picom -b
 exec bspwm

@@ -150,5 +150,6 @@ configuration {
 /*	me-select-entry: "MousePrimary";*/
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
+	display-drun: ">>>";
 }
 @import "/usr/share/rofi/themes/gruvbox-dark.rasi"

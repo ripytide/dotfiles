@@ -72,6 +72,14 @@ super + t
     fi
 
 #
+# changing current window opacity
+#
+
+# increment/decrement opacity of focused window; or set to max
+super + {m,c,v}
+	picom-trans -c {-2,+4,100}
+
+#
 # wm independent hotkeys
 #
 
@@ -88,7 +96,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # change all backgrounds
-super + g + y
+super + y
 	changewallpaper 0; changewallpaper 1; changewallpaper 2
 
 #
