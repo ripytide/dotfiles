@@ -3,7 +3,7 @@
 #
 
 #
-# resize
+# resize/movement
 #
 
 # resize window depending on whether its floating/next to the left edge of moniter etc
@@ -19,12 +19,12 @@ super + {Left,Down,Up,Right}
 #
 
 # focus the older nodes in history n=1, e=2, o=3 nodes ago
-super + {n,e,o}
-	focushistory {2,3,4}
+super + n
+	focushistory 2
 
 # focus the next/previous window in the current desktop
-super + {u,p}
-	bspc node -f {next,prev}.local.!hidden.window
+super + {e,o}
+	bspc node -f {prev,next}.local.!hidden.window
 
 # focus the given moniter
 super + {1-6}
@@ -43,28 +43,24 @@ super + shift + {1-6}
 	bspc node -d ^{1-6} --follow
 
 # close and kill
-super + {_,shift + }q
-	bspc node -{c,k}
-
-# swap the current node and the biggest window
-super + g
-	bspc node -s biggest.window.local --follow
+super + j
+	bspc node -k
 
 #
 # toggling hiding all windows
 #
-super + k
+super + y
 	hideallwindows
 #
 # changing layouts
 #
 
 # alternate between the tiled and monocle layout
-super + l
+super + i
 	bspc desktop -l next
 
-# set the window state
-super + t
+# toggle between tiled and pseudo_tiled modes
+super + slash
     if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \                    
         bspc node focused -t pseudo_tiled; \                                        
     else \                                                                      
@@ -76,7 +72,7 @@ super + t
 #
 
 # increment/decrement opacity of focused window; or set to max
-super + {m,c,v}
+super + {u,p,semicolon}
 	picom-trans -c {-2,+4,100}
 
 #
@@ -88,7 +84,7 @@ super + space
 	rofi -show drun
 
 # terminal emulator
-super + Return
+super + w
 	st
 
 # make sxhkd reload its configuration files:
@@ -96,14 +92,13 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # change all backgrounds
-super + y
-	changewallpaper 0; changewallpaper 1; changewallpaper 2
+super + k
+	changewallpaper 0; changewallpaper 2; changewallpaper 1
 
 #
-# bspwm hotkeys
+# media controls
 #
 
-# quit/restart bspwm
-super + alt + {q,r}
-	bspc {quit,wm -r}
-
+# volume control
+super + {less,greater}
+	python ~/scripts/changespotifyvolume.py {-5%,+5%}
