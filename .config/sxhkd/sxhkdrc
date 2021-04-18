@@ -102,3 +102,11 @@ super + k
 # volume control
 super + {less,greater}
 	python ~/scripts/changespotifyvolume.py {-5%,+5%}
+
+# play/pause
+super + l
+	playerctl play-pause
+
+# next/previous track
+super + {comma,period}
+	playerctl {previous,next}
