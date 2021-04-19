@@ -23,12 +23,16 @@ super + n
 	focushistory 2
 
 # focus the next/previous window in the current desktop
-super + {e,o}
+super + {o,e}
 	bspc node -f {prev,next}.local.!hidden.window
 
 # focus the given moniter
 super + {1-6}
 	bspc desktop -f ^{1-6}
+
+# focus on the 1st, 2nd, 3rd moniter with whatever desktop is currently active on it
+super + {s,h,t}
+	bspc monitor {DVI-D-0,DP-0,HDMI-0} -f
 
 # focus on the other desktop on the current moniter
 super + f
