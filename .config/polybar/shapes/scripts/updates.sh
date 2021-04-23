@@ -31,7 +31,7 @@ while true; do
         else
             echo " None"
         fi
-        sleep 10
+        sleep 30
         get_total_updates
     done
 
