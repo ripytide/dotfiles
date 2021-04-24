@@ -123,3 +123,10 @@ super + {comma,period}
 super + b
 	{polybar-msg cmd toggle; bspc config -m DP-0 top_padding 0 ,\
 	polybar-msg cmd toggle; bspc config -m DP-0 top_padding 32 }
+
+#
+# take a screenshot
+#
+
+super + v
+	flameshot gui
