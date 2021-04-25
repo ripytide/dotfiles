@@ -40,3 +40,6 @@ picom -b &
 
 # run polybar
 ~/.config/polybar/shapes/launch.sh &
+
+# run notification server: dunst
+dunst &
