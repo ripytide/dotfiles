@@ -38,3 +38,5 @@ playerctld daemon
 # enable picom compositer for tranparency and blur
 picom -b &
 
+# run polybar
+~/.config/polybar/shapes/launch.sh &
