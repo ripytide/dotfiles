@@ -8,7 +8,7 @@
 
 # resize window depending on whether its floating/next to the left edge of moniter etc
 super + shift + {y,n,e,o}
-	smartresize {west,south,north,east}
+	smartresize.sh {west,south,north,east}
 
 # move a floating window
 super + {Left,Down,Up,Right}
@@ -20,7 +20,7 @@ super + {Left,Down,Up,Right}
 
 # focus the older nodes in history n=1, e=2, o=3 nodes ago
 super + n
-	focushistory 2
+	focushistory.sh 2
 
 # focus the next/previous window in the current desktop
 super + {o,e}
@@ -54,7 +54,7 @@ super + j
 # toggling hiding all windows
 #
 super + y
-	hideallwindows
+	hideallwindows.sh
 #
 # changing layouts
 #
@@ -97,7 +97,7 @@ super + Escape
 
 # change all backgrounds
 super + k
-	changewallpaper 0; changewallpaper 2; changewallpaper 1
+	changewallpaper.sh 0; changewallpaper.sh 2; changewallpaper.sh 1
 
 #
 # media controls

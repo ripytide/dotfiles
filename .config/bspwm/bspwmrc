@@ -36,9 +36,9 @@ bspc rule -a Screenkey manage=off
 xinput --set-prop 14 303 0 1 &
 
 #choose random wallpapers
-/home/ripytide/scripts/changewallpaper 0 &
-/home/ripytide/scripts/changewallpaper 2 &
-/home/ripytide/scripts/changewallpaper 1 &
+changewallpaper.sh 0 &
+changewallpaper.sh 2 &
+changewallpaper.sh 1 &
 
 #enable playerctl daemon for media controls to work with the last active media source
 playerctld daemon

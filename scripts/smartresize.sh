@@ -1,9 +1,9 @@
 #! /bin/bash
-if [[ $(isfloaty) != "yes" ]]
+if [[ $(isfloaty.sh) != "yes" ]]
 then
 case $1 in
 	"west")
-		if [ "$(islocalwindow east)" = "yes" ]
+		if [ "$(islocalwindow.sh east)" = "yes" ]
 		then
 			bspc node -z right -20 0
 		else
@@ -11,7 +11,7 @@ case $1 in
 		fi
 		;;
 	"east")
-		if [ "$(islocalwindow west)" = "yes" ]
+		if [ "$(islocalwindow.sh west)" = "yes" ]
 		then
 			bspc node -z left 20 0
 		else
@@ -19,7 +19,7 @@ case $1 in
 		fi
 		;;
 	"north")
-		if [ "$(islocalwindow south)" = "yes" ]
+		if [ "$(islocalwindow.sh south)" = "yes" ]
 		then
 			bspc node -z bottom 0 -20
 		else
@@ -27,7 +27,7 @@ case $1 in
 		fi
 		;;
 	"south")
-		if [ "$(islocalwindow north)" = "yes" ]
+		if [ "$(islocalwindow.sh north)" = "yes" ]
 		then
 			bspc node -z top 0 20
 		else
