@@ -48,7 +48,7 @@ super + shift + {1-6}
 
 # close and kill
 super + j
-	bspc node -k
+	bspc node -c
 
 #
 # toggling hiding all windows
@@ -65,10 +65,10 @@ super + i
 
 # toggle between tiled and pseudo_tiled modes
 super + slash
-    if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \                    
-        bspc node focused -t pseudo_tiled; \                                        
-    else \                                                                      
-        bspc node focused -t tiled; \                                           
+    if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \
+        bspc node focused -t pseudo_tiled; \
+    else \
+        bspc node focused -t tiled; \
     fi
 
 #
