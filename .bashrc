@@ -16,7 +16,6 @@ alias v='nvim'
 alias tr='trash'
 
 export FZF_DEFAULT_COMMAND="find -L"
-export PATH="/home/ripytide/scripts/:$PATH"
 
 export FZF_DEFAULT_OPTS='
   --color fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f
