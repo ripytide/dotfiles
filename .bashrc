@@ -4,6 +4,9 @@
 
 export EDITOR="nvim"
 export VISUAL="nvim"
+export PATH="/home/ripytide/scripts/:$PATH"
+export LAT="51.869036"
+export LON="-2.591202"
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
