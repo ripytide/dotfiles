@@ -48,7 +48,7 @@ playerctld daemon
 picom -b &
 
 #run polybar
-~/.config/polybar/shapes/launch.sh &
+~/.config/polybar/launch.sh &
 
 #run notification server: dunst
 dunst &
