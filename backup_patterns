@@ -1,0 +1,3 @@
+R /home/ripytide
+R /var/spool/cron/ripytide
+R /etc
