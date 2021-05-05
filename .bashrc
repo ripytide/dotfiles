@@ -26,3 +26,5 @@ export FZF_DEFAULT_OPTS='
   --preview="bat --color=always {}"
 '
 colorscript random
+
+exec fish
