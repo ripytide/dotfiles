@@ -1,3 +1,4 @@
+#! /bin/sh
 #
 # ~/.bashrc
 #
@@ -7,9 +8,6 @@ export VISUAL="nvim"
 export PATH="/home/ripytide/scripts/:$PATH"
 export LAT="51.869036"
 export LON="-2.591202"
-
-# If not running interactively, don't do anything
-[[ $- != *i* ]] && return
 
 alias ls='ls --color=auto -lh'
 PS1='[\u@\h \W]\$ '
@@ -26,5 +24,3 @@ export FZF_DEFAULT_OPTS='
   --preview="bat --color=always {}"
 '
 colorscript random
-
-exec fish

@@ -3,7 +3,7 @@
 #
 
 #
-# resize/movement
+# resize/movement/swap
 #
 
 # resize window depending on whether its floating/next to the left edge of moniter etc
@@ -13,6 +13,10 @@ super + shift + {y,n,e,o}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# swap window in direction
+super + ctrl + {y,n,e,o}
+	bspc node -s {west,south,north,east}
 
 #
 # focus
@@ -49,6 +53,10 @@ super + shift + {1-6}
 # close and kill
 super + j
 	bspc node -c
+
+# set the node flags
+super + ctrl + {t,h,s}
+	bspc node -g {marked,locked,sticky}
 
 #
 # toggling hiding all windows

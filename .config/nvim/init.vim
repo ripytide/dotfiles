@@ -94,19 +94,66 @@ set tabstop=4
 
 " enable syntax highlighting
 if has('syntax')
-	syntax on
+    syntax on
 endif
 
-" redraw when typing in command line to update status line to show command
-" mode label
-au CmdlineEnter * redraws
+" the number of suggestions shown for suggestions
+set pumheight=5
+
+" settings reccomended for coc.nvim see their readme
+set nobackup
+set nowritebackup
+set updatetime=300
+set shortmess+=c
+if has("nvim-0.5.0") || has("patch-8.1.1564")
+  " Recently vim can merge signcolumn and number column into one
+  set signcolumn=number
+else
+  set signcolumn=yes
+endif
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+function! s:check_back_space() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+" Use `[g` and `]g` to navigate diagnostics
+" Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
+nmap <silent> [g <Plug>(coc-diagnostic-prev)
+nmap <silent> ]g <Plug>(coc-diagnostic-next)
+
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
+
+
+" Symbol renaming.
+nmap <leader>rn <Plug>(coc-rename)
+
+" Formatting selected code.
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
+
+
+
+
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug '907th/vim-auto-save'
 let g:auto_save = 1  " enable AutoSave on Vim startup
 let g:auto_save_silent = 1
 
-""Plug 'tpope/vim-fugitive'
+""""Plug 'tpope/vim-fugitive'
 
 ""Plug 'tpope/vim-surround'
 
@@ -121,27 +168,33 @@ let g:auto_save_silent = 1
 ""let g:syntastic_check_on_open = 1
 ""let g:syntastic_check_on_wq = 0
 
-""Plug 'vim-airline/vim-airline'
-""" airline config
-""let g:airline#extensions#tabline#enabled = 1
-""let g:airline_section_c = "%t        CWD: %{getcwd()}"
-""Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-airline/vim-airline'
+" airline config
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_section_c = "%{getcwd()} ==> %t"
+Plug 'vim-airline/vim-airline-themes'
 
-""" kinetic page moving
-""Plug 'yuttie/comfortable-motion.vim'
+" kinetic page moving
+"Plug 'yuttie/comfortable-motion.vim'
 
-""Plug 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdcommenter'
 
-""Plug 'tpope/vim-repeat'
+"Plug 'tpope/vim-repeat'
 
-""Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-""Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+"Plug 'junegunn/fzf.vim'
 
-""Plug 'takac/vim-hardtime'
+"Plug 'takac/vim-hardtime'
 
-""Plug 'valloric/youcompleteme'
+"Plug 'valloric/youcompleteme'
 
 Plug 'romainl/vim-cool'
+
+Plug 'mattn/emmet-vim'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+"Plug 'turbio/bracey.vim'
 call plug#end()
 
 colorscheme gruvbox
@@ -149,13 +202,9 @@ colorscheme gruvbox
 " custom vim bindings
 let mapleader = "\\"
 nmap <SPACE> <leader>
-"
-" makes scrolling 3x faster
-nnoremap <C-e> 3<C-e>
-nnoremap <C-y> 3<C-y>
 
 " able to toggle nerd tree with ^F6
-nmap <F6> :NERDTreeToggle<CR>
+" nmap <F6> :NERDTreeToggle<CR>
 
 " silently (not visible in command line) map escape to temporarily turn off
 " highlighting
@@ -167,21 +216,11 @@ nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 " vim fzf bindings
 nnoremap <leader>p :Files<CR>
 
-nnoremap <leader>d :bd 
+nmap <leader>n :bnext<CR>
+nmap <leader>e :bprev<CR>
 
-nnoremap <leader>rc :e C:/Users/fores/.vimrc<CR>
-
-nnoremap <silent> <leader>js :call ToggeJsonErrors()<CR>:e<CR>
-
-function! ToggeJsonErrors()
-	if g:vim_json_warnings
-		let g:vim_json_warnings=0
-	else
-		let g:vim_json_warnings=1
-	endif
-endfunction
-
-nmap <leader><leader> <C-6>
+" make vim-emmet expand on tab
+" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
 
 " workman rebind movement keys back to normal positions
 noremap n j
@@ -201,4 +240,3 @@ noremap Y H
 noremap H Y
 noremap O L
 noremap L O
-
