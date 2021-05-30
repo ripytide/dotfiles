@@ -1,6 +1,5 @@
 " enable vim features which seperate it from vi
 set nocompatible
-
 set encoding=utf-8
 " attempt to determine the type of a file based on its name and possibly its
 " contents. Use this to allow intelligent auto-indenting for each filetype,
@@ -12,6 +11,10 @@ endif
 " when set, hidden allows you to :e another file without first saving the file
 " you were on before if that file has unsaved changes
 set hidden
+
+" allow persistent undoing
+set undodir=~/.config/nvim/undodir
+set undofile
 
 " a nicer command autocomplete tab and s-tab for forward and back set wildmenu,
 " commas seperate first second and so on presses
@@ -145,8 +148,6 @@ xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 
-
-
 call plug#begin()
 Plug 'morhetz/gruvbox'
 Plug '907th/vim-auto-save'
@@ -195,6 +196,24 @@ Plug 'mattn/emmet-vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Plug 'turbio/bracey.vim'
+
+Plug 'sirver/ultisnips'
+let g:UltiSnipsExpandTrigger="<c-u>"
+
+imap <c-h> <Nop>
+imap <c-t> <Nop>
+let g:UltiSnipsJumpForwardTrigger="<c-t>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>"
+let g:ultisnips_javascript = {'keyword-spacing': 'always', 'semi': 'never','space-before-function-paren': 'never',}
+
+Plug 'honza/vim-snippets'
+
+Plug 'jiangmiao/auto-pairs'
+
+Plug 'luochen1990/rainbow'
+let g:rainbow_active = 1
+
+
 call plug#end()
 
 colorscheme gruvbox
