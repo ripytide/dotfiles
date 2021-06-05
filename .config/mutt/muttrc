@@ -1,2 +1,6 @@
-set imap_user=james.forsterer@gmail.com
-set folder=imap[s]
+set mbox_type=Maildir
+set folder = "~/.mail"
+mailboxes "+james.forsterer@gmail.com/INBOX" "+james.forsterer@gmail.com/archive" "+james.forsterer@gmail.com/bin" "+james.forsterer@gmail.com/drafts" "+james.forsterer@gmail.com/important" "+james.forsterer@gmail.com/sent" "+james.forsterer@gmail.com/spam" "+james.forsterer@gmail.com/starred"
+set spoolfile = "+james.forsterer@gmail.com/INBOX"
+set record = "+james.forsterer@gmail.com/sent"
+set postponed = "+james.forsterer@gmail.com/drafts"
