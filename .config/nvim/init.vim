@@ -213,6 +213,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
 
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
 
 call plug#end()
 
