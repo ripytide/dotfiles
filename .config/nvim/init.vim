@@ -1,9 +1,9 @@
-source generic.vim
+source ~/.config/nvim/generic.vim
 
-source coc.vim
+source ~/.config/nvim/coc.vim
 
-source plugins.vim
+source ~/.config/nvim/plugins.vim
 
-source bindings.vim
+source ~/.config/nvim/bindings.vim
 
 colorscheme gruvbox
