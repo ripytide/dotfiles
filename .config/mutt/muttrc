@@ -4,3 +4,28 @@ mailboxes "+james.forsterer@gmail.com/INBOX" "+james.forsterer@gmail.com/archive
 set spoolfile = "+james.forsterer@gmail.com/INBOX"
 set record = "+james.forsterer@gmail.com/sent"
 set postponed = "+james.forsterer@gmail.com/drafts"
+
+
+set sidebar_visible
+set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_short_path
+set sidebar_delim_chars="/"
+
+
+set mail_check_stats
+
+
+# workman rebind movement keys back to normal positions
+
+unbind n
+bind index n next-entry
+unbind e
+bind index e previous-entry
+
+bind index,pager \CP sidebar-prev
+bind index,pager \CN sidebar-next
+bind index,pager \CO sidebar-open
+
+set abort_key="<Esc>"
+
+

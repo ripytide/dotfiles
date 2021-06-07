@@ -48,9 +48,5 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
-xinput --set-prop 14 303 0 1 &
-/home/ripytide/wallpapers/scripts/changewallpaper 0
-/home/ripytide/wallpapers/scripts/changewallpaper 1
-/home/ripytide/wallpapers/scripts/changewallpaper 2
-picom -b
+./home/ripytide/scripts/start.sh
 exec bspwm

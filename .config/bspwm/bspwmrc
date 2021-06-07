@@ -28,27 +28,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Polybar state=floating
 
-
-#mount cloud drives locally
-rclone mount gdrive: /mnt/cloud/gdrive &
-rclone mount odrive: /mnt/cloud/odrive &
-
-#turn off mouse acceleration
-xinput --set-prop 14 303 0 1 & 
-
-#choose random wallpapers
-changewallpaper.sh 0 &
-changewallpaper.sh 2 &
-changewallpaper.sh 1 &
-
-#enable playerctl daemon for media controls to work with the last active media source
-playerctld daemon
-
-#enable picom compositer for tranparency and blur
-#picom -b &
-
-#run polybar
-~/.config/polybar/launch.sh &
-
-#run notification server: dunst
-dunst &
+./home/ripytide/scripts/start.sh
