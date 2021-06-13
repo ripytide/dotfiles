@@ -14,27 +14,18 @@ nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 " vim fzf bindings
 nnoremap <leader>p :Files<CR>
 
-nmap <leader>n :bnext<CR>
-nmap <leader>e :bprev<CR>
+nmap <leader>e :bnext<CR>
+nmap <leader>n :bprev<CR>
 
-" make vim-emmet expand on tab
-" imap <expr> <tab> emmet#expandAbbrIntelligent("\<tab>")
+" required as vim-fugitive binds this to something which makes vim wait when
+" pressing y, so this unmaps it
+" and autocmd is needed as init.vim is loaded before plugins
+autocmd VimEnter * nunmap y<C-G>
+
+nmap <leader>h :HardTimeToggle<CR>
 
 " workman rebind movement keys back to normal positions
-noremap n j
-noremap j n
-noremap e k
-noremap k e
-noremap y h
-noremap h y
-noremap o l
-noremap l o
+set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
-noremap N J
-noremap J N
-noremap E K
-noremap K E
-noremap Y H
-noremap H Y
-noremap O L
-noremap L O
+nmap <leader>d :Goyo<CR>
+nmap <leader>q :Limelight!!<CR>

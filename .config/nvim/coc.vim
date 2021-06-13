@@ -12,11 +12,16 @@ if has("nvim-0.5.0") || has("patch-8.1.1564")
 else
   set signcolumn=yes
 endif
-inoremap <silent><expr> <TAB>
+
+" holy balls is this AMAZING
+imap <silent><expr> <TAB>
+      \ UltiSnips#CanExpandSnippet() ? "\<c-u>" :
+      \ UltiSnips#CanJumpForwards() ? "\<c-t>" :
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" AMAZING end
 
 function! s:check_back_space() abort
   let col = col('.') - 1

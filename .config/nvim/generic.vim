@@ -99,3 +99,10 @@ set tabstop=4
 if has('syntax')
     syntax on
 endif
+
+set colorcolumn=80
+
+set list lcs=tab:\|\  
+
+set foldmethod=indent
+set nofoldenable
