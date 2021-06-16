@@ -141,3 +141,6 @@ super + b
 
 super + v
 	flameshot gui
+
+super + a
+	passes.sh
