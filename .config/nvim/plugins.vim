@@ -24,10 +24,7 @@ Plug 'scrooloose/nerdcommenter'
 
 Plug 'tpope/vim-repeat'
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-"Plug 'junegunn/fzf.vim'
-
-"limit use of j and k
+"limit use of j, k, h, l
 Plug 'takac/vim-hardtime'
 let g:hardtime_allow_different_key = 1
 let g:hardtime_default_on = 1
@@ -60,4 +57,11 @@ Plug 'junegunn/limelight.vim'
 let g:limelight_conceal_ctermfg = 7
 let g:limelight_priority = -1
 
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+
+Plug 'tpope/vim-eunuch'
+
+Plug 'ActivityWatch/aw-watcher-vim'
 call plug#end()

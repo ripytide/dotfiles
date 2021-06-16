@@ -1,5 +1,6 @@
 let mapleader = "\\"
 nmap <SPACE> <leader>
+vmap <SPACE> <leader>
 
 " able to toggle nerd tree with ^F6
 " nmap <F6> :NERDTreeToggle<CR>
@@ -10,9 +11,6 @@ nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 
 " highlight current line
 :nnoremap <silent> <Leader>l ml:execute 'match Search /\%'.line('.').'l/'<CR>
-
-" vim fzf bindings
-nnoremap <leader>p :Files<CR>
 
 nmap <leader>e :bnext<CR>
 nmap <leader>n :bprev<CR>
@@ -29,3 +27,9 @@ set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
 nmap <leader>d :Goyo<CR>
 nmap <leader>q :Limelight!!<CR>
+
+nmap <leader>p :Telescope find_files theme=get_ivy<CR>
+
+nmap <leader>f :Prettier<CR>
+
+nmap <leader>o :CocCommand editor.action.organizeImport<CR>
