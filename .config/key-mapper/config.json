@@ -1,6 +1,6 @@
 {
     "autoload": {
-        "Razer Razer BlackWidow Chroma": "Pre-gergo workman"
+        "Razer Razer BlackWidow Chroma": "ripytide's map"
     },
     "macros": {
         "keystroke_sleep_ms": 10

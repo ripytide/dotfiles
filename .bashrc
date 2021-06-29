@@ -1,4 +1,5 @@
 #! /bin/sh
+
 #
 # ~/.bashrc
 #
@@ -9,20 +10,6 @@ export PATH="~/scripts/:~/.local/bin/:$PATH"
 export LAT="51.869036"
 export LON="-2.591202"
 
-alias ls='ls --color=auto -lh'
-PS1='[\u@\h \W]\$ '
-alias fzf='$EDITOR "$(\fzf)"'
-alias cfg='/usr/bin/git --git-dir=$HOME/configs/ --work-tree=$HOME'
-alias v='nvim'
-alias tr='trash'
-
-export FZF_DEFAULT_COMMAND="find -L"
-
-export FZF_DEFAULT_OPTS='
-  --color fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f
-  --color info:#83a598,prompt:#bdae93,spinner:#fabd2f,pointer:#83a598,marker:#fe8019,header:#665c54
-  --preview="bat --color=always {}"
-'
 colorscript random
 
 exec fish
