@@ -36,7 +36,7 @@ set hlsearch
 " search is executed incremetally as typing search query instead of only after
 " pressing enter
 set incsearch
-
+"
 " case is ignored by default when searching, however, if an upper case letter
 " is used then the search does become case sensitive
 set ignorecase
@@ -77,7 +77,7 @@ set confirm
 " set the command window height to 2 lines
 set cmdheight=2
 
-" display line numbers on the left, also setting relativenumber gives hybrid
+"" display line numbers on the left, also setting relativenumber gives hybrid
 " of relative number and normal number for the current line
 set number
 set relativenumber
@@ -86,7 +86,8 @@ set relativenumber
 set scrolloff=8
 
 " quickly time out on keycodes, but never time out on mappings
-set notimeout ttimeout ttimeoutlen=200
+" issues causing pause after pressing esc
+"set notimeout ttimeout ttimeoutlen=200
 
 " sets the amount of spaces that vim considers an indent for commands like <
 " or >

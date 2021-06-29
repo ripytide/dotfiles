@@ -5,7 +5,7 @@
 
 export EDITOR="nvim"
 export VISUAL="nvim"
-export PATH="/home/ripytide/scripts/:$PATH"
+export PATH="~/scripts/:~/.local/bin/:$PATH"
 export LAT="51.869036"
 export LON="-2.591202"
 
@@ -24,3 +24,5 @@ export FZF_DEFAULT_OPTS='
   --preview="bat --color=always {}"
 '
 colorscript random
+
+exec fish

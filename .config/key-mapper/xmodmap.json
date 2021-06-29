@@ -207,6 +207,9 @@
     "XF86Battery": 236,
     "XF86Bluetooth": 237,
     "XF86WLAN": 238,
+    "XF86UWB": 239,
+    "XF86Next_VMode": 241,
+    "XF86Prev_VMode": 242,
     "XF86MonBrightnessCycle": 243,
     "XF86WWAN": 246,
     "XF86RFKill": 247

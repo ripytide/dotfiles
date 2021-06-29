@@ -16,8 +16,8 @@ endif
 " holy balls is this AMAZING
 imap <silent><expr> <TAB>
       \ UltiSnips#CanExpandSnippet() ? "\<c-u>" :
-      \ UltiSnips#CanJumpForwards() ? "\<c-t>" :
       \ pumvisible() ? "\<C-n>" :
+      \ UltiSnips#CanJumpForwards() ? "\<c-t>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"

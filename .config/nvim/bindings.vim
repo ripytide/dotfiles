@@ -28,7 +28,8 @@ set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 nmap <leader>d :Goyo<CR>
 nmap <leader>q :Limelight!!<CR>
 
-nmap <leader>p :Telescope find_files theme=get_ivy<CR>
+nmap <leader>p :Telescope git_files <CR>
+nmap <leader>u :Telescope find_files <CR>
 
 nmap <leader>f :Prettier<CR>
 

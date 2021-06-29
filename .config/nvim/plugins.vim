@@ -13,8 +13,8 @@ Plug 'tpope/vim-surround'
 "Plug 'scrooloose/nerdtree'
 
 Plug 'vim-airline/vim-airline'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline_section_c = "%{getcwd()} ==> %t"
+Plug 'enricobacis/vim-airline-clock'
+
 Plug 'vim-airline/vim-airline-themes'
 
 "kinetic page moving
@@ -45,6 +45,8 @@ let g:ultisnips_javascript = {'keyword-spacing': 'always', 'semi': 'never','spac
 Plug 'ripytide/vim-snippets'
 
 Plug 'jiangmiao/auto-pairs'
+let g:AutoPairsMapCR = 0
+let g:AutoPairsCenterLine = 0
 
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
@@ -63,5 +65,9 @@ Plug 'nvim-telescope/telescope.nvim'
 
 Plug 'tpope/vim-eunuch'
 
-Plug 'ActivityWatch/aw-watcher-vim'
+Plug 'alvan/vim-closetag'
+let g:closetag_filetypes = 'html,javascript,jsx'
+let g:closetag_regions = {}
+
+Plug 'simnalamburt/vim-mundo'
 call plug#end()
