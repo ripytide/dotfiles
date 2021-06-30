@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for ripytide on Wed Jun 30 14:19:30 2021.
+# Written by xscreensaver-settings 6.00 for ripytide on Wed Jun 30 14:24:30 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -33,7 +33,7 @@ mode:		random
 selected:	-1
 
 textMode:	date
-textLiteral:	XScreenSaver
+textLiteral:	devourer
 textFile:	
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
@@ -48,10 +48,10 @@ programs:								      \
 				helix -root				    \n\
 				hopalong -root				    \n\
 				imsmap -root				    \n\
--				noseguy -root				    \n\
--				pyro -root				    \n\
+				noseguy -root				    \n\
+				pyro -root				    \n\
 				qix -root				    \n\
--				rocks -root				    \n\
+				rocks -root				    \n\
 				rorschach -root				    \n\
 				decayscreen -root			    \n\
 				flame -root				    \n\
@@ -59,18 +59,18 @@ programs:								      \
 				slidescreen -root			    \n\
 				pedal -root				    \n\
 				bouboule -root				    \n\
--				braid -root				    \n\
+				braid -root				    \n\
 				coral -root				    \n\
 				deco -root				    \n\
 				drift -root				    \n\
--				fadeplot -root				    \n\
+				fadeplot -root				    \n\
 				galaxy -root				    \n\
 				goop -root				    \n\
 				grav -root				    \n\
 				ifs -root				    \n\
   GL: 				jigsaw -root				    \n\
 				julia -root				    \n\
--				kaleidescope -root			    \n\
+				kaleidescope -root			    \n\
   GL: 				moebius -root				    \n\
 				moire -root				    \n\
   GL: 				morph3d -root				    \n\
@@ -80,7 +80,7 @@ programs:								      \
   GL: 				pipes -root				    \n\
 				rd-bomb -root				    \n\
   GL: 				rubik -root				    \n\
--				sierpinski -root			    \n\
+				sierpinski -root			    \n\
 				slip -root				    \n\
   GL: 				sproingies -root			    \n\
 				starfish -root				    \n\
@@ -93,7 +93,7 @@ programs:								      \
 				bsod -root				    \n\
   GL: 				bubble3d -root				    \n\
   GL: 				cage -root				    \n\
--				crystal -root				    \n\
+				crystal -root				    \n\
 				cynosure -root				    \n\
 				discrete -root				    \n\
 				distort -root				    \n\
@@ -107,15 +107,15 @@ programs:								      \
   GL: 				sonar -root				    \n\
   GL: 				stairs -root				    \n\
 				truchet -root				    \n\
--				vidwhacker -root			    \n\
+				vidwhacker -root			    \n\
 				blaster -root				    \n\
 				bumps -root				    \n\
 				ccurve -root				    \n\
 				compass -root				    \n\
 				deluxe -root				    \n\
--				demon -root				    \n\
+				demon -root				    \n\
 - GL: 				extrusion -root				    \n\
--				loop -root				    \n\
+				loop -root				    \n\
 				penetrate -root				    \n\
 				petri -root				    \n\
 				phosphor -root				    \n\
@@ -126,16 +126,16 @@ programs:								      \
 				spotlight -root				    \n\
 				squiral -root				    \n\
 				wander -root				    \n\
--				webcollage -root			    \n\
+				webcollage -root			    \n\
 				xflame -root				    \n\
 				xmatrix -root				    \n\
   GL: 				gflux -root				    \n\
--				nerverot -root				    \n\
+				nerverot -root				    \n\
 				xrayswarm -root				    \n\
 				xspirograph -root			    \n\
   GL: 				circuit -root				    \n\
   GL: 				dangerball -root			    \n\
-- GL: 				dnalogo -root				    \n\
+  GL: 				dnalogo -root				    \n\
   GL: 				engine -root				    \n\
   GL: 				flipscreen3d -root			    \n\
   GL: 				gltext -root				    \n\
@@ -157,18 +157,18 @@ programs:								      \
 				euler2d -root				    \n\
 				fluidballs -root			    \n\
   GL: 				flurry -root				    \n\
-- GL: 				glblur -root				    \n\
+  GL: 				glblur -root				    \n\
   GL: 				glsnake -root				    \n\
 				halftone -root				    \n\
   GL: 				juggler3d -root				    \n\
   GL: 				lavalite -root				    \n\
--				polyominoes -root			    \n\
+				polyominoes -root			    \n\
   GL: 				queens -root				    \n\
-- GL: 				sballs -root				    \n\
+  GL: 				sballs -root				    \n\
   GL: 				spheremonics -root			    \n\
--				thornbird -root				    \n\
+				thornbird -root				    \n\
 				twang -root				    \n\
-- GL: 				antspotlight -root			    \n\
+  GL: 				antspotlight -root			    \n\
 				apple2 -root				    \n\
   GL: 				atunnel -root				    \n\
 				barcode -root				    \n\
@@ -184,9 +184,9 @@ programs:								      \
   GL: 				gleidescope -root			    \n\
   GL: 				glknots -root				    \n\
   GL: 				glmatrix -root				    \n\
-- GL: 				glslideshow -root			    \n\
+  GL: 				glslideshow -root			    \n\
   GL: 				hypertorus -root			    \n\
-- GL: 				jigglypuff -root			    \n\
+  GL: 				jigglypuff -root			    \n\
 				metaballs -root				    \n\
   GL: 				mirrorblob -root			    \n\
 				piecewise -root				    \n\
@@ -197,7 +197,7 @@ programs:								      \
 				xanalogtv -root				    \n\
 				abstractile -root			    \n\
 				anemotaxis -root			    \n\
-- GL: 				antinspect -root			    \n\
+  GL: 				antinspect -root			    \n\
 				fireworkx -root				    \n\
 				fuzzyflakes -root			    \n\
 				interaggregate -root			    \n\
@@ -207,10 +207,10 @@ programs:								      \
 				pacman -root				    \n\
   GL: 				pinion -root				    \n\
   GL: 				polyhedra -root				    \n\
-- GL: 				providence -root			    \n\
+  GL: 				providence -root			    \n\
 				substrate -root				    \n\
 				wormhole -root				    \n\
-- GL: 				antmaze -root				    \n\
+  GL: 				antmaze -root				    \n\
   GL: 				boing -root				    \n\
 				boxfit -root				    \n\
   GL: 				carousel -root				    \n\
@@ -234,7 +234,7 @@ programs:								      \
   GL: 				voronoi -root				    \n\
   GL: 				hypnowheel -root			    \n\
   GL: 				klein -root				    \n\
--				lcdscrub -root				    \n\
+				lcdscrub -root				    \n\
   GL: 				photopile -root				    \n\
   GL: 				skytentacles -root			    \n\
   GL: 				rubikblocks -root			    \n\
