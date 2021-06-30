@@ -2,15 +2,26 @@ set mbox_type=Maildir
 set folder = "~/.mail"
 mailboxes "+james.forsterer@gmail.com/INBOX" "+james.forsterer@gmail.com/archive" "+james.forsterer@gmail.com/bin" "+james.forsterer@gmail.com/drafts" "+james.forsterer@gmail.com/important" "+james.forsterer@gmail.com/sent" "+james.forsterer@gmail.com/spam" "+james.forsterer@gmail.com/starred"
 set spoolfile = "+james.forsterer@gmail.com/INBOX"
-set record = "+james.forsterer@gmail.com/sent"
+# gmail automatically saves sent mail to sent folder
+unset record
 set postponed = "+james.forsterer@gmail.com/drafts"
 
+#smtp stuff
+set my_pass = `pass show Mail/james.forsterer@gmail.com`
+set my_user = james.forsterer@gmail.com
+set realname = "James Forster"
+set from = james.forsterer@gmail.com
+set use_from = yes
+set smtp_pass = $my_pass
+set smtp_url=smtps://$my_user@smtp.gmail.com
+set ssl_force_tls = yes
+
+set sort = reverse-date-received
 
 set sidebar_visible
-set sidebar_format = "%B%?F? [%F]?%* %?N?%N/?%S"
+set sidebar_format = "%B %* %?N?%N/?%S"
 set sidebar_short_path
 set sidebar_delim_chars="/"
-
 
 set mail_check_stats
 
@@ -22,10 +33,21 @@ bind index n next-entry
 unbind e
 bind index e previous-entry
 
+bind alias,index,browser,query G last-entry
+bind pager G bottom
+
+bind index,pager g noop
+bind alias,index,browser,query gg first-entry
+bind pager gg top
+
+bind alias,index,pager,browser,query \Cd half-down
+bind alias,index,pager,browser,query \Cu half-up
+
 bind index,pager \CP sidebar-prev
 bind index,pager \CN sidebar-next
 bind index,pager \CO sidebar-open
 
+bind index j search-next
+bind index J search-opposite
+
 set abort_key="<Esc>"
-
-

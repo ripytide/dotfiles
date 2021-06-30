@@ -3,10 +3,15 @@ ui = TTYUI
 accounts = james.forsterer@gmail.com
 fsync = False
 
+pythonfile = ~/.config/offlineimap/offlineimap.py
+
 [Account james.forsterer@gmail.com]
 localrepository = james-local
 remoterepository = james-remote
 postsynchook = notmuch new
+
+autorefresh = 0.5
+quick = 10
 
 [Repository james-local]
 type = Maildir
@@ -35,6 +40,11 @@ nametrans = lambda folder: {'[Gmail]/Drafts':    'drafts',
 
 sslcacertfile = /etc/ssl/certs/ca-certificates.crt
 ssl_version = tls1_2
+
+remotepasseval = get_pass("james.forsterer@gmail.com")
+
+keepalive = 60
+holdconnectionopen = yes
 
 [mbnames]
 enabled = yes
