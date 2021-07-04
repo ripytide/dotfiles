@@ -70,4 +70,10 @@ let g:closetag_filetypes = 'html,javascript,jsx'
 let g:closetag_regions = {}
 
 Plug 'simnalamburt/vim-mundo'
+
+Plug 'sbdchd/neoformat'
+augroup fmt
+  autocmd!
+  autocmd BufWritePre * undojoin | Neoformat
+augroup END
 call plug#end()

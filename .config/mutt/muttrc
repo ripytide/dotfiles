@@ -51,3 +51,9 @@ bind index j search-next
 bind index J search-opposite
 
 set abort_key="<Esc>"
+
+
+
+#colors from neomutt website gruvbox
+#source colors-gruvbox-shuber.muttrc
+#source colors-gruvbox-shuber-extended.muttrc

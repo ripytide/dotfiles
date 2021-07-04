@@ -147,3 +147,11 @@ super + a
 
 super + shift + a
 	rofi-pass.sh
+
+
+#
+# color theme switching with pywal
+#
+
+super + ctrl + {1,2,3,4,5,9,0}
+	wal --theme {base16-gruvbox-soft,base16-ashes,base16-bespin,base16-brewer,base16-google,random_light,random}

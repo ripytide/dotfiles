@@ -1,8 +1,5 @@
 #! /bin/sh
 
-#restart sxhkd
-pgrep -x sxhkd > /dev/null || sxhkd &
-
 #setup monitors
 bspc monitor DVI-D-0 -d I II
 bspc monitor DP-0 -d III IV
@@ -27,5 +24,3 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a Polybar state=floating
-
-./home/ripytide/scripts/start.sh

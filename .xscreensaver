@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for ripytide on Wed Jun 30 14:24:30 2021.
+# Written by xscreensaver-settings 6.00 for ripytide on Thu Jul  1 11:19:36 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
-cycle:		0:02:00
+cycle:		0:03:00
 lock:		True
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
@@ -14,22 +14,22 @@ splash:		True
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-settings
 nice:		10
-fade:		True
-unfade:		True
-fadeSeconds:	0:00:05
+fade:		False
+unfade:		False
+fadeSeconds:	0:00:00
 ignoreUninstalledPrograms:False
 font:		
 dpmsEnabled:	True
 dpmsQuickOff:	False
-dpmsStandby:	0:30:00
-dpmsSuspend:	0:40:00
-dpmsOff:	0:50:00
-grabDesktopImages:  True
+dpmsStandby:	0:20:00
+dpmsSuspend:	0:20:00
+dpmsOff:	0:20:00
+grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: False
-imageDirectory:	
+chooseRandomImages: True
+imageDirectory:	/home/ripytide/wallpapers
 
-mode:		random
+mode:		random-same
 selected:	-1
 
 textMode:	date
@@ -107,7 +107,7 @@ programs:								      \
   GL: 				sonar -root				    \n\
   GL: 				stairs -root				    \n\
 				truchet -root				    \n\
-				vidwhacker -root			    \n\
+-				vidwhacker -root			    \n\
 				blaster -root				    \n\
 				bumps -root				    \n\
 				ccurve -root				    \n\
@@ -126,7 +126,7 @@ programs:								      \
 				spotlight -root				    \n\
 				squiral -root				    \n\
 				wander -root				    \n\
-				webcollage -root			    \n\
+-				webcollage -root			    \n\
 				xflame -root				    \n\
 				xmatrix -root				    \n\
   GL: 				gflux -root				    \n\
