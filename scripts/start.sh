@@ -27,8 +27,6 @@ playerctld daemon &
 #run notification server: dunst
 dunst &
 
-blockify &
-
 key-mapper-control --command autoload &
 
 xscreensaver &

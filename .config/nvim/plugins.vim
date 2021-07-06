@@ -40,9 +40,7 @@ imap <c-t> <Nop>
 imap <c-h> <Nop>
 let g:UltiSnipsJumpForwardTrigger="<c-t>"
 let g:UltiSnipsJumpBackwardTrigger="<c-h>"
-let g:ultisnips_javascript = {'keyword-spacing': 'always', 'semi': 'never','space-before-function-paren': 'never',}
-
-Plug 'ripytide/vim-snippets'
+let g:UltiSnipsSnippetDirectories=["ripysnips"]
 
 Plug 'jiangmiao/auto-pairs'
 let g:AutoPairsMapCR = 0
@@ -72,8 +70,6 @@ let g:closetag_regions = {}
 Plug 'simnalamburt/vim-mundo'
 
 Plug 'sbdchd/neoformat'
-augroup fmt
-  autocmd!
-  autocmd BufWritePre * undojoin | Neoformat
-augroup END
+
+Plug 'neovimhaskell/haskell-vim'
 call plug#end()
