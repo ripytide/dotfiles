@@ -161,3 +161,9 @@ super + {minus,equal}
 
 super + ctrl + {minus,equal}
 	brightnessctl -d tpacpi::kbd_backlight set {0,100%}
+
+super + g
+	xscreensaver-command -lock
+
+super + c
+	networkmanager_dmenu
