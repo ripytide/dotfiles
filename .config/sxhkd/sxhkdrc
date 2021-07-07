@@ -160,7 +160,7 @@ super + {minus,equal}
 	brightnessctl set {10%-,+10%}
 
 super + ctrl + {minus,equal}
-	brightnessctl -d tpacpi::kbd_backlight set {0,100%}
+	brightnessctl -d tpacpi::kbd_backlight set {1-,+1}
 
 super + g
 	xscreensaver-command -lock
