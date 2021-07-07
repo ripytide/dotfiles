@@ -12,8 +12,6 @@ xinput --set-prop 13 303 0 1 &
 
 #choose random wallpapers
 ~/scripts/changewallpaper.sh 0 &
-~/scripts/changewallpaper.sh 2 &
-~/scripts/changewallpaper.sh 1 &
 
 #enable playerctl daemon for media controls to work with the last active media source
 playerctld daemon &
