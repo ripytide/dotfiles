@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for ripytide on Thu Jul  1 11:19:36 2021.
+# Written by xscreensaver-settings 6.00 for ripytide on Wed Jul  7 18:22:41 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:10:00
@@ -10,7 +10,7 @@ passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
 verbose:	False
-splash:		True
+splash:		False
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-settings
 nice:		10
@@ -29,7 +29,7 @@ grabVideoFrames:    False
 chooseRandomImages: True
 imageDirectory:	/home/ripytide/wallpapers
 
-mode:		random-same
+mode:		random
 selected:	-1
 
 textMode:	date
