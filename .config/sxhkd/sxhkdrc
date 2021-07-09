@@ -36,7 +36,7 @@ super + {1-6}
 
 # focus on the 1st, 2nd, 3rd moniter with whatever desktop is currently active on it
 super + {s,h,t}
-	bspc monitor {DVI-D-0,DP-0,HDMI-0} -f
+	bspc desktop -f ^{1,2,3}
 
 # focus on the other desktop on the current moniter
 super + f
@@ -155,3 +155,15 @@ super + shift + a
 
 super + ctrl + {1,2,3,4,5,9,0}
 	wal --theme {base16-gruvbox-soft,base16-ashes,base16-bespin,base16-brewer,base16-google,random_light,random}
+
+super + {minus,equal}
+	brightnessctl set {10%-,+10%}
+
+super + ctrl + {minus,equal}
+	brightnessctl -d tpacpi::kbd_backlight set {1-,+1}
+
+super + g
+	xscreensaver-command -lock
+
+super + c
+	networkmanager_dmenu
