@@ -36,7 +36,7 @@ super + {1-6}
 
 # focus on the 1st, 2nd, 3rd moniter with whatever desktop is currently active on it
 super + {s,h,t}
-	bspc desktop -f ^{1,2,3}
+	bspc monitor -f ^{1,2,3}
 
 # focus on the other desktop on the current moniter
 super + f
