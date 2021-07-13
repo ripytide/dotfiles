@@ -1,8 +1,8 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for ripytide on Thu Jul  1 11:19:36 2021.
+# Written by xscreensaver-settings 6.00 for ripytide on Tue Jul 13 14:31:22 2021.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	0:10:00
+timeout:	0:08:00
 cycle:		0:03:00
 lock:		True
 lockTimeout:	0:00:00
