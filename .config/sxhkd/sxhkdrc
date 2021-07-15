@@ -93,7 +93,7 @@ super + {u,p,semicolon}
 
 # program launcher
 super + space
-	rofi -show drun
+	rofi -show drun -i
 
 # terminal emulator
 super + w

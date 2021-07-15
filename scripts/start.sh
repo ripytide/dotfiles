@@ -22,7 +22,7 @@ playerctld daemon &
 #picom -b &
 
 #run polybar
-~/.config/polybar/launch.sh &
+#~/.config/polybar/launch.sh &
 
 #run notification server: dunst
 dunst &
@@ -32,6 +32,8 @@ key-mapper-control --command autoload &
 xscreensaver &
 
 xss-lock -- xscreensaver-command -lock &
+
+udiskie &
 
 #start bspwm
 bspwm
