@@ -1,0 +1,2 @@
+program_options:
+  notify_command: "openusb.sh {event} {mount_path}"
