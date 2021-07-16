@@ -31,6 +31,6 @@ nmap <leader>q :Limelight!!<CR>
 nmap <leader>p :Telescope git_files <CR>
 nmap <leader>u :Telescope find_files <CR>
 
-nmap <leader>f :Prettier<CR>
+nmap <leader>f :Neoformat<CR>
 
 nmap <leader>o :CocCommand editor.action.organizeImport<CR>

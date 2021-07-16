@@ -107,3 +107,5 @@ set list lcs=tab:\|\
 
 set foldmethod=indent
 set nofoldenable
+
+autocmd Filetype haskell setlocal expandtab
