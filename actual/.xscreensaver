@@ -10,7 +10,7 @@ passwdTimeout:	0:00:30
 visualID:	default
 installColormap:    True
 verbose:	False
-splash:		True
+splash:		False
 splashDuration:	0:00:05
 demoCommand:	xscreensaver-settings
 nice:		10
