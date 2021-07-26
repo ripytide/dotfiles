@@ -35,5 +35,7 @@ xss-lock -- xscreensaver-command -lock &
 
 udiskie &
 
+komorebi &
+
 #start bspwm
 bspwm
