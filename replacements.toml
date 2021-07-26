@@ -1,4 +1,4 @@
-["bspwm/bspwmrc"]
+[".config/bspwm/bspwmrc"]
 monitor_config = """
 bspc monitor DVI-D-0 -d I II
 bspc monitor DP-0 -d III IV

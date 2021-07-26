@@ -1,13 +1,8 @@
 #! /bin/sh
-replacements=replacements.toml
-input=.config
-output=~/.config
+replacements=~/dotfiles/replacements.toml
+input=~/dotfiles/actual
+output=~
 
-if [[ -e $output ]]; then
-	rm -rf $output
-	mkdir $output
-fi
-
-cp -r $input/* $output
+cp -r $input/. $output
 
 ./replacer.py $replacements $output
