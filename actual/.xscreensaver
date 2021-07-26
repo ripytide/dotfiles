@@ -1,9 +1,9 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for ripytide on Tue Jul 13 14:31:22 2021.
+# Written by xscreensaver-settings 6.00 for ripytide on Mon Jul 26 15:37:34 2021.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	0:08:00
-cycle:		0:03:00
+timeout:	0:05:00
+cycle:		3:46:00
 lock:		True
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
@@ -21,12 +21,12 @@ ignoreUninstalledPrograms:False
 font:		
 dpmsEnabled:	True
 dpmsQuickOff:	False
-dpmsStandby:	0:20:00
-dpmsSuspend:	0:20:00
-dpmsOff:	0:20:00
+dpmsStandby:	0:10:00
+dpmsSuspend:	0:10:00
+dpmsOff:	0:10:00
 grabDesktopImages:  False
 grabVideoFrames:    False
-chooseRandomImages: True
+chooseRandomImages: False
 imageDirectory:	/home/ripytide/wallpapers
 
 mode:		random-same
@@ -37,7 +37,7 @@ textLiteral:	devourer
 textFile:	
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
-dialogTheme:	aquablack
+dialogTheme:	greenblack
 
 programs:								      \
 				maze -root				    \n\
