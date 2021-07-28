@@ -1,5 +1,5 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.00 for ripytide on Mon Jul 26 15:37:34 2021.
+# Written by xscreensaver-settings 6.00 for ripytide on Wed Jul 28 15:05:37 2021.
 # https://www.jwz.org/xscreensaver/
 
 timeout:	0:05:00
@@ -32,9 +32,9 @@ imageDirectory:	/home/ripytide/wallpapers
 mode:		random-same
 selected:	-1
 
-textMode:	date
+textMode:	file
 textLiteral:	devourer
-textFile:	
+textFile:	/home/ripytide/sync/bee/bee movie script
 textProgram:	fortune
 textURL:	https://en.wikipedia.org/w/index.php?title=Special:NewPages&feed=rss
 dialogTheme:	greenblack
