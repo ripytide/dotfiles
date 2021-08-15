@@ -43,8 +43,9 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 let g:UltiSnipsSnippetDirectories=["ripysnips"]
 
 Plug 'jiangmiao/auto-pairs'
-let g:AutoPairsMapCR = 0
+let g:AutoPairsMapCR = 1
 let g:AutoPairsCenterLine = 0
+let g:AutoPairsShortcutToggle = '<c-q>'
 
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1

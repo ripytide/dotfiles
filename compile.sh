@@ -5,4 +5,4 @@ output=~
 
 cp -r $input/. $output
 
-./replacer.py $replacements $output
+~/dotfiles/replacer.py $replacements $output

@@ -29,7 +29,7 @@ dunst &
 
 key-mapper-control --command autoload &
 
-xautolock -time 15 -locker "systemctl suspend" -detectsleep
+xautolock -time 15 -locker "systemctl suspend" -detectsleep &
 
 xscreensaver &
 
