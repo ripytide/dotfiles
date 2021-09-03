@@ -1,6 +1,7 @@
 {
     "autoload": {
-        "Razer Razer BlackWidow Chroma": "ripytide's map"
+        "Razer Razer BlackWidow Chroma": "ripytide's map",
+        "AT Translated Set 2 keyboard": "ripytide's map"
     },
     "macros": {
         "keystroke_sleep_ms": 10
