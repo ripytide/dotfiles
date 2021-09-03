@@ -1,0 +1,10 @@
+[".config/bspwm/bspwmrc"]
+monitor_config = """
+bspc monitor eDP1 -d I II III
+"""
+
+[".config/sxhkd/sxhkdrc"]
+sht_keybinds = """
+super + {s,h,t}
+	bspc desktop -f ^{1,2,3}
+"""

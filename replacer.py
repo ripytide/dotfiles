@@ -18,7 +18,6 @@ def replaceInFile(filename, replacements):
     with open(getConfigFilePath(filename), "w") as file:
         for line in lines:
 
-            print(line)
             if line[0] == "!":
                 print("filename:" + filename)
 

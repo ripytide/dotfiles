@@ -4,3 +4,9 @@ bspc monitor DVI-D-0 -d I II
 bspc monitor DP-0 -d III IV
 bspc monitor HDMI-0 -d V VI
 """
+
+[".config/sxhkd/sxhkdrc"]
+sht_keybinds = """
+super + {s,h,t}
+	bspc monitor -f ^{1,2,3}
+"""

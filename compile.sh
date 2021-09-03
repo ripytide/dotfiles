@@ -5,4 +5,4 @@ output=~
 
 cp -r $input/. $output
 
-~/dotfiles/replacer.py $replacements $output
+~/dotfiles/replacer.py "$1".toml $output
