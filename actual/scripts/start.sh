@@ -8,7 +8,7 @@ echo -e "\n"
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 #turn off mouse acceleration
-xinput --set-prop 13 303 0 1 &
+xinput --set-prop 12 303 0 1 &
 
 #choose random wallpapers
 ~/scripts/changewallpaper.sh 0 &
