@@ -23,7 +23,6 @@ dunst
 efibootmgr
 epson-inkjet-printer-escpr
 fakeroot
-ffmpegthumbnailer
 firefox
 fish
 flameshot
@@ -42,15 +41,12 @@ gutenprint
 gvfs
 gvfs-mtp
 haskell-language-server
-ifuse
 inetutils
 intel-ucode
-jpegoptim
 key-mapper-git
 kitty
 kodi
 kodi-addon-pvr-hts
-komorebi
 libfprint-vfs009x-git
 libimobiledevice
 libnotify
@@ -86,7 +82,6 @@ pass
 patch
 pkgconf
 playerctl
-poppler
 python2
 python2-pip
 python-pip
@@ -97,10 +92,8 @@ rsync
 shell-color-scripts
 signal-desktop
 smbclient
-speedtest-cli
 spotify
 starship
-steam
 sudo
 sxhkd
 sxiv
@@ -108,10 +101,8 @@ syncthing
 syncthing-gtk
 tealdeer
 teams
-terminator
 texinfo
 thunar
-thunderbird
 tlp
 tlpui-git
 traceroute
@@ -127,7 +118,6 @@ vim-plug
 vlc
 wget
 which
-windscribe-cli
 wol
 xautolock
 xclip
