@@ -1,8 +1,7 @@
 #! /bin/sh
-replacements=~/dotfiles/replacements.toml
-input=~/dotfiles/actual
+input=~/dotfiles/actual/.
 output=~
 
-cp -r $input/. $output
+cp -r $input $output
 
 ~/dotfiles/replacer.py "$1".toml $output
