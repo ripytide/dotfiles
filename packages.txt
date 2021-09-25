@@ -1,148 +1,148 @@
 acpi
 acpilight
-	alacritty
-		alsa-utils
-		autoconf
-		automake
-		base
-	bastet
-		bat
-	bind
-		binutils
-		bison
-	blockify-git
+alacritty
+alsa-utils
+autoconf
+automake
+base
+bastet
+bat
+bind
+binutils
+bison
+blockify-git
 brightnessctl
-		bspwm
-	chromium
-		chrony
-	clang
+bspwm
+chromium
+chrony
+clang
 cronie
-	cups
-	discord
-		dunst
-		efibootmgr
-	epson-inkjet-printer-escpr
-		fakeroot
+cups
+discord
+dunst
+efibootmgr
+epson-inkjet-printer-escpr
+fakeroot
 ffmpegthumbnailer
-		firefox
-		fish
-	flameshot
-		flex
-	foomatic-db-engine
-	foomatic-db-gutenprint-ppds
-	foomatic-db-nonfree-ppds
-	foomatic-db-ppds
-		gcc
-	gdb
-		git
-		grub
+firefox
+fish
+flameshot
+flex
+foomatic-db-engine
+foomatic-db-gutenprint-ppds
+foomatic-db-nonfree-ppds
+foomatic-db-ppds
+gcc
+gdb
+git
+grub
 grub-customizer
-	gst-libav
-	gutenprint
-		gvfs
+gst-libav
+gutenprint
+gvfs
 gvfs-mtp
 haskell-language-server
-	ifuse
-	inetutils
-	intel-ucode
-	jpegoptim
-		key-mapper-git
-		kitty
-	kodi
-	kodi-addon-pvr-hts
-	komorebi
+ifuse
+inetutils
+intel-ucode
+jpegoptim
+key-mapper-git
+kitty
+kodi
+kodi-addon-pvr-hts
+komorebi
 libfprint-vfs009x-git
-	libimobiledevice
+libimobiledevice
 libnotify
-	libreoffice-fresh
+libreoffice-fresh
 libtool
-		linux
-		linux-firmware
-		m4
-		make
-		man-db
-	minecraft-launcher
-	ncdu
+linux
+linux-firmware
+m4
+make
+man-db
+minecraft-launcher
+ncdu
 neofetch
-		neovim
-		networkmanager
+neovim
+networkmanager
 networkmanager-dmenu-git
-	networkmanager-openvpn
-	nfs-utils
+networkmanager-openvpn
+nfs-utils
 nitrogen
-		nmap
-		nm-connection-editor
-		nodejs
+nmap
+nm-connection-editor
+nodejs
 noto-fonts-emoji
-		npm
-		ntfs-3g
-	nvidia
-	nvidia-settings
-		openssh
-	openvpn
-		os-prober
-		pandoc
-		pass
-		patch
-		pkgconf
-		playerctl
+npm
+ntfs-3g
+nvidia
+nvidia-settings
+openssh
+openvpn
+os-prober
+pandoc
+pass
+patch
+pkgconf
+playerctl
 poppler
 python2
 python2-pip
-		python-pip
+python-pip
 pywal-git
-	qtpass
-		rofi
-	rsync
+qtpass
+rofi
+rsync
 shell-color-scripts
-	signal-desktop
-	smbclient
-	speedtest-cli
-	spotify
-		starship
-	steam
-		sudo
-		sxhkd
-	sxiv
-	syncthing
+signal-desktop
+smbclient
+speedtest-cli
+spotify
+starship
+steam
+sudo
+sxhkd
+sxiv
+syncthing
 syncthing-gtk
 tealdeer
-	teams
-	terminator
-		texinfo
-		thunar
-	thunderbird
-	tldr
+teams
+terminator
+texinfo
+thunar
+thunderbird
+tldr
 tlp
 tlpui-git
 traceroute
-		trash-cli
-		ttf-fira-code
+trash-cli
+ttf-fira-code
 tumbler
-		udiskie
-	unrar
-		unzip
+udiskie
+unrar
+unzip
 usbutils
 ventoy-bin
 vim-plug
-		vlc
+vlc
 wget
-		which
-	windscribe-cli
+which
+windscribe-cli
 wol
-	xautolock
-		xclip
-		xdotool
+xautolock
+xclip
+xdotool
 xf86-video-intel
-		xorg-server
+xorg-server
 xorg-xclock
 xorg-xev
 xorg-xhost
-		xorg-xinit
-	xorg-xinput
-	xorg-xkbcomp
+xorg-xinit
+xorg-xinput
+xorg-xkbcomp
 xorg-xrandr
-		xscreensaver
-		xss-lock
-		yay
+xscreensaver
+xss-lock
+yay
 zbar
