@@ -1,97 +1,148 @@
 acpi
 acpilight
-alsa-utils
-autoconf
-automake
-base
-bat
-binutils
-bison
+	alacritty
+		alsa-utils
+		autoconf
+		automake
+		base
+	bastet
+		bat
+	bind
+		binutils
+		bison
+	blockify-git
 brightnessctl
-bspwm
-chrony
+		bspwm
+	chromium
+		chrony
+	clang
 cronie
-dunst
-efibootmgr
-fakeroot
+	cups
+	discord
+		dunst
+		efibootmgr
+	epson-inkjet-printer-escpr
+		fakeroot
 ffmpegthumbnailer
-firefox
-fish
-flex
-gcc
-git
-grub
+		firefox
+		fish
+	flameshot
+		flex
+	foomatic-db-engine
+	foomatic-db-gutenprint-ppds
+	foomatic-db-nonfree-ppds
+	foomatic-db-ppds
+		gcc
+	gdb
+		git
+		grub
 grub-customizer
-gvfs
+	gst-libav
+	gutenprint
+		gvfs
 gvfs-mtp
 haskell-language-server
-key-mapper-git
-kitty
+	ifuse
+	inetutils
+	intel-ucode
+	jpegoptim
+		key-mapper-git
+		kitty
+	kodi
+	kodi-addon-pvr-hts
+	komorebi
 libfprint-vfs009x-git
+	libimobiledevice
 libnotify
+	libreoffice-fresh
 libtool
-linux
-linux-firmware
-m4
-make
-man-db
+		linux
+		linux-firmware
+		m4
+		make
+		man-db
+	minecraft-launcher
+	ncdu
 neofetch
-neovim
-networkmanager
+		neovim
+		networkmanager
 networkmanager-dmenu-git
+	networkmanager-openvpn
+	nfs-utils
 nitrogen
-nm-connection-editor
-nmap
-nodejs
+		nmap
+		nm-connection-editor
+		nodejs
 noto-fonts-emoji
-npm
-ntfs-3g
-openssh
-os-prober
-pandoc
-pass
-patch
-pkgconf
-playerctl
+		npm
+		ntfs-3g
+	nvidia
+	nvidia-settings
+		openssh
+	openvpn
+		os-prober
+		pandoc
+		pass
+		patch
+		pkgconf
+		playerctl
 poppler
-python-pip
 python2
 python2-pip
+		python-pip
 pywal-git
-rofi
+	qtpass
+		rofi
+	rsync
 shell-color-scripts
-starship
-sudo
-sxhkd
+	signal-desktop
+	smbclient
+	speedtest-cli
+	spotify
+		starship
+	steam
+		sudo
+		sxhkd
+	sxiv
+	syncthing
 syncthing-gtk
 tealdeer
-texinfo
-thunar
+	teams
+	terminator
+		texinfo
+		thunar
+	thunderbird
+	tldr
 tlp
 tlpui-git
 traceroute
-trash-cli
-ttf-fira-code
+		trash-cli
+		ttf-fira-code
 tumbler
-udiskie
-unzip
+		udiskie
+	unrar
+		unzip
 usbutils
 ventoy-bin
 vim-plug
-vlc
+		vlc
 wget
-which
+		which
+	windscribe-cli
 wol
-xclip
-xdotool
+	xautolock
+		xclip
+		xdotool
 xf86-video-intel
-xorg-server
+		xorg-server
 xorg-xclock
 xorg-xev
 xorg-xhost
-xorg-xinit
+		xorg-xinit
+	xorg-xinput
+	xorg-xkbcomp
 xorg-xrandr
-xscreensaver
-xss-lock
-yay
+		xscreensaver
+		xss-lock
+		yay
 zbar
