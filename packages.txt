@@ -135,3 +135,4 @@ xscreensaver
 xss-lock
 yay
 zbar
+bluez-utils
