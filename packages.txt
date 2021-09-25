@@ -136,3 +136,4 @@ xss-lock
 yay
 zbar
 bluez-utils
+bluez
