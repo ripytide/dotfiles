@@ -112,7 +112,6 @@ terminator
 texinfo
 thunar
 thunderbird
-tldr
 tlp
 tlpui-git
 traceroute
