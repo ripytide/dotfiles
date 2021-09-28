@@ -58,11 +58,6 @@ super + ctrl + {t,h,s}
 	bspc node -g {marked,locked,sticky}
 
 #
-# toggling hiding all windows
-#
-super + y
-	hideallwindows.sh
-#
 # changing layouts
 #
 
@@ -78,6 +73,8 @@ super + slash
         bspc node focused -t tiled; \
     fi
 
+super + apostrophe
+	bspc node @/ -R 90
 #
 # changing current window opacity
 #
@@ -161,8 +158,20 @@ super + {minus,equal}
 super + ctrl + {minus,equal}
 	brightnessctl -d tpacpi::kbd_backlight set {1-,+1}
 
-super + g
+
+#
+# toggling hiding all windows
+#
+super + m
+	hideallwindows.sh
+
+super + x
 	xscreensaver-command -lock
+
+super + z
+	xscreensaver-command -lock && xset dpms force off
+
+super
 
 super + c
 	networkmanager_dmenu

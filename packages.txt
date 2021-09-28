@@ -137,3 +137,6 @@ yay
 zbar
 bluez-utils
 bluez
+pulseaudio
+pulseaudio-alsa
+pulseaudio-bluetooth
