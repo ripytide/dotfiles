@@ -177,4 +177,4 @@ super + c
 	networkmanager_dmenu
 
 super + q
-	notify-send "$(date) $(acpi -b)"
+	notify-send "$(date)" && notify-send "$(acpi -b)"
