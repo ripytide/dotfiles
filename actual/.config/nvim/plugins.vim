@@ -78,6 +78,4 @@ let g:neoformat_c_clangformat = {
 let g:neoformat_enabled_c = ['clangformat']
 
 Plug 'neovimhaskell/haskell-vim'
-
-Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
