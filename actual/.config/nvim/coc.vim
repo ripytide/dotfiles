@@ -50,6 +50,6 @@ nmap <leader>rn <Plug>(coc-rename)
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tailwindcss', 'coc-eslint', 'coc-prettier']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tailwindcss', 'coc-eslint', 'coc-prettier', 'coc-rls', 'coc-rust-analyzer']
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
