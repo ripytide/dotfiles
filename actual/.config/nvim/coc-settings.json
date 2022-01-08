@@ -7,6 +7,5 @@
       "filetypes": ["haskell", "lhaskell"]
     }
   },
-  "coc.source.OmniSharp.enable" : true,
-  "coc.source.OmniSharp.triggerCharacters": "."
+  "rust-analyzer.diagnostics.disabled": ["mismatched-arg-count"]
 }

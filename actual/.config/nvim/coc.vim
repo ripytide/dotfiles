@@ -28,8 +28,8 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
-"                             \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+" make coc select first option on enter
+inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm() : "\<C-g>u\<CR>"
 
 " Use `[g` and `]g` to navigate diagnostics
 " Use `:CocDiagnostics` to get all diagnostics of current buffer in location list.
@@ -63,6 +63,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tailwindcss', 'coc-eslint', 'coc-prettier', 'coc-rls', 'coc-rust-analyzer']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tailwindcss', 'coc-eslint', 'coc-prettier', 'coc-rls']
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
