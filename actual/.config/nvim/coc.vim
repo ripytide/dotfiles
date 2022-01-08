@@ -63,6 +63,6 @@ function! s:show_documentation()
   endif
 endfunction
 
-let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tailwindcss', 'coc-eslint', 'coc-prettier', 'coc-rls']
+let g:coc_global_extensions = ['coc-json', 'coc-tsserver', 'coc-tailwindcss', 'coc-eslint', 'coc-prettier']
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
