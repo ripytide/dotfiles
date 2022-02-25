@@ -178,3 +178,8 @@ super + c
 
 super + q
 	notify-send "$(date)" && notify-send "$(acpi -b)"
+
+
+# auto type for form filling
+super + bracketright
+	~/scripts/test.sh
