@@ -42,6 +42,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
+nmap <silent> <leader>z :CocFix<CR>
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)

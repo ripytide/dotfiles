@@ -71,11 +71,6 @@ let g:closetag_regions = {}
 Plug 'simnalamburt/vim-mundo'
 
 Plug 'sbdchd/neoformat'
-let g:neoformat_c_clangformat = {
-    \ 'exe': 'clang-format',
-    \ 'args': ['--style=file']
-\}
-let g:neoformat_enabled_c = ['clangformat']
 
 Plug 'neovimhaskell/haskell-vim'
 call plug#end()
