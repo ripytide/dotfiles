@@ -23,7 +23,7 @@ let g:hardtime_maxcount = 4
 
 Plug 'romainl/vim-cool'
 
-Plug 'neoclide/coc.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'jiangmiao/auto-pairs'
 let g:AutoPairsMapCR = 1
@@ -53,6 +53,5 @@ Plug 'https://github.com/svermeulen/vim-subversive'
 nmap s <plug>(SubversiveSubstitute)
 nmap ss <plug>(SubversiveSubstituteLine)
 nmap S <plug>(SubversiveSubstituteToEndOfLine)
-
 
 call plug#end()
