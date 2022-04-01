@@ -47,4 +47,12 @@ Plug 'simnalamburt/vim-mundo'
 Plug 'sbdchd/neoformat'
 
 Plug 'neovimhaskell/haskell-vim'
+
+Plug 'https://github.com/svermeulen/vim-subversive'
+" s for substitute
+nmap s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+nmap S <plug>(SubversiveSubstituteToEndOfLine)
+
+
 call plug#end()
