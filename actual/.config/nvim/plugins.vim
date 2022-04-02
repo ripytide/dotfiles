@@ -54,4 +54,25 @@ nmap s <plug>(SubversiveSubstitute)
 nmap ss <plug>(SubversiveSubstituteLine)
 nmap S <plug>(SubversiveSubstituteToEndOfLine)
 
+Plug 'svermeulen/vim-cutlass'
+" map m to a new cut key
+nnoremap m d
+xnoremap m d
+nnoremap mm dd
+nnoremap M D
+
+Plug 'svermeulen/vim-yoink'
+nmap <c-n> <plug>(YoinkPostPasteSwapBack)
+nmap <c-p> <plug>(YoinkPostPasteSwapForward)
+nmap p <plug>(YoinkPaste_p)
+nmap P <plug>(YoinkPaste_P)
+" Also replace the default gp with yoink paste so we can toggle paste in this case too
+nmap gp <plug>(YoinkPaste_gp)
+nmap gP <plug>(YoinkPaste_gP)
+nmap <c-=> <plug>(YoinkPostPasteToggleFormat)
+nmap y <plug>(YoinkYankPreserveCursorPosition)
+xmap y <plug>(YoinkYankPreserveCursorPosition)
+" so new cut command is included in yoinks
+let g:yoinkIncludeDeleteOperations = 1
+
 call plug#end()
