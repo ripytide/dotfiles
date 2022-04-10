@@ -8,4 +8,6 @@ source ~/.config/nvim/airline.vim
 
 source ~/.config/nvim/bindings.vim
 
+source ~/.config/nvim/tree-sitter.lua
+
 colorscheme gruvbox
