@@ -75,4 +75,6 @@ xmap y <plug>(YoinkYankPreserveCursorPosition)
 " so new cut command is included in yoinks
 let g:yoinkIncludeDeleteOperations = 1
 
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
 call plug#end()
