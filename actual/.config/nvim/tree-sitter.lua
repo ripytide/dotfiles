@@ -3,8 +3,6 @@ require'nvim-treesitter.configs'.setup {
     ensure_installed = { "c", "rust", "javascript"},
     highlight = {
       enable = true,
-      -- list of language that will be disabled
-      disable = { "c", "rust" },
       additional_vim_regex_highlighting = false,
     },
   }
