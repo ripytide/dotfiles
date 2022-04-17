@@ -81,11 +81,8 @@ Plug 'romgrk/barbar.nvim'
 
 Plug 'romgrk/barbar.nvim'
 " Move to previous/next
-nnoremap <silent>    <leader>e :BufferPrevious<CR>
-nnoremap <silent>    <leader>n :BufferNext<CR>
-" Re-order to previous/next
-nnoremap <silent>    <leader><leader>e :BufferMovePrevious<CR>
-nnoremap <silent>    <leader><leader>n :BufferMoveNext<CR>
+nnoremap <silent>    <leader>n :BufferPrevious<CR>
+nnoremap <silent>    <leader>e :BufferNext<CR>
 " Close buffer
 nnoremap <silent>    <leader>d :BufferClose<CR>
 " Wipeout buffer
