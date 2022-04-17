@@ -7,10 +7,6 @@ let g:auto_save_silent = 1
 
 Plug 'tpope/vim-surround'
 
-Plug 'vim-airline/vim-airline'
-Plug 'enricobacis/vim-airline-clock'
-Plug 'vim-airline/vim-airline-themes'
-
 Plug 'scrooloose/nerdcommenter'
 
 Plug 'tpope/vim-repeat'
@@ -76,5 +72,34 @@ xmap y <plug>(YoinkYankPreserveCursorPosition)
 let g:yoinkIncludeDeleteOperations = 1
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+
+Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+let g:tokyonight_italic_keywords = 0
+
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
+
+Plug 'romgrk/barbar.nvim'
+" Move to previous/next
+nnoremap <silent>    <leader>e :BufferPrevious<CR>
+nnoremap <silent>    <leader>n :BufferNext<CR>
+" Re-order to previous/next
+nnoremap <silent>    <leader><leader>e :BufferMovePrevious<CR>
+nnoremap <silent>    <leader><leader>n :BufferMoveNext<CR>
+" Close buffer
+nnoremap <silent>    <leader>d :BufferClose<CR>
+" Wipeout buffer
+nnoremap <silent>    <leader>w :BufferWipeout<CR>
+nnoremap <silent>    <leader>a :BufferCloseAllButCurrent<CR>
+" Magic buffer-picking mode
+nnoremap <silent>    <leader>p :BufferPick<CR>
+" Sort automatically by...
+nnoremap <silent> <Space>bb :BufferOrderByBufferNumber<CR>
+nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
+nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR>
+nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
+
+Plug 'itchyny/lightline.vim'
+let g:lightline = { 'colorscheme': 'tokyonight' }
 
 call plug#end()

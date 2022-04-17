@@ -10,4 +10,5 @@ source ~/.config/nvim/bindings.vim
 
 source ~/.config/nvim/tree-sitter.lua
 
-colorscheme gruvbox
+colorscheme tokyonight
+"colorscheme gruvbox
