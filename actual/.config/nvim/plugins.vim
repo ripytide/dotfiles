@@ -31,17 +31,8 @@ let g:rainbow_active = 1
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-local actions = require("telescope.actions")
-" make esc esc in insert mode
-require("telescope").setup{
-  defaults = {
-    mappings = {
-      i = {
-        ["<esc>"] = actions.close
-      },
-    },
-  }
-}
+Plug('tami5/sqlite.lua')
+Plug('nvim-telescope/telescope-frecency.nvim')
 
 Plug 'tpope/vim-eunuch'
 

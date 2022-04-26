@@ -17,3 +17,25 @@ set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 nmap <leader>u :Telescope find_files <CR>
 
 nmap <leader>f :Neoformat<CR>
+
+" me like searching functions
+nnoremap <silent> <leader>a :Telescope treesitter<CR>:function: 
+
+" make esc esc in insert mode
+lua <<EOF
+local actions = require("telescope.actions")
+require("telescope").setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      },
+    },
+  }
+}
+EOF
+
+" load frecency extension
+lua <<EOF
+require("telescope").load_extension("frecency")
+EOF
