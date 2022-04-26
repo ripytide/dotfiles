@@ -31,6 +31,17 @@ let g:rainbow_active = 1
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+local actions = require("telescope.actions")
+" make esc esc in insert mode
+require("telescope").setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<esc>"] = actions.close
+      },
+    },
+  }
+}
 
 Plug 'tpope/vim-eunuch'
 
@@ -79,7 +90,6 @@ let g:tokyonight_italic_keywords = 0
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
-Plug 'romgrk/barbar.nvim'
 " Move to previous/next
 nnoremap <silent>    <leader>n :BufferPrevious<CR>
 nnoremap <silent>    <leader>e :BufferNext<CR>
@@ -99,4 +109,5 @@ nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
 Plug 'itchyny/lightline.vim'
 let g:lightline = { 'colorscheme': 'tokyonight' }
 
+Plug 'wakatime/vim-wakatime'
 call plug#end()
