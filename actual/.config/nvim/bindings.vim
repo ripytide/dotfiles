@@ -19,7 +19,7 @@ nmap <leader>u :Telescope find_files <CR>
 nmap <leader>f :Neoformat<CR>
 
 " me like searching functions
-nnoremap <silent> <leader>a :Telescope treesitter<CR>:function: 
+nnoremap <silent> <leader>g :Telescope treesitter<CR>:function: 
 
 " make esc esc in insert mode
 lua <<EOF
