@@ -39,5 +39,7 @@ udiskie &
 
 komorebi &
 
+aw-qt &
+
 #start bspwm
 bspwm

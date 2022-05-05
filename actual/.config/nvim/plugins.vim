@@ -100,5 +100,5 @@ nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
 Plug 'itchyny/lightline.vim'
 let g:lightline = { 'colorscheme': 'tokyonight' }
 
-Plug 'wakatime/vim-wakatime'
+Plug 'ActivityWatch/aw-watcher-vim'
 call plug#end()
