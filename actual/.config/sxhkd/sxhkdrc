@@ -31,15 +31,17 @@ super + {e,n}
 	bspc node -f {prev,next}.local.!hidden.window
 
 # focus the given moniter
-super + {1-6}
-	bspc desktop -f ^{1-6}
+super + {1-9}
+	bspc desktop -f ^{1-9}
 
 # focus on the 1st, 2nd, 3rd moniter with whatever desktop is currently active on it
 !sht_keybinds
 
 # focus on the other desktop on the current moniter
+#super + f
+	#bspc desktop -f last.local
 super + f
-	bspc desktop -f last.local
+	bspc desktop -f last
 
 #
 # managing windows
@@ -104,7 +106,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # change all backgrounds
-super + k
+super + v
 	changewallpaper.sh 0; changewallpaper.sh 2; changewallpaper.sh 1
 
 #
@@ -128,14 +130,14 @@ super + {comma,period}
 #
 
  #Hide-show polybar
-super + b
-	polybar-msg cmd toggle;xdo raise -N Polybar
+#super + b
+	#polybar-msg cmd toggle;xdo raise -N Polybar
 
 #
 # take a screenshot
 #
 
-super + v
+super + b
 	flameshot gui
 
 super + a
