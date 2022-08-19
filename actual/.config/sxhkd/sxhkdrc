@@ -179,7 +179,7 @@ super + c
 	networkmanager_dmenu
 
 super + q
-	notify-send "$(date)" && notify-send "$(acpi -b)"
+	notify-send "$(date)" && notify-send "$(acpi -b)" && notify-send "$(/home/ripytide/scripts/show_ram.sh)"
 
 
 # auto type for form filling

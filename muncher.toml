@@ -1,13 +1,12 @@
 [".config/bspwm/bspwmrc"]
 monitor_config = """
 bspc monitor eDP1 -d 1 2 3 4 5 6
-bspc monitor HDMI2 -d 7 8 9
 """
 
 [".config/sxhkd/sxhkdrc"]
 sht_keybinds = """
-super + {s,h,t}
-	fish -c "go_to_desktop {1,2,3}"
+super + {s,h,t,g,y}
+	fish -c "go_to_desktop {1,2,3,4,5}"
 
 super + k
 	fish -c "set -U DESKTOP_NUM 0"

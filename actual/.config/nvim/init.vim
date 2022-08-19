@@ -2,7 +2,7 @@ source ~/.config/nvim/generic.vim
 
 source ~/.config/nvim/plugins.vim
 
-source ~/.config/nvim/coc.vim
+source ~/.config/nvim/new-coc.vim
 
 source ~/.config/nvim/airline.vim
 

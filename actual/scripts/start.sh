@@ -41,5 +41,7 @@ komorebi &
 
 aw-qt &
 
+wal -R
+
 #start bspwm
 bspwm
