@@ -12,8 +12,6 @@ xinput --set-prop 12 303 0 1 &
 
 #choose random wallpapers
 ~/scripts/changewallpaper.sh 0 &
-~/scripts/changewallpaper.sh 2 &
-~/scripts/changewallpaper.sh 1 &
 
 #enable playerctl daemon for media controls to work with the last active media source
 playerctld daemon &
@@ -27,7 +25,7 @@ playerctld daemon &
 #run notification server: dunst
 dunst &
 
-key-mapper-control --command autoload &
+!keymapper
 
 #xautolock -time 15 -locker "systemctl suspend" -detectsleep &
 
@@ -36,8 +34,6 @@ xscreensaver &
 xss-lock -- xscreensaver-command -lock &
 
 udiskie &
-
-komorebi &
 
 aw-qt &
 

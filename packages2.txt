@@ -40,7 +40,6 @@ foomatic-db-ppds
 freecad
 gcc
 gdb
-gdb-frontend-bin
 git
 git-cola
 gparted
@@ -55,7 +54,6 @@ inetutils
 inkscape
 intel-ucode
 jre-openjdk-headless
-key-mapper-git
 kitty
 libfprint-vfs009x-git
 libimobiledevice
@@ -87,17 +85,14 @@ npm
 ntfs-3g
 openssh
 openvpn
-optipng
 os-prober
 palemoon-bin
 pass
 patch
 pavucontrol-qt
 pcurses
-perl-rename
 pkgconf
 playerctl
-poppler
 powershell-bin
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -129,8 +124,6 @@ teams
 texinfo
 thunar
 tk
-tlp
-tlpui-git
 traceroute
 trash-cli
 ttf-fira-code
@@ -139,7 +132,6 @@ udiskie
 unzip
 usbutils
 ventoy-bin
-vim-plug
 virtualbox
 virtualbox-host-modules-arch
 vlc
