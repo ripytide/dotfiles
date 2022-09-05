@@ -1,5 +1,5 @@
 " the number of suggestions shown for suggestions
-set pumheight=5
+set pumheight=4
 
 " Give more space for displaying messages.
 set cmdheight=2

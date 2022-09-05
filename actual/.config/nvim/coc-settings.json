@@ -22,5 +22,9 @@
     "mismatched-arg-count"
   ],
   "rust-analyzer.inlayHints.enable": false,
-  "suggest.noselect": true
+
+  "suggest.noselect": true,
+  "suggest.enablePreselect": false,
+  "suggest.labelMaxLength": 40,
+  "suggest.reversePumAboveCursor": true
 }
