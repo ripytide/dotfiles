@@ -101,6 +101,10 @@ super + w
 super + r
 	thunar
 
+# firefox
+super + d
+	firefox
+
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
@@ -146,7 +150,6 @@ super + a
 super + shift + a
 	rofi-pass.sh
 
-
 #
 # color theme switching with pywal
 #
@@ -167,21 +170,13 @@ super + ctrl + {minus,equal}
 super + m
 	hideallwindows.sh
 
-super + x
-	xscreensaver-command -lock
-
 super + z
-	xscreensaver-command -lock && xset dpms force off
-
-super
-
+	rofi -show power-menu -modi power-menu:rofi-power-menu
+#super + z
+#	xscreensaver-command -lock && xset dpms force off
+	
 super + c
 	networkmanager_dmenu
 
 super + q
-	notify-send "$(date)" && notify-send "$(acpi -b)" && notify-send "$(/home/ripytide/scripts/show_ram.sh)"
-
-
-# auto type for form filling
-super + bracketright
-	~/scripts/test.sh
+	notify-send "$(date)" && notify-send "$(/home/ripytide/scripts/show_ram.sh)" && notify-send "$(acpi -b)"
