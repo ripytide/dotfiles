@@ -133,9 +133,9 @@ super + {comma,period}
 # toggle polybar
 #
 
- #Hide-show polybar
-#super + b
-	#polybar-msg cmd toggle;xdo raise -N Polybar
+# Hide-show polybar
+super + q
+	fish -c "toggle_polybar"
 
 #
 # take a screenshot
@@ -177,6 +177,3 @@ super + z
 	
 super + c
 	networkmanager_dmenu
-
-super + q
-	notify-send "$(date)" && notify-send "$(/home/ripytide/scripts/show_ram.sh)" && notify-send "$(acpi -b)"

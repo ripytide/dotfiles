@@ -20,7 +20,7 @@ playerctld daemon &
 #picom -b &
 
 #run polybar
-#~/.config/polybar/launch.sh &
+~/scripts/launch_polybar.sh &
 
 #run notification server: dunst
 dunst &
