@@ -27,7 +27,7 @@ dunst &
 
 !keymapper
 
-#xautolock -time 15 -locker "systemctl suspend" -detectsleep &
+xautolock -time 15 -locker "systemctl hybrid-sleep" -detectsleep &
 
 xscreensaver &
 
@@ -35,7 +35,9 @@ xss-lock -- xscreensaver-command -lock &
 
 udiskie &
 
-aw-qt &
+aw-server-rust &
+aw-watcher-afk &
+aw-watcher-window &
 
 wal -R
 
