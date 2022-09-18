@@ -35,7 +35,8 @@ super + {1-9}
 	bspc desktop -f ^{1-9}
 
 # focus on the 1st, 2nd, 3rd moniter with whatever desktop is currently active on it
-!sht_keybinds
+super + {s,h,t,d,r,w}
+	bspc desktop -f {1,2,3,4,5,6}
 
 # focus on the other desktop on the current moniter
 #super + f
@@ -50,6 +51,9 @@ super + f
 # send to the given desktop
 super + shift + {1-6}
 	bspc node -d ^{1-6} --follow
+
+super + shift + {s,h,t,d,r,w}
+	bspc node -d ^{1,2,3,4,5,6} --follow
 
 # close and kill
 super + j
@@ -94,15 +98,15 @@ super + space
 	rofi -show drun -i
 
 # terminal emulator
-super + w
+super + l
 	kitty
 
 # file explorer
-super + r
+super + o
 	thunar
 
 # firefox
-super + d
+super + y
 	firefox
 
 # make sxhkd reload its configuration files:
