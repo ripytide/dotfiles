@@ -176,6 +176,8 @@ super + m
 
 super + z
 	rofi -show power-menu -modi power-menu:rofi-power-menu
+super + x
+	~/scripts/rofi-layout-selector.sh
 #super + z
 #	xscreensaver-command -lock && xset dpms force off
 	
