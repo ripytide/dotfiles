@@ -1,16 +1,16 @@
 [".config/bspwm/bspwmrc"]
 monitor_config = """
-bspc monitor HDMI-3 -d 1 2 3 4 5 6
+bspc monitor HDMI3 -d 1 2 3 4 5 6
 """
 
 [".config/rofi/config.rasi"]
 monitor = """
-	monitor: "HDMI-3";
+	monitor: "HDMI3";
 """
 
 [".config/dunst/dunstrc"]
 monitor = """
-	monitor = HDMI-3
+	monitor = HDMI3
 """
 
 ["scripts/start.sh"]
@@ -18,13 +18,13 @@ keymapper = ""
 
 [".config/polybar/config.ini"]
 monitor = """
-monitor = HDMI-3
+monitor = HDMI3
 """
 
 [".config/fish/functions/toggle_polybar.fish"]
 spacing_off = """
-		bspc config -m HDMI-3 top_padding 0
+		bspc config -m HDMI3 top_padding 0
 """
 spacing_on = """
-		bspc config -m HDMI-3 top_padding 20
+		bspc config -m HDMI3 top_padding 20
 """

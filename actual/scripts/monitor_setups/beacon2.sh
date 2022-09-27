@@ -1,5 +1,5 @@
 #!/bin/sh
 
 ~/.screenlayout/vert-hori-beacon-house.sh
-bspc monitor HDMI-3 -d 1 2 3
-bspc monitor DP-1 -d 4 5 6
+bspc monitor HDMI3 -d 1 2 3
+bspc monitor DP1 -d 4 5 6

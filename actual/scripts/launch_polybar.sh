@@ -9,5 +9,7 @@ done
 # Terminate already running bar instances
 killall polybar
 
+sleep 2;
+
 # Launch polybar
 polybar main -c ~/.config/polybar/config.ini &
