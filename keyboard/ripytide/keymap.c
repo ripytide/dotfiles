@@ -33,24 +33,35 @@ LGUI_T(KC_ESC),   KC_A,    KC_S,    KC_H,    KC_T,    KC_G,                     
   ),
   [1] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      _______,   KC_P9,   KC_P7,   KC_P5,   KC_P3, KC_PMNS,                      XXXXXXX,   KC_LT,   KC_GT, XXXXXXX, XXXXXXX, XXXXXXX,
+      _______,    KC_9,    KC_7,    KC_5,    KC_3, KC_PMNS,                      XXXXXXX,   KC_AT, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,   KC_P8,   KC_P6,   KC_P4,   KC_P2, KC_PPLS,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, XXXXXXX, _______,
+      _______,    KC_8,    KC_6,    KC_4,    KC_2, KC_PPLS,                      KC_LEFT, KC_DOWN,   KC_UP,KC_RIGHT, KC_HASH, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______, KC_COMM, KC_PDOT, KC_PSLS, KC_PAST, KC_PEQL,                       KC_NUM, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
-                                          _______,   KC_P0,   KC_P1,    XXXXXXX, _______, _______
+                                          _______,    KC_0,    KC_1,    XXXXXXX, _______, _______
                                       //`--------------------------'  `--------------------------'
   ),
   [2] = LAYOUT_split_3x6_3(
   //,-----------------------------------------------------.                    ,-----------------------------------------------------.
-      _______,   KC_F9,   KC_F7,   KC_F5,   KC_F3,   KC_F1,                      KC_HASH, KC_LCBR, KC_RCBR, KC_MINS, KC_PLUS, KC_CIRC,
+      _______,   KC_F9,   KC_F7,   KC_F5,   KC_F3,   KC_F1,                        KC_LT, KC_LCBR, KC_RCBR,   KC_GT, KC_PLUS, KC_CIRC,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
-      _______,   KC_F8,   KC_F6,   KC_F4,   KC_F2, KC_PERC,                        KC_AT, KC_LPRN, KC_RPRN,  KC_EQL, KC_AMPR, _______,
+      _______,   KC_F8,   KC_F6,   KC_F4,   KC_F2, KC_PERC,                      KC_MINS, KC_LPRN, KC_RPRN,  KC_EQL, KC_AMPR, _______,
   //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
       _______,  KC_F12,  KC_F11,  KC_F10,  KC_DLR,  KC_GRV,                      KC_TILD, KC_LBRC, KC_RBRC, KC_EXLM, KC_QUES, _______,
   //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
                                           _______, _______, XXXXXXX,    KC_PIPE, _______,  _______
+                                      //`--------------------------'  `--------------------------'
+  ),
+  [3] = LAYOUT_split_3x6_3(
+  //,-----------------------------------------------------.                    ,-----------------------------------------------------.
+      _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                XXXXXXX,KC_MS_BTN1,KC_MS_BTN2, KC_MS_BTN3, XXXXXXX, XXXXXXX,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                KC_MS_LEFT,KC_MS_DOWN,KC_MS_UP,KC_MS_RIGHT,XXXXXXX, _______,
+  //|--------+--------+--------+--------+--------+--------|                    |--------+--------+--------+--------+--------+--------|
+      _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                XXXXXXX,KC_MS_WH_DOWN,KC_MS_WH_UP,XXXXXXX, XXXXXXX, _______,
+  //|--------+--------+--------+--------+--------+--------+--------|  |--------+--------+--------+--------+--------+--------+--------|
+                                          _______, _______, XXXXXXX,    XXXXXXX, _______,  _______
                                       //`--------------------------'  `--------------------------'
   ),
 };
@@ -78,4 +89,14 @@ const key_override_t **key_overrides = (const key_override_t *[]){
     NULL // Null terminate the array of overrides!
 };
 
+// Combos
+const uint16_t PROGMEM double_ctrl[] = {KC_LCTL, KC_RCTL, COMBO_END};
+const uint16_t PROGMEM double_shift[] = {KC_LSFT, KC_RSFT, COMBO_END};
 
+const uint16_t PROGMEM left_hand_home_three[] = {KC_T, KC_H, KC_S, COMBO_END};
+
+combo_t key_combos[COMBO_COUNT] = {
+    COMBO(double_ctrl, KC_LALT),
+    COMBO(double_shift, KC_LALT),
+    COMBO(left_hand_home_three, MO(3)),
+};
