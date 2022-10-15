@@ -26,5 +26,7 @@
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
   "suggest.labelMaxLength": 40,
-  "suggest.reversePumAboveCursor": true
+  "suggest.reversePumAboveCursor": true,
+
+  "pyright.inlayHints.variableTypes": false
 }

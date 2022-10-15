@@ -43,6 +43,7 @@ let g:closetag_regions = {}
 Plug 'simnalamburt/vim-mundo'
 
 Plug 'sbdchd/neoformat'
+let g:neoformat_enabled_python = ["black"]
 
 Plug 'neovimhaskell/haskell-vim'
 
