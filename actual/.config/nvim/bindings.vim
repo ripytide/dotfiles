@@ -20,6 +20,12 @@ nmap <leader>f :Neoformat<CR>
 
 nnoremap <silent> <leader>j :Prettier<CR>
 
+nmap <silent> g; A;<ESC>
+nmap <silent> g, A,<ESC>
+
+nnoremap <silent> <C-n> <C-o>
+nnoremap <silent> <C-e> <C-i>
+
 " make esc esc in insert mode
 lua <<EOF
 local actions = require("telescope.actions")
