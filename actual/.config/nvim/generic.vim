@@ -56,3 +56,5 @@ set colorcolumn=80
 
 set foldmethod=indent
 set nofoldenable
+
+set textwidth=70
