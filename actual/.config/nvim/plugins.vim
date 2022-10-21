@@ -102,4 +102,6 @@ Plug 'itchyny/lightline.vim'
 let g:lightline = { 'colorscheme': 'tokyonight' }
 
 Plug 'ActivityWatch/aw-watcher-vim'
+
+Plug 'pwntester/octo.nvim'
 call plug#end()
