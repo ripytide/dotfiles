@@ -23,6 +23,9 @@ nnoremap <silent> <leader>j :Prettier<CR>
 nmap <silent> g; A;<ESC>
 nmap <silent> g, A,<ESC>
 
+nnoremap <silent> <C-d> 10<C-e>
+nnoremap <silent> <C-u> 10<C-y>
+
 nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
 
