@@ -38,12 +38,6 @@ super + {1-9}
 super + {s,h,t,d,r,w}
 	bspc desktop -f {1,2,3,4,5,6}
 
-# focus on the other desktop on the current moniter
-#super + f
-	#bspc desktop -f last.local
-super + f
-	bspc desktop -f last
-
 #
 # managing windows
 #
@@ -108,6 +102,10 @@ super + o
 # firefox
 super + y
 	firefox
+
+# firefox bookmarks
+super + f
+	rofi -show firefox_bookmarks -modi "firefox_bookmarks:rofi_firefox_bookmarks.sh"	
 
 # make sxhkd reload its configuration files:
 super + Escape

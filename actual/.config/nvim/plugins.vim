@@ -81,7 +81,6 @@ let g:tokyonight_italic_keywords = 0
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
-
 " Move to previous/next
 nnoremap <silent>    <leader>n :BufferPrevious<CR>
 nnoremap <silent>    <leader>e :BufferNext<CR>
