@@ -14,7 +14,7 @@ nmap <leader>h :HardTimeToggle<CR>
 " workman rebind movement keys back to normal positions
 set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
-nmap <leader>u :Telescope find_files <CR>
+nmap <leader>u :Telescope find_files hidden=true<CR>
 
 nmap <leader>f :Neoformat<CR>
 
