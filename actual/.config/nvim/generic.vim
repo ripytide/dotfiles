@@ -3,7 +3,7 @@
 set hidden
 
 " allow persistent undoing
-set undodir=~/.config/nvim/undodir
+set undodir=~/sync/undodir
 set undofile
 
 "show partial normal mode commands in the bottom right
