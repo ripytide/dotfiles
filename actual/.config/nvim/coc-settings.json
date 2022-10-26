@@ -14,7 +14,6 @@
     }
   },
   "rust-analyzer.diagnostics.disabled": ["mismatched-arg-count"],
-  "rust-analyzer.inlayHints.enable": false,
 
   "suggest.noselect": true,
   "suggest.enablePreselect": false,
@@ -23,5 +22,7 @@
 
   "pyright.inlayHints.variableTypes": false,
   "pyright.inlayHints.functionReturnTypes": false,
-  "python.linting.flake8Enabled": true
+  "python.linting.flake8Enabled": true,
+
+  "inlayHint.enable": false
 }

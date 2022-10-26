@@ -41,5 +41,7 @@ aw-watcher-window &
 
 wal -R
 
+watcher.sh &
+
 #start bspwm
 bspwm

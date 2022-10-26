@@ -98,7 +98,21 @@ nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR>
 nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
 
 Plug 'itchyny/lightline.vim'
-let g:lightline = { 'colorscheme': 'tokyonight' }
+function! CocCurrentFunction()
+    return get(b:, 'coc_current_function', '')
+endfunction
+let g:lightline = {
+      \ 'colorscheme': 'tokyonight',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified', 'cocstatus', 'currentfunction' ] ]
+      \ },
+      \ 'component_function': {
+      \   'cocstatus': 'coc#status',
+      \   'currentfunction': 'CocCurrentFunction'
+      \ },
+      \ }
+
 
 Plug 'ActivityWatch/aw-watcher-vim'
 

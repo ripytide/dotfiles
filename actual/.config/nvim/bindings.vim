@@ -26,8 +26,11 @@ nnoremap <silent> <C-e> <C-i>
 
 nmap <leader>f :Neoformat<CR>
 
-nnoremap <silent> <leader>j :Prettier<CR>
-
 nmap <leader>u :Telescope find_files<CR>
 
-nmap <silent> gt :CocCommand pyright.runLinting<CR>
+nnoremap <leader>j :source $MYVIMRC<CR>
+
+augroup myvimrc
+    au!
+    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
+augroup END
