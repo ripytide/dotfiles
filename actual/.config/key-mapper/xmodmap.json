@@ -177,7 +177,7 @@
     "XF86TouchpadToggle": 191,
     "XF86TouchpadOn": 192,
     "XF86TouchpadOff": 193,
-    "Mode_switch": 195,
+    "ISO_Level5_Shift": 195,
     "NoSymbol": 199,
     "XF86AudioPause": 201,
     "XF86Launch3": 202,
@@ -211,6 +211,8 @@
     "XF86Next_VMode": 241,
     "XF86Prev_VMode": 242,
     "XF86MonBrightnessCycle": 243,
+    "XF86BrightnessAuto": 244,
+    "XF86DisplayOff": 245,
     "XF86WWAN": 246,
     "XF86RFKill": 247
 }

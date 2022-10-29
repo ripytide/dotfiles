@@ -24,6 +24,10 @@
         "1,58,1": "Super_L",
         "1,25,1": "semicolon",
         "1,42,1+1,25,1": "Shift_L + semicolon",
-        "1,100,1": "Escape"
+        "1,100,1": "Escape",
+        "1,52,1": "comma",
+        "1,53,1": "period",
+        "1,51,1": "Shift_L + minus",
+        "1,42,1+1,12,1": "Shift_L + slash"
     }
 }

@@ -15,5 +15,6 @@
             "x_scroll_speed": 2,
             "y_scroll_speed": 0.5
         }
-    }
+    },
+    "version": "1.2.2"
 }
