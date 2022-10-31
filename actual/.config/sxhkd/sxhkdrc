@@ -181,3 +181,6 @@ super + x
 	
 super + c
 	networkmanager_dmenu
+
+super + ctrl + q
+	killall bspwm

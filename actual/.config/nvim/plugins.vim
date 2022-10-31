@@ -117,4 +117,6 @@ let g:lightline = {
 Plug 'ActivityWatch/aw-watcher-vim'
 
 Plug 'pwntester/octo.nvim'
+
+Plug 'https://github.com/p00f/nvim-ts-rainbow'
 call plug#end()
