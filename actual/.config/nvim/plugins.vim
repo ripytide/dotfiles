@@ -40,8 +40,6 @@ Plug 'alvan/vim-closetag'
 let g:closetag_filetypes = 'html,javascript,jsx'
 let g:closetag_regions = {}
 
-Plug 'simnalamburt/vim-mundo'
-
 Plug 'sbdchd/neoformat'
 let g:neoformat_enabled_python = ["black"]
 
