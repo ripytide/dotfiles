@@ -5,7 +5,7 @@ Plug '907th/vim-auto-save'
 let g:auto_save = 1
 let g:auto_save_silent = 1
 
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 
 Plug 'scrooloose/nerdcommenter'
 
@@ -47,9 +47,9 @@ Plug 'neovimhaskell/haskell-vim'
 
 Plug 'https://github.com/svermeulen/vim-subversive'
 " s for substitute
-nmap s <plug>(SubversiveSubstitute)
-nmap ss <plug>(SubversiveSubstituteLine)
-nmap S <plug>(SubversiveSubstituteToEndOfLine)
+nmap q <plug>(SubversiveSubstitute)
+nmap qq <plug>(SubversiveSubstituteLine)
+nmap Q <plug>(SubversiveSubstituteToEndOfLine)
 
 Plug 'svermeulen/vim-cutlass'
 " map m to a new cut key
@@ -114,7 +114,13 @@ let g:lightline = {
 
 Plug 'ActivityWatch/aw-watcher-vim'
 
-Plug 'pwntester/octo.nvim'
+Plug 'p00f/nvim-ts-rainbow'
 
-Plug 'https://github.com/p00f/nvim-ts-rainbow'
+Plug 'chaoren/vim-wordmotion'
+
+Plug 'edluffy/specs.nvim'
+
+Plug 'ggandor/leap.nvim'
+
+Plug 'rhysd/clever-f.vim'
 call plug#end()

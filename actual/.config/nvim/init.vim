@@ -10,6 +10,9 @@ source ~/.config/nvim/telescope.vim
 
 source ~/.config/nvim/tree-sitter.lua
 
+source ~/.config/nvim/specs.lua
+
+
 colorscheme tokyonight
 "colorscheme gruvbox
 
@@ -18,6 +21,4 @@ colorscheme tokyonight
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-lua << EOF
-require('octo').setup()
-EOF
+source ~/.config/nvim/leap.lua
