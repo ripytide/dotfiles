@@ -58,3 +58,5 @@ set foldmethod=indent
 set nofoldenable
 
 set textwidth=70
+
+set nowrap
