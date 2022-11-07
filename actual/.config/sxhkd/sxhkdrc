@@ -104,7 +104,7 @@ super + o
 
 # neovide
 super + l
-	neovide
+	neovide --novsync --nofork --multigrid --maximized
 
 # firefox bookmarks
 super + f
