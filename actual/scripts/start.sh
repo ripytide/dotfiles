@@ -17,7 +17,7 @@ xinput --set-prop 12 303 0 1 &
 playerctld daemon &
 
 #enable picom compositer for tranparency and blur
-#picom -b &
+picom -b
 
 #run polybar
 ~/scripts/launch_polybar.sh &

@@ -24,11 +24,14 @@ nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
 
 
-nmap <leader>f :Neoformat<CR>
+nmap <leader>f :! cargo fmt<CR>
 
-nmap <leader>u :Telescope find_files<CR>
+nmap <leader>p :Telescope find_files<CR>
 
-nnoremap <leader>j :source $MYVIMRC<CR>
+nnoremap <leader>j :Neoformat<CR>
+
+nnoremap ; :lnext<CR>
+nnoremap , :lprevious<CR>
 
 augroup myvimrc
     au!
@@ -36,3 +39,5 @@ augroup myvimrc
 augroup END
 
 nnoremap gq q
+
+autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"

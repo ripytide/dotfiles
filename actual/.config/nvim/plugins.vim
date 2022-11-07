@@ -88,7 +88,7 @@ nnoremap <silent>    <leader>d :BufferClose<CR>
 nnoremap <silent>    <leader>w :BufferWipeout<CR>
 nnoremap <silent>    <leader>a :BufferCloseAllButCurrent<CR>
 " Magic buffer-picking mode
-nnoremap <silent>    <leader>p :BufferPick<CR>
+" nnoremap <silent>    <leader>p :BufferPick<CR>
 " Sort automatically by...
 nnoremap <silent> <Space>bb :BufferOrderByBufferNumber<CR>
 nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
@@ -118,9 +118,10 @@ Plug 'p00f/nvim-ts-rainbow'
 
 Plug 'chaoren/vim-wordmotion'
 
-Plug 'edluffy/specs.nvim'
-
 Plug 'ggandor/leap.nvim'
 
 Plug 'rhysd/clever-f.vim'
+
+Plug 'nvim-lua/popup.nvim'
+Plug 'jvgrootveld/telescope-zoxide'
 call plug#end()

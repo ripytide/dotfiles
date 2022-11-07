@@ -1,11 +1,11 @@
 function toggle_polybar
 	if set -qU polybar
 		polybar-msg cmd hide
-!spacing_off
+		bspc config -m eDP1 top_padding 0
 		set -e polybar
 	else
 		polybar-msg cmd show
-!spacing_on
+		bspc config -m eDP1 top_padding 20
 		set -U polybar
 	end
 end

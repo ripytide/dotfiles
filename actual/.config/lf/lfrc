@@ -75,3 +75,7 @@ map j search-next
 map J search-prev
 
 map h copy
+
+map a set hidden!
+
+set hidden on

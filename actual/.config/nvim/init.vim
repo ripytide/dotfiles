@@ -10,8 +10,11 @@ source ~/.config/nvim/telescope.vim
 
 source ~/.config/nvim/tree-sitter.lua
 
-source ~/.config/nvim/specs.lua
+"source ~/.config/nvim/specs.lua
 
+source ~/.config/nvim/zoxide.lua
+
+source ~/.config/nvim/neovide.vim
 
 colorscheme tokyonight
 "colorscheme gruvbox

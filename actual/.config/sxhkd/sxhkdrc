@@ -28,7 +28,18 @@ super + ctrl + {y,n,e,o}
 
 # focus the next/previous window in the current desktop
 super + {e,n}
-	bspc node -f {prev,next}.local.!hidden.window
+	fish -c {prev,next}
+	#bspc node -f {prev,next}.local.!hidden.window
+
+# alternate between the tiled and monocle layout
+super + i
+	fish -c "toggle_monocle"
+	#bspc desktop -l next
+
+# close and kill
+super + j
+	fish -c close
+	#bspc node -c
 
 # focus the given moniter
 super + {1-9}
@@ -49,10 +60,6 @@ super + shift + {1-6}
 super + shift + {s,h,t,d,r,w}
 	bspc node -d ^{1,2,3,4,5,6} --follow
 
-# close and kill
-super + j
-	bspc node -c
-
 # set the node flags
 super + ctrl + {t,h,s}
 	bspc node -g {marked,locked,sticky}
@@ -61,14 +68,10 @@ super + ctrl + {t,h,s}
 # changing layouts
 #
 
-# alternate between the tiled and monocle layout
-super + i
-	bspc desktop -l next
-
 # toggle between tiled and pseudo_tiled modes
-super + slash
+super + underscore
     if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \
-        bspc node focused -t pseudo_tiled; \
+        bspc node focused -t floating; \
     else \
         bspc node focused -t tiled; \
     fi
@@ -92,16 +95,16 @@ super + space
 	rofi -show drun -i
 
 # terminal emulator
-super + l
+super + y
 	kitty
 
-# file explorer
-super + o
-	thunar
-
 # firefox
-super + y
-	firefox
+super + o
+	kitty -e lf
+
+# neovide
+super + l
+	neovide
 
 # firefox bookmarks
 super + f
