@@ -23,12 +23,9 @@ nnoremap <silent> <C-u> 10<C-y>
 nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
 
+nmap <leader>u :Telescope find_files<CR>
 
-nmap <leader>f :! cargo fmt<CR>
-
-nmap <leader>p :Telescope find_files<CR>
-
-nnoremap <leader>j :Neoformat<CR>
+nnoremap <leader>f :Neoformat<CR>
 
 nnoremap ; :lnext<CR>
 nnoremap , :lprevious<CR>

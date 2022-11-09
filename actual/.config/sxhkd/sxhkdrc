@@ -104,7 +104,8 @@ super + o
 
 # neovide
 super + l
-	neovide --novsync --nofork --multigrid --maximized
+	kitty -e nvim
+	#neovide --novsync --nofork --multigrid --maximized
 
 # firefox bookmarks
 super + f

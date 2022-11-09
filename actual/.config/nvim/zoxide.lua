@@ -28,4 +28,4 @@ t.setup({
 t.load_extension('zoxide')
 
 -- Add a mapping
-vim.keymap.set("n", "<leader>u", t.extensions.zoxide.list)
+vim.keymap.set("n", "<leader>p", t.extensions.zoxide.list)
