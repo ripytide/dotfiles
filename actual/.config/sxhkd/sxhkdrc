@@ -188,3 +188,6 @@ super + c
 
 super + ctrl + q
 	killall bspwm
+
+XF86AudioMute
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
