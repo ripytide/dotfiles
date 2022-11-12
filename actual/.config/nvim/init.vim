@@ -16,7 +16,7 @@ source ~/.config/nvim/zoxide.lua
 
 source ~/.config/nvim/neovide.vim
 
-colorscheme tokyonight
+colorscheme tokyonight-night
 "colorscheme gruvbox
 
 " Make <CR> to accept selected completion item or notify coc.nvim to format

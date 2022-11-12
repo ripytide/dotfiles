@@ -9,7 +9,8 @@ done
 # Terminate already running bar instances
 killall polybar
 
-sleep 2;
-
 # Launch polybar
 polybar main -c ~/.config/polybar/config.ini &
+
+#hide it once it launches
+xdo id -m -N Polybar && polybar-msg cmd hide

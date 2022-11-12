@@ -16,6 +16,7 @@ set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
 nmap <silent> g; A;<ESC>
 nmap <silent> g, A,<ESC>
+nmap <silent> g: A:<ESC>
 
 nnoremap <silent> <C-d> 10<C-e>
 nnoremap <silent> <C-u> 10<C-y>
@@ -30,11 +31,7 @@ nnoremap <leader>f :Neoformat<CR>
 nnoremap ; :lnext<CR>
 nnoremap , :lprevious<CR>
 
-augroup myvimrc
-    au!
-    au BufWritePost .vimrc,_vimrc,vimrc,.gvimrc,_gvimrc,gvimrc so $MYVIMRC | if has('gui_running') | so $MYGVIMRC | endif
-augroup END
-
 nnoremap gq q
 
-autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
+nmap gpp a<CR><ESC>ddP
+nmap gpP i<CR><ESC>ddP

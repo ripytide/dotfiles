@@ -39,9 +39,11 @@ aw-server-rust &
 aw-watcher-afk &
 aw-watcher-window &
 
-wal -R
+#wal -R
 
 watcher.sh &
+
+xcape -e 'Super_L=Escape' &
 
 #start bspwm
 bspwm

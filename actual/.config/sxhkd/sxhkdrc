@@ -70,11 +70,7 @@ super + ctrl + {t,h,s}
 
 # toggle between tiled and pseudo_tiled modes
 super + underscore
-    if [ -z "$(bspc query -N -n focused.pseudo_tiled)" ]; then \
-        bspc node focused -t floating; \
-    else \
-        bspc node focused -t tiled; \
-    fi
+	bspc node -t {floating,tiled}
 
 super + apostrophe
 	bspc node @/ -R 90
