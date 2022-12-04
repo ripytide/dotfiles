@@ -5,7 +5,7 @@ Plug '907th/vim-auto-save'
 let g:auto_save = 1
 let g:auto_save_silent = 1
 
-"Plug 'tpope/vim-surround'
+Plug 'tpope/vim-surround'
 
 Plug 'scrooloose/nerdcommenter'
 
@@ -47,9 +47,9 @@ Plug 'neovimhaskell/haskell-vim'
 
 Plug 'https://github.com/svermeulen/vim-subversive'
 " s for substitute
-nmap q <plug>(SubversiveSubstitute)
-nmap qq <plug>(SubversiveSubstituteLine)
-nmap Q <plug>(SubversiveSubstituteToEndOfLine)
+nmap s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+nmap S <plug>(SubversiveSubstituteToEndOfLine)
 
 Plug 'svermeulen/vim-cutlass'
 " map m to a new cut key
@@ -57,20 +57,6 @@ nnoremap m d
 xnoremap m d
 nnoremap mm dd
 nnoremap M D
-
-Plug 'svermeulen/vim-yoink'
-nmap <c-n> <plug>(YoinkPostPasteSwapBack)
-nmap <c-p> <plug>(YoinkPostPasteSwapForward)
-nmap p <plug>(YoinkPaste_p)
-nmap P <plug>(YoinkPaste_P)
-" Also replace the default gp with yoink paste so we can toggle paste in this case too
-nmap gp <plug>(YoinkPaste_gp)
-nmap gP <plug>(YoinkPaste_gP)
-nmap <c-=> <plug>(YoinkPostPasteToggleFormat)
-nmap y <plug>(YoinkYankPreserveCursorPosition)
-xmap y <plug>(YoinkYankPreserveCursorPosition)
-" so new cut command is included in yoinks
-let g:yoinkIncludeDeleteOperations = 1
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -116,12 +102,19 @@ Plug 'ActivityWatch/aw-watcher-vim'
 
 Plug 'p00f/nvim-ts-rainbow'
 
-Plug 'chaoren/vim-wordmotion'
-
 Plug 'ggandor/leap.nvim'
 
 Plug 'rhysd/clever-f.vim'
 
 Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
+
+Plug 'fannheyward/telescope-coc.nvim'
+
+Plug 'tpope/vim-abolish'
+
+Plug 'ripytide/rust.vim'
+
+Plug 'mbbill/undotree'
+
 call plug#end()

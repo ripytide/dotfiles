@@ -25,6 +25,7 @@ nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
 
 nmap <leader>u :Telescope find_files<CR>
+nmap <leader>j :Telescope live_grep<CR>
 
 nnoremap <leader>f :Neoformat<CR>
 
@@ -35,3 +36,5 @@ nnoremap gq q
 
 nmap gpp a<CR><ESC>ddP
 nmap gpP i<CR><ESC>ddP
+
+noremap <silent> gz zz

@@ -14,3 +14,6 @@ polybar main -c ~/.config/polybar/config.ini &
 
 #hide it once it launches
 xdo id -m -N Polybar && polybar-msg cmd hide
+
+#remove top_padding
+bspc config top_padding 0

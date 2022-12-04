@@ -1,4 +1,3 @@
-require("leap").add_default_mappings()
 require("leap").setup({
 	equivalence_classes = { " \t\r\n" },
 	safe_labels = {},

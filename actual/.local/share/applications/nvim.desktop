@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=0.8
+Type=Application
+Terminal=false
+Exec=kitty -e nvim
+Name=neovim

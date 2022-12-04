@@ -1,3 +1,3 @@
-function t --wraps='cargo test' --description 'alias t=cargo test'
+function t
   cargo test $argv; 
 end

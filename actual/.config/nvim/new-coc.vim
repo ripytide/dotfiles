@@ -32,18 +32,6 @@ endfunction
 inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-nmap <silent> gj <Plug>(coc-diagnostic-next)
-nmap <silent> gk <Plug>(coc-diagnostic-prev)
-
-" GoTo code navigation.
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-
-" Use K to show documentation in preview window.
-nnoremap <silent> K :call ShowDocumentation()<CR>
-
 function! ShowDocumentation()
   if CocAction('hasProvider', 'hover')
     call CocActionAsync('doHover')
@@ -55,9 +43,6 @@ endfunction
 " Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
-" Symbol renaming.
-nmap <leader>rn <Plug>(coc-rename)
-
 augroup mygroup
   autocmd!
   " Setup formatexpr specified filetype(s).
@@ -66,11 +51,18 @@ augroup mygroup
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
 augroup end
 
-" Remap keys for applying codeAction to the current buffer.
-nmap <leader>z  <Plug>(coc-codeaction)
+function! ToggleOutline() abort
+let winid = coc#window#find('cocViewId', 'OUTLINE')
+if winid == -1
+  call CocActionAsync('showOutline', 1)
+else
+  call coc#window#close(winid)
+endif
+endfunction
 
-" Run the Code Lens action on the current line.
-nmap <leader>cl  <Plug>(coc-codelens-action)
+" ============================================================================
+" ================================COC BINDINGS================================
+" ============================================================================
 
 " Map function and class text objects
 " NOTE: Requires 'textDocument.documentSymbol' support from the language server.
@@ -82,6 +74,17 @@ xmap ic <Plug>(coc-classobj-i)
 omap ic <Plug>(coc-classobj-i)
 xmap ac <Plug>(coc-classobj-a)
 omap ac <Plug>(coc-classobj-a)
+nmap ga :Telescope coc code_actions<CR>
+nmap gs :Telescope coc workspace_symbols<CR>
+nmap gm :Telescope coc references<CR>
+nmap gr <Plug>(coc-rename)
+nmap <silent> gj <Plug>(coc-diagnostic-next)
+nmap <silent> gk <Plug>(coc-diagnostic-prev)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <silent><nowait> <leader>o  :call ToggleOutline()<CR>
 
 " Remap <C-f> and <C-b> for scroll float windows/popups.
 if has('nvim-0.4.0') || has('patch-8.2.0750')
@@ -92,13 +95,3 @@ if has('nvim-0.4.0') || has('patch-8.2.0750')
   vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
   vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
 endif
-
-nnoremap <silent><nowait> <leader>o  :call ToggleOutline()<CR>
-function! ToggleOutline() abort
-let winid = coc#window#find('cocViewId', 'OUTLINE')
-if winid == -1
-  call CocActionAsync('showOutline', 1)
-else
-  call coc#window#close(winid)
-endif
-endfunction

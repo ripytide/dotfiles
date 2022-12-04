@@ -42,7 +42,7 @@ set confirm
 set number
 set relativenumber
 
-" keeps cursor in the centre of the sreen
+" keeps cursor in the centre of the screen
 set scrolloff=8
 
 " sets the amount of spaces that vim considers an indent for commands like <
@@ -60,3 +60,5 @@ set nofoldenable
 set textwidth=70
 
 set nowrap
+
+set iskeyword+=-
