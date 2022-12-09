@@ -102,12 +102,12 @@ Plug 'ActivityWatch/aw-watcher-vim'
 
 Plug 'p00f/nvim-ts-rainbow'
 
-Plug 'ggandor/leap.nvim'
+Plug 'ggandor/leap.nvim', {'branch': 'main'}
 
 Plug 'rhysd/clever-f.vim'
 
 Plug 'nvim-lua/popup.nvim'
-Plug 'jvgrootveld/telescope-zoxide'
+Plug 'jvgrootveld/telescope-zoxide', {'branch': 'main'}
 
 Plug 'fannheyward/telescope-coc.nvim'
 
@@ -117,4 +117,6 @@ Plug 'ripytide/rust.vim'
 
 Plug 'mbbill/undotree'
 
+Plug 'kdheepak/lazygit.nvim', {'branch': 'main'}
+nnoremap <silent> <leader>l :LazyGit<CR>
 call plug#end()
