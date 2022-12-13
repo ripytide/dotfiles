@@ -6,15 +6,10 @@ vmap <SPACE> <leader>
 " highlighting
 nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 
-nmap <leader>h :HardTimeToggle<CR>
+nnoremap <leader>h :HardTimeToggle<CR>
 
 " workman rebind movement keys back to normal positions
 set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
-
-nmap <silent> g; A;<ESC>
-nmap <silent> g, A,<ESC>
-nmap <silent> g: A:<ESC>
-nmap <silent> g. A.<ESC>
 
 nnoremap <silent> <C-d> 10<C-e>
 nnoremap <silent> <C-u> 10<C-y>
@@ -22,17 +17,31 @@ nnoremap <silent> <C-u> 10<C-y>
 nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
 
-nmap <leader>u :Telescope find_files<CR>
-nmap <leader>j :Telescope live_grep<CR>
+nnoremap <leader>u :Telescope find_files<CR>
+nnoremap <leader>j :Telescope live_grep<CR>
 
 nnoremap <leader>f :Neoformat<CR>
 
-nnoremap ; :lnext<CR>
-nnoremap , :lprevious<CR>
+nnoremap <leader>_ :lnext<CR>
+nnoremap <leader>, :lprevious<CR>
 
-nnoremap gq q
+nmap <leader>t a<CR><ESC>ddP
 
-nmap gpp a<CR><ESC>ddP
-nmap gpP i<CR><ESC>ddP
+noremap <leader>m zz
 
-noremap <silent> gz zz
+" extra append/insert immediate keybinds
+" this is so cursed lol
+let all = (['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '_', '*', '[', ']', '{', '}', '(', ')', ',', '.', '-', '+', ';', '!', '@', '#', '$', '%', '^', '&', '/', '\|', '\', '`', '~', '<', '>', '"'])
+
+for x in all
+	execute 'nnoremap <silent> ' . 'Q' . x . ' a' . x . '<ESC>'
+endfor
+for x in all
+	execute 'nnoremap <silent> ' . 'q' . x . ' A' . x . '<ESC>'
+endfor
+for x in all
+	execute 'nnoremap <silent> ' . ',' . x . ' i' . x . '<ESC>'
+endfor
+for x in all
+	execute 'nnoremap <silent> ' . '_' . x . ' I' . x . '<ESC>'
+endfor

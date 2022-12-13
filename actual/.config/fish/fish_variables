@@ -1,5 +1,9 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR 0x00A00004:\x1d
+SETUVAR 0x01000005:\x1d
+SETUVAR 0x01000007:\x1d
+SETUVAR 0x0100005F:\x1d
 SETUVAR 0x01200004:\x1d
 SETUVAR 0x01200006:\x1d
 SETUVAR 0x01600004:\x1d
