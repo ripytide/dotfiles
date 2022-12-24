@@ -5,7 +5,7 @@ date
 echo -e "\n"
 
 #restart sxhkd
-pgrep -x sxhkd > /dev/null || sxhkd &
+pgrep -x sxhkd >/dev/null || sxhkd &
 
 #turn off mouse acceleration
 xinput --set-prop 12 303 0 1 &
@@ -27,11 +27,11 @@ dunst &
 
 !keymapper
 
-xautolock -time 15 -locker "systemctl hybrid-sleep" -detectsleep &
+xautolock -time 15 -locker "xscreensaver-command -lock" -detectsleep \
+	-notify 10 -notifier 'notify-send "Locking Screen in 10 seconds"' \
+	-corners 00-0 -killtime 10 -killer "systemctl hybrid-sleep" &
 
 xscreensaver &
-
-xss-lock -- xscreensaver-command -lock &
 
 udiskie &
 

@@ -1,10 +1,10 @@
 # XScreenSaver Preferences File
-# Written by xscreensaver-settings 6.05 for ripytide on Sat Dec 10 17:19:31 2022.
+# Written by xscreensaver-settings 6.06 for ripytide on Sat Dec 24 14:35:49 2022.
 # https://www.jwz.org/xscreensaver/
 
-timeout:	0:05:00
-cycle:		0:50:00
-lock:		True
+timeout:	1:40:00
+cycle:		1:40:00
+lock:		False
 lockTimeout:	0:00:00
 passwdTimeout:	0:00:30
 visualID:	default
@@ -18,11 +18,11 @@ fade:		False
 unfade:		False
 fadeSeconds:	0:00:00
 ignoreUninstalledPrograms:False
-dpmsEnabled:	True
+dpmsEnabled:	False
 dpmsQuickOff:	False
-dpmsStandby:	0:10:00
-dpmsSuspend:	0:10:00
-dpmsOff:	0:10:00
+dpmsStandby:	1:40:00
+dpmsSuspend:	1:40:00
+dpmsOff:	1:40:00
 grabDesktopImages:  False
 grabVideoFrames:    False
 chooseRandomImages: True
@@ -288,6 +288,7 @@ programs:								      \
   GL: 				mapscroller --root			    \n\
   GL: 				nakagin --root				    \n\
   GL: 				squirtorus --root			    \n\
+  GL: 				hextrail --root				    \n\
 
 
 pointerHysteresis:  10
