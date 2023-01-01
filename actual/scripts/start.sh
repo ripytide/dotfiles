@@ -27,11 +27,13 @@ dunst &
 
 !keymapper
 
-xautolock -time 15 -locker "xscreensaver-command -lock" -detectsleep \
-	-notify 10 -notifier 'notify-send "Locking Screen in 10 seconds"' \
-	-corners 00-0 -killtime 10 -killer "systemctl hybrid-sleep" &
-
 xscreensaver &
+
+xss-lock -- xscreensaver-command -lock &
+
+xautolock -time 15 -locker "xscreensaver-command -lock" -detectsleep \
+	-notify 10 -notifier 'notify-send "Locking Screen in 10 seconds"'\
+	-corners 00-0 -killtime 10 -killer "systemctl hybrid-sleep" &
 
 udiskie &
 
