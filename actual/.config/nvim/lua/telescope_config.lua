@@ -1,4 +1,3 @@
-lua <<EOF
 local telescope = require("telescope")
 local telescopeConfig = require("telescope.config")
 local actions = require("telescope.actions")
@@ -31,7 +30,4 @@ telescope.setup({
 	},
 })
 
-
 require("telescope").load_extension("frecency")
-
-EOF

@@ -62,3 +62,15 @@ set textwidth=70
 set nowrap
 
 set iskeyword+=-
+
+" the number of suggestions shown for suggestions
+set pumheight=4
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+set signcolumn=number

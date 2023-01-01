@@ -26,6 +26,3 @@ t.setup({
 
 -- Load the extension
 t.load_extension('zoxide')
-
--- Add a mapping
-vim.keymap.set("n", "<leader>p", t.extensions.zoxide.list)

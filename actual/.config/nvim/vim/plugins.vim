@@ -46,17 +46,8 @@ let g:neoformat_enabled_python = ["black"]
 Plug 'neovimhaskell/haskell-vim'
 
 Plug 'https://github.com/svermeulen/vim-subversive'
-" s for substitute
-nmap s <plug>(SubversiveSubstitute)
-nmap ss <plug>(SubversiveSubstituteLine)
-nmap S <plug>(SubversiveSubstituteToEndOfLine)
 
 Plug 'svermeulen/vim-cutlass'
-" map m to a new cut key
-nnoremap m d
-xnoremap m d
-nnoremap mm dd
-nnoremap M D
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
@@ -65,21 +56,6 @@ let g:tokyonight_italic_keywords = 0
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
-" Move to previous/next
-nnoremap <silent>    <leader>n :BufferPrevious<CR>
-nnoremap <silent>    <leader>e :BufferNext<CR>
-" Close buffer
-nnoremap <silent>    <leader>d :BufferClose<CR>
-" Wipeout buffer
-nnoremap <silent>    <leader>w :BufferWipeout<CR>
-nnoremap <silent>    <leader>a :BufferCloseAllButCurrent<CR>
-" Magic buffer-picking mode
-" nnoremap <silent>    <leader>p :BufferPick<CR>
-" Sort automatically by...
-nnoremap <silent> <Space>bb :BufferOrderByBufferNumber<CR>
-nnoremap <silent> <Space>bd :BufferOrderByDirectory<CR>
-nnoremap <silent> <Space>bl :BufferOrderByLanguage<CR>
-nnoremap <silent> <Space>bw :BufferOrderByWindowNumber<CR>
 
 Plug 'itchyny/lightline.vim'
 function! CocCurrentFunction()
@@ -96,7 +72,6 @@ let g:lightline = {
       \   'currentfunction': 'CocCurrentFunction'
       \ },
       \ }
-
 
 Plug 'ActivityWatch/aw-watcher-vim'
 
@@ -118,5 +93,4 @@ Plug 'ripytide/rust.vim'
 Plug 'mbbill/undotree'
 
 Plug 'kdheepak/lazygit.nvim', {'branch': 'main'}
-nnoremap <silent> <leader>l :LazyGit<CR>
 call plug#end()

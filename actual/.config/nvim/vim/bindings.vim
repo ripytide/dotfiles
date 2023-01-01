@@ -1,26 +1,16 @@
+" == Core ==
 let mapleader = "\\"
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 
-" silently (not visible in command line) map escape to temporarily turn off
-" highlighting
+" to temporarily turn off highlighting
 nnoremap <silent> <ESC> :noh<CR>:match none<CR>
-
-nnoremap <leader>h :HardTimeToggle<CR>
-
-" workman rebind movement keys back to normal positions
-set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
 nnoremap <silent> <C-d> 10<C-e>
 nnoremap <silent> <C-u> 10<C-y>
 
 nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
-
-nnoremap <leader>u :Telescope find_files<CR>
-nnoremap <leader>j :Telescope live_grep<CR>
-
-nnoremap <leader>f :Neoformat<CR>
 
 nnoremap <leader>_ :lnext<CR>
 nnoremap <leader>, :lprevious<CR>
@@ -29,6 +19,10 @@ nmap <leader>t a<CR><ESC>ddP
 
 noremap <leader>m zz
 
+" workman rebind movement keys back to normal positions
+set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
+
+" == Insert and Append Instant ==
 " extra append/insert immediate keybinds
 " this is so cursed lol
 let all = (['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_', '*', '[', ']', '{', '}', '(', ')', ',', '.', '-', '+', ';', '!', '@', '#', '$', '%', '^', '&', '/', '\|', '\', '`', '~', '<', '>', '"'])
@@ -45,3 +39,77 @@ endfor
 for x in all
 	execute 'nnoremap <silent> ' . '_' . x . ' I' . x . '<ESC>'
 endfor
+
+" == Commands ==
+nnoremap <leader>h :HardTimeToggle<CR>
+
+nnoremap <leader>u :Telescope find_files<CR>
+nnoremap <leader>j :Telescope live_grep<CR>
+
+nnoremap <leader>f :Neoformat<CR>
+
+nnoremap <silent> <leader>l :LazyGit<CR>
+
+" == COC BINDINGS ==
+
+" Map function and class text objects
+" NOTE: Requires 'textDocument.documentSymbol' support from the language server.
+xmap if <Plug>(coc-funcobj-i)
+omap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap af <Plug>(coc-funcobj-a)
+xmap ic <Plug>(coc-classobj-i)
+omap ic <Plug>(coc-classobj-i)
+xmap ac <Plug>(coc-classobj-a)
+omap ac <Plug>(coc-classobj-a)
+nmap ga :Telescope coc code_actions<CR>
+nmap gs :Telescope coc workspace_symbols<CR>
+nmap gm :Telescope coc references<CR>
+nmap gr <Plug>(coc-rename)
+nmap <silent> gj <Plug>(coc-diagnostic-next)
+nmap <silent> gk <Plug>(coc-diagnostic-prev)
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nnoremap <silent> K :call ShowDocumentation()<CR>
+nnoremap <silent><nowait> <leader>o  :call ToggleOutline()<CR>
+
+" Remap <C-f> and <C-b> for scroll float windows/popups.
+if has('nvim-0.4.0') || has('patch-8.2.0750')
+  nnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  nnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+  inoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(1)\<cr>" : "\<Right>"
+  inoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? "\<c-r>=coc#float#scroll(0)\<cr>" : "\<Left>"
+  vnoremap <silent><nowait><expr> <C-f> coc#float#has_scroll() ? coc#float#scroll(1) : "\<C-f>"
+  vnoremap <silent><nowait><expr> <C-b> coc#float#has_scroll() ? coc#float#scroll(0) : "\<C-b>"
+endif
+
+" == Vim Subversive ==
+" s for substitute
+nmap s <plug>(SubversiveSubstitute)
+nmap ss <plug>(SubversiveSubstituteLine)
+nmap S <plug>(SubversiveSubstituteToEndOfLine)
+
+" == Vim cutlass
+" map m to a new cut key
+nnoremap m d
+xnoremap m d
+nnoremap mm dd
+nnoremap M D
+
+" == Vim BarBar ==
+" Move to previous/next
+nnoremap <silent>    <leader>n :BufferPrevious<CR>
+nnoremap <silent>    <leader>e :BufferNext<CR>
+" Close buffer
+nnoremap <silent>    <leader>d :BufferClose<CR>
+" Wipeout buffer
+nnoremap <silent>    <leader>w :BufferWipeout<CR>
+nnoremap <silent>    <leader>a :BufferCloseAllButCurrent<CR>
+
+" == Leap ==
+nnoremap <silent> z <Plug>(leap-forward-to)
+nnoremap <silent> Z <Plug>(leap-backward-to)
+
+" == Zoxide ==
+nnoremap <leader>p :lua require("telescope").extensions.zoxide.list()<CR>
