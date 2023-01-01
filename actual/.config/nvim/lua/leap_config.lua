@@ -13,3 +13,6 @@ require("leap").setup({
 		multi_revert = "<backspace>",
 	},
 })
+
+vim.keymap.set("n", "z", "<Plug>(leap-forward-to)")
+vim.keymap.set("n", "Z", "<Plug>(leap-backward-to)")
