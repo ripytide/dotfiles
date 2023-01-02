@@ -29,7 +29,7 @@ lsp.setup_nvim_cmp({
 
 lsp.set_preferences({
     suggest_lsp_servers = true,
-	set_lsp_keymaps = false,
+	set_lsp_keymaps = true,
     sign_icons = {
         error = 'E',
         warn = 'W',

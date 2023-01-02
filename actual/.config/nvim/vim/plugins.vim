@@ -114,6 +114,8 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'rafamadriz/friendly-snippets'
 
 Plug 'VonHeikemen/lsp-zero.nvim'
+
+Plug 'nvim-telescope/telescope-ui-select.nvim'
 call plug#end()
 
 " this line needs to be outside of the Plug for some reason
