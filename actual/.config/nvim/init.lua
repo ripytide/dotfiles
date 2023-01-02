@@ -4,13 +4,13 @@ end
 
 src("generic.vim")
 src("plugins.vim")
-src("new-coc.vim")
 src("bindings.vim")
 src("neovide.vim")
 require("telescope_config")
 require("leap_config")
 require("tree-sitter")
 require("zoxide")
+require("lsp")
 
 --my old flame ;(
 --colorscheme gruvbox

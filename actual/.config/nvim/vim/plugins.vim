@@ -19,7 +19,8 @@ let g:hardtime_maxcount = 4
 
 Plug 'romainl/vim-cool'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"goodbye old friend
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'jiangmiao/auto-pairs'
 let g:AutoPairsMapCR = 1
@@ -58,18 +59,12 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
 Plug 'itchyny/lightline.vim'
-function! CocCurrentFunction()
-    return get(b:, 'coc_current_function', '')
-endfunction
+"todo add lsp status stuff
 let g:lightline = {
       \ 'colorscheme': 'tokyonight',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified', 'cocstatus', 'currentfunction' ] ]
-      \ },
-      \ 'component_function': {
-      \   'cocstatus': 'coc#status',
-      \   'currentfunction': 'CocCurrentFunction'
+      \             [ 'readonly', 'filename', 'modified' ] ]
       \ },
       \ }
 
@@ -84,7 +79,8 @@ Plug 'rhysd/clever-f.vim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide', {'branch': 'main'}
 
-Plug 'fannheyward/telescope-coc.nvim'
+"goodbye old friend
+"Plug 'fannheyward/telescope-coc.nvim'
 
 Plug 'tpope/vim-abolish'
 
@@ -93,4 +89,25 @@ Plug 'ripytide/rust.vim'
 Plug 'mbbill/undotree'
 
 Plug 'kdheepak/lazygit.nvim', {'branch': 'main'}
+
+" == LSP-ZERO ==
+
+" LSP Support
+Plug 'neovim/nvim-lspconfig'
+Plug 'williamboman/mason.nvim'
+Plug 'williamboman/mason-lspconfig.nvim'
+
+" Autocompletion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-nvim-lua'
+
+"  Snippets
+Plug 'L3MON4D3/LuaSnip'
+Plug 'rafamadriz/friendly-snippets'
+
+Plug 'VonHeikemen/lsp-zero.nvim'
 call plug#end()
