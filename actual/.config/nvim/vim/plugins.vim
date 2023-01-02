@@ -59,14 +59,18 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'romgrk/barbar.nvim'
 
 Plug 'itchyny/lightline.vim'
-"todo add lsp status stuff
+Plug 'josa42/nvim-lightline-lsp'
 let g:lightline = {
-      \ 'colorscheme': 'tokyonight',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ }
+\ 'colorscheme': 'tokyonight',
+\ 	'active': {
+\ 		'left': [ 
+\ 					[ 'mode', 'paste' ],
+\ 					[ 'readonly', 'filename', 'modified' ],
+\ 					[  'lsp_info', 'lsp_hints', 'lsp_errors', 'lsp_warnings', 'lsp_ok' ],
+\ 					[ 'lsp_status' ]
+\ 				]
+\ 	}
+\ }
 
 Plug 'ActivityWatch/aw-watcher-vim'
 
@@ -111,3 +115,6 @@ Plug 'rafamadriz/friendly-snippets'
 
 Plug 'VonHeikemen/lsp-zero.nvim'
 call plug#end()
+
+" this line needs to be outside of the Plug for some reason
+call lightline#lsp#register()
