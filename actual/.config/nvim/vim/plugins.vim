@@ -59,6 +59,7 @@ let g:tokyonight_italic_keywords = 0
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
 Plug 'nvim-lualine/lualine.nvim'
+Plug 'arkav/lualine-lsp-progress'
 
 Plug 'ActivityWatch/aw-watcher-vim'
 

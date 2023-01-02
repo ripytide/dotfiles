@@ -33,7 +33,7 @@ noremap <leader>m zz
 " == Insert and Append Instant ==
 " extra append/insert immediate keybinds
 " this is so cursed lol
-let all = (['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_', '*', '[', ']', '{', '}', '(', ')', ',', '.', '-', '+', ';', '!', '@', '#', '$', '%', '^', '&', '/', '\|', '\', '`', '~', '<', '>', '"'])
+let all = (['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_', '*', '[', ']', '{', '}', '(', ')', ',', '.', '-', '+', ';', '!', '@', '#', '$', '%', '^', '&', '/', '\|', '\', '`', '~', '<', '>', '"', "'"])
 
 for x in all
 	execute 'nnoremap <silent> ' . 'Q' . x . ' a' . x . '<ESC>'
@@ -107,13 +107,14 @@ nnoremap M D
 
 " == Bufferline ==
 " Move to previous/next
-nnoremap <silent>    <leader>n :BufferPrevious<CR>
-nnoremap <silent>    <leader>e :BufferNext<CR>
+nnoremap <silent>    <leader>e :BufferLineCycleNext<CR>
+nnoremap <silent>    <leader>n :BufferLineCyclePrev<CR>
 " Close buffer
-nnoremap <silent>    <leader>d :BufferClose<CR>
-" Wipeout buffer
-nnoremap <silent>    <leader>w :BufferWipeout<CR>
-nnoremap <silent>    <leader>a :BufferCloseAllButCurrent<CR>
+nnoremap <silent>    <leader>d :bw<CR>
+" Wipeout buffers
+nnoremap <silent>    <leader>w :%bw!<CR>
+" Delete all buffers but the current one
+nnoremap <silent>    <leader>a :%bd\|e#\|bw#<CR>
 
 " == Leap ==
 nnoremap <silent> z <Plug>(leap-forward-to)
