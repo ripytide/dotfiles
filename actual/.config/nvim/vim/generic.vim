@@ -6,6 +6,10 @@ set hidden
 set undodir=~/sync/undodir
 set undofile
 
+" an endless source of anoyance
+set noswapfile
+set nobackup
+
 "show partial normal mode commands in the bottom right
 set showcmd
 
@@ -71,6 +75,6 @@ set cmdheight=2
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=300
+set updatetime=50
 
-set signcolumn=number
+set signcolumn=yes

@@ -3,6 +3,9 @@ let mapleader = "\\"
 nmap <SPACE> <leader>
 vmap <SPACE> <leader>
 
+" workman rebind movement keys back to normal positions
+set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
+
 " to temporarily turn off highlighting
 nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 
@@ -15,12 +18,14 @@ nnoremap <silent> <C-e> <C-i>
 nnoremap <leader>_ :lnext<CR>
 nnoremap <leader>, :lprevious<CR>
 
+vnoremap J :m '>+1<CR>gv=gv
+vnoremap K :m '<-2<CR>gv=gv
+
+nnoremap H mzJ'z
+
 nmap <leader>t a<CR><ESC>ddP
 
 noremap <leader>m zz
-
-" workman rebind movement keys back to normal positions
-set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
 " == Insert and Append Instant ==
 " extra append/insert immediate keybinds
