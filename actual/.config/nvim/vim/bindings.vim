@@ -105,7 +105,7 @@ xnoremap m d
 nnoremap mm dd
 nnoremap M D
 
-" == Vim BarBar ==
+" == Bufferline ==
 " Move to previous/next
 nnoremap <silent>    <leader>n :BufferPrevious<CR>
 nnoremap <silent>    <leader>e :BufferNext<CR>

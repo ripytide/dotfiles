@@ -78,3 +78,5 @@ set cmdheight=2
 set updatetime=50
 
 set signcolumn=yes
+
+set termguicolors

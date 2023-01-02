@@ -5,12 +5,14 @@ end
 src("generic.vim")
 src("plugins.vim")
 src("bindings.vim")
-src("neovide.vim")
+--src("neovide.vim")
 require("telescope_config")
 require("leap_config")
 require("tree-sitter")
 require("zoxide")
 require("lsp")
+require("bufferline_config")
+require("lualine_config")
 
 --my old flame ;(
 --colorscheme gruvbox

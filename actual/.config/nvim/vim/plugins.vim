@@ -1,5 +1,6 @@
 call plug#begin()
-Plug 'morhetz/gruvbox'
+" old flame
+" Plug 'morhetz/gruvbox'
 
 Plug '907th/vim-auto-save'
 let g:auto_save = 1
@@ -56,21 +57,8 @@ Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
 let g:tokyonight_italic_keywords = 0
 
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'romgrk/barbar.nvim'
-
-Plug 'itchyny/lightline.vim'
-Plug 'josa42/nvim-lightline-lsp'
-let g:lightline = {
-\ 'colorscheme': 'tokyonight',
-\ 	'active': {
-\ 		'left': [ 
-\ 					[ 'mode', 'paste' ],
-\ 					[ 'readonly', 'filename', 'modified' ],
-\ 					[  'lsp_info', 'lsp_hints', 'lsp_errors', 'lsp_warnings', 'lsp_ok' ],
-\ 					[ 'lsp_status' ]
-\ 				]
-\ 	}
-\ }
+Plug 'akinsho/bufferline.nvim'
+Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'ActivityWatch/aw-watcher-vim'
 
@@ -117,6 +105,3 @@ Plug 'VonHeikemen/lsp-zero.nvim'
 
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 call plug#end()
-
-" this line needs to be outside of the Plug for some reason
-call lightline#lsp#register()
