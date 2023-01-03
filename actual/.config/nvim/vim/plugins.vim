@@ -87,6 +87,7 @@ Plug 'kdheepak/lazygit.nvim'
 " LSP
 Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-dap'
+Plug 'rcarriga/nvim-dap-ui'
 Plug 'simrat39/rust-tools.nvim'
 
 " Autocompletion
