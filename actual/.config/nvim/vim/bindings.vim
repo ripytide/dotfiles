@@ -114,7 +114,7 @@ nnoremap <silent>    <leader>d :bw<CR>
 " Wipeout buffers
 nnoremap <silent>    <leader>w :%bw!<CR>
 " Delete all buffers but the current one
-nnoremap <silent>    <leader>a :%bd\|e#\|bw#<CR>
+nnoremap <silent>    <leader>a mz:%bd\|e#\|bw#<CR>'z
 
 " == Leap ==
 nnoremap <silent> z <Plug>(leap-forward-to)

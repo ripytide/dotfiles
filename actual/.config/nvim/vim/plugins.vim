@@ -33,8 +33,9 @@ let g:rainbow_active = 1
 
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug('tami5/sqlite.lua')
-Plug('nvim-telescope/telescope-frecency.nvim')
+Plug 'tami5/sqlite.lua'
+Plug 'nvim-telescope/telescope-frecency.nvim'
+Plug 'nvim-telescope/telescope-ui-select.nvim'
 
 Plug 'tpope/vim-eunuch'
 
@@ -53,7 +54,7 @@ Plug 'svermeulen/vim-cutlass'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-Plug 'folke/tokyonight.nvim', { 'branch': 'main' }
+Plug 'folke/tokyonight.nvim'
 let g:tokyonight_italic_keywords = 0
 
 Plug 'kyazdani42/nvim-web-devicons'
@@ -65,12 +66,12 @@ Plug 'ActivityWatch/aw-watcher-vim'
 
 Plug 'p00f/nvim-ts-rainbow'
 
-Plug 'ggandor/leap.nvim', {'branch': 'main'}
+Plug 'ggandor/leap.nvim'
 
 Plug 'rhysd/clever-f.vim'
 
 Plug 'nvim-lua/popup.nvim'
-Plug 'jvgrootveld/telescope-zoxide', {'branch': 'main'}
+Plug 'jvgrootveld/telescope-zoxide'
 
 "goodbye old friend
 "Plug 'fannheyward/telescope-coc.nvim'
@@ -81,28 +82,23 @@ Plug 'ripytide/rust.vim'
 
 Plug 'mbbill/undotree'
 
-Plug 'kdheepak/lazygit.nvim', {'branch': 'main'}
+Plug 'kdheepak/lazygit.nvim'
 
-" == LSP-ZERO ==
-
-" LSP Support
+" LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'williamboman/mason.nvim'
-Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'simrat39/rust-tools.nvim'
 
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
-Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-nvim-lua'
-
-"  Snippets
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
+Plug 'onsails/lspkind.nvim'
+" LuaSnip
 Plug 'L3MON4D3/LuaSnip'
-Plug 'rafamadriz/friendly-snippets'
-
-Plug 'VonHeikemen/lsp-zero.nvim'
-
-Plug 'nvim-telescope/telescope-ui-select.nvim'
+Plug 'saadparwaiz1/cmp_luasnip'
 call plug#end()

@@ -68,7 +68,7 @@ set nowrap
 set iskeyword+=-
 
 " the number of suggestions shown for suggestions
-set pumheight=4
+set pumheight=6
 
 " Give more space for displaying messages.
 set cmdheight=2
@@ -80,3 +80,5 @@ set updatetime=50
 set signcolumn=yes
 
 set termguicolors
+
+set completeopt=menu,menuone,noinsert,noselect,preview

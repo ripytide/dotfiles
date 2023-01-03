@@ -10,9 +10,11 @@ require("telescope_config")
 require("leap_config")
 require("tree-sitter")
 require("zoxide")
-require("lsp")
 require("bufferline_config")
 require("lualine_config")
+require("lsp_config")
+require("rust_tools_config")
+require("cmp_config")
 
 --my old flame ;(
 --colorscheme gruvbox
