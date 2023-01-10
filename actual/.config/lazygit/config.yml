@@ -1,1 +1,13 @@
 promptToReturnFromSubprocess: false
+
+keybindings:
+  prevItem-alt: 'e' # go one line up
+  nextItem-alt: 'n' # go one line down
+
+customCommands:
+  - key: "C"
+    command: "git cz c"
+    description: "commit with commitizen"
+    context: "files"
+    loadingText: "opening commitizen commit tool"
+    subprocess: true

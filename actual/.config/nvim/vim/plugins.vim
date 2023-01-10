@@ -23,11 +23,9 @@ Plug 'romainl/vim-cool'
 "goodbye old friend
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-"goodbye old friend also
-"Plug 'jiangmiao/auto-pairs'
-"let g:AutoPairsMapCR = 1
-"let g:AutoPairsCenterLine = 0
-"let g:AutoPairsShortcutToggle = '<c-q>'
+Plug 'jiangmiao/auto-pairs'
+let g:AutoPairsShortcutToggle = '<c-q>'
+au FileType rust let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>', '|':'|'})
 
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
@@ -105,6 +103,4 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
 Plug 'airblade/vim-gitgutter'
-
-Plug 'm4xshen/autoclose.nvim'
 call plug#end()
