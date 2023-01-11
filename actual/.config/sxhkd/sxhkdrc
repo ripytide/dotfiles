@@ -41,24 +41,17 @@ super + j
 	fish -c close
 	#bspc node -c
 
-# focus the given moniter
-super + {1-9}
-	bspc desktop -f ^{1-9}
-
-# focus on the 1st, 2nd, 3rd moniter with whatever desktop is currently active on it
+# focus the given desktop
 super + {s,h,t,d,r,w}
-	bspc desktop -f {1,2,3,4,5,6}
+	bspc desktop -f {one,two,three,four,five,six}
 
 #
 # managing windows
 #
 
 # send to the given desktop
-super + shift + {1-6}
-	bspc node -d ^{1-6} --follow
-
 super + shift + {s,h,t,d,r,w}
-	bspc node -d ^{1,2,3,4,5,6} --follow
+	bspc node -d {one,two,three,four,five,six} --follow
 
 # set the node flags
 super + ctrl + {t,h,s}

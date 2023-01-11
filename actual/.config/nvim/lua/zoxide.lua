@@ -5,7 +5,7 @@ local z_utils = require("telescope._extensions.zoxide.utils")
 t.setup({
     extensions = {
         zoxide = {
-            prompt_title = "[ Walking on the shoulders of TJ ]",
+            prompt_title = "[ Zoxide ]",
             mappings = {
                 default = {
                     after_action = function(selection)
