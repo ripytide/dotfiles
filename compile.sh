@@ -1,7 +1,8 @@
 #! /bin/sh
-input=~/dotfiles/actual/.
-output=~
+mkdir -p $tmp/home/ripytide/dotfiles/actual
 
-cp -r $input $output
+cp -r ~/dotfiles/actual/. /home/ripytide/dotfiles/actual
 
-~/dotfiles/replacer.py "$1".toml $output
+find ~/dotfiles/actual -type f -print0 | xargs -0 -I _ envsubst < _ | sponge _
+
+#rm -rf $tmp
