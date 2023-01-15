@@ -1,28 +1,3 @@
-[".config/bspwm/bspwmrc"]
-monitor_config = """
-bspc monitor eDP1 -d one two three four five six
-"""
-
-[".config/rofi/config.rasi"]
-monitor = """
-	monitor: "eDP1";
-"""
-
-[".config/dunst/dunstrc"]
-monitor = """
-	monitor = eDP1
-"""
-
-["scripts/start.sh"]
-keymapper = """
-key-mapper-control --command autoload &
-"""
-
-[".config/polybar/config.ini"]
-monitor = """
-monitor = eDP1
-"""
-
 [".config/fish/functions/toggle_polybar.fish"]
 spacing_off = """
 		bspc config -m eDP1 top_padding 0

@@ -3,9 +3,9 @@ configuration {
 	width: 30;
 	lines: 10;
 	font: "fira code 16";
-!monitor
+	monitor: "$MONITOR";
 	show-icons: true;
-	terminal: "st";
+	terminal: "kitty";
 	drun-display-format: "{name}";
 	hide-scrollbar: true;
 	display-drun: ">>>";

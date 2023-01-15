@@ -25,7 +25,7 @@ picom -b
 #run notification server: dunst
 dunst &
 
-!keymapper
+key-mapper-control --command autoload &
 
 xscreensaver &
 
