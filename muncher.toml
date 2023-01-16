@@ -1,7 +1,0 @@
-[".config/fish/functions/toggle_polybar.fish"]
-spacing_off = """
-		bspc config -m eDP1 top_padding 0
-"""
-spacing_on = """
-		bspc config -m eDP1 top_padding 20
-"""
