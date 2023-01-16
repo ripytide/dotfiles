@@ -2,6 +2,7 @@
 
 import os
 import subprocess
+import socket
 
 subprocess.run(["cp", "-a", "/home/ripytide/dotfiles/actual/.", "/home/ripytide"])
 
@@ -17,9 +18,19 @@ def new_location(old):
     return old.replace("/home/ripytide/dotfiles/actual/", "/home/ripytide/")
 
 
+hostname = socket.gethostname()
+
+variables = {"muncher": {"\\$MONITOR": "eDP1"}, "nipper": {"\\$MONITOR": "HDMI-2"}}
+
 for dotfile in all_dotfiles:
-    command = (
-        f'cat "{dotfile}" | sed \'s/\\$MONITOR/eDP1/g\' | tee "{new_location(dotfile)}"'
-    )
-    print(command)
-    subprocess.getoutput(command)
+    with open(dotfile) as input:
+        string = input.read()
+        for (key, value) in variables.items():
+            string.replace(key, value)
+
+        with open (new_location(dotfile)) as ouput:
+            output..write(string)
+
+        print(f"Processed: {dotfile} Successfully!")
+
+print(f"\n\n Dotfiles Compiled Successfully! Hostname={hostname}")
