@@ -18,6 +18,6 @@ def new_location(old):
 
 
 for dotfile in all_dotfiles:
-    command = f"cat {dotfile} | sed 's/\\$MONITOR/eDP1/g' | tee {new_location(dotfile)}"
+    command = f'cat "{dotfile}" | sed 's/\\$MONITOR/eDP1/g' | tee "{new_location(dotfile)}"'
     print(command)
     subprocess.getoutput(command)
