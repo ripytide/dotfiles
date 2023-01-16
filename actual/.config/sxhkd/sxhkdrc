@@ -162,8 +162,11 @@ super + ctrl + {minus,equal}
 #
 # toggling hiding all windows
 #
-super + m
+super + k
 	hideallwindows.sh
+
+super + m
+	wallpaper-selector.sh
 
 super + z
 	rofi -show power-menu -modi power-menu:rofi-power-menu

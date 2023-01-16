@@ -3,7 +3,7 @@
 import os
 import subprocess
 
-subprocess.run(["cp", "-r", "/home/ripytide/dotfiles/actual/.", "/home/ripytide"])
+subprocess.run(["cp", "-a", "/home/ripytide/dotfiles/actual/.", "/home/ripytide"])
 
 all_dotfiles = []
 # traverse root directory, and list directories as dirs and files as files
