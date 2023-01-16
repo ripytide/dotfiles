@@ -25,12 +25,12 @@ variables = {"muncher": {"\\$MONITOR": "eDP1"}, "nipper": {"\\$MONITOR": "HDMI-2
 for dotfile in all_dotfiles:
     with open(dotfile) as input:
         string = input.read()
-        for (key, value) in variables.items():
+        for (key, value) in variables[hostname].items():
             string.replace(key, value)
 
-        with open (new_location(dotfile)) as ouput:
-            output..write(string)
+        with open (new_location(dotfile), 'w') as output:
+            output.write(string)
 
         print(f"Processed: {dotfile} Successfully!")
 
-print(f"\n\n Dotfiles Compiled Successfully! Hostname={hostname}")
+print(f"\n\nDotfiles Compiled Successfully!\nHostname={hostname}")
