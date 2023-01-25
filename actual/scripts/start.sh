@@ -17,7 +17,7 @@ xinput --set-prop 12 303 0 1 &
 playerctld daemon &
 
 #enable picom compositer for tranparency and blur
-picom -b
+#picom -b
 
 #run polybar
 ~/scripts/launch_polybar.sh &
@@ -35,7 +35,7 @@ xautolock -time 15 -locker "xscreensaver-command -lock" -detectsleep \
 	-notify 10 -notifier 'notify-send "Locking Screen in 10 seconds"'\
 	-corners 00-0 -killtime 10 -killer "systemctl hybrid-sleep" &
 
-udiskie &
+#udiskie &
 
 aw-server-rust &
 aw-watcher-afk &

@@ -28,18 +28,18 @@ super + ctrl + {y,n,e,o}
 
 # focus the next/previous window in the current desktop
 super + {e,n}
-	fish -c {prev,next}
-	#bspc node -f {prev,next}.local.!hidden.window
+	#fish -c {prev,next}
+	bspc node -f {prev,next}.local.!hidden.window
 
 # alternate between the tiled and monocle layout
 super + i
-	fish -c "toggle_monocle"
-	#bspc desktop -l next
+	#fish -c "toggle_monocle"
+	bspc desktop -l next
 
 # close and kill
 super + j
-	fish -c close
-	#bspc node -c
+	#fish -c close
+	bspc node -c
 
 # focus the given desktop
 super + {s,h,t,d,r,w}
