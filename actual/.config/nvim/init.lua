@@ -12,10 +12,9 @@ require("tree-sitter")
 require("zoxide")
 require("bufferline_config")
 require("lualine_config")
-require("lsp_config")
+require("mason_config")
 require("rust_tools_config")
 require("cmp_config")
-require("mason_config")
 
 --my old flame ;(
 --colorscheme gruvbox

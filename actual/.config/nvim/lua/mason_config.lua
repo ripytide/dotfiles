@@ -1,6 +1,7 @@
 require("mason").setup()
 require("mason-lspconfig").setup()
 local dapui = require("dapui")
+local dap = require("dap")
 dapui.setup()
 
 vim.diagnostic.config {virtual_text = false}
@@ -25,7 +26,7 @@ local on_attach = function(_, bufnr)
     vim.keymap.set("n", "gbs", dap.step_over, opts)
     vim.keymap.set("n", "gbi", dap.step_into, opts)
     vim.keymap.set("n", "gbr", dap.repl.open, opts)
-    vim.keymap.set("n", "gbo", dapui.toggle, opts)
+    vim.keymap.set("n", "gbt", dapui.toggle, opts)
 end
 
 require("mason-lspconfig").setup_handlers {

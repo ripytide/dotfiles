@@ -1,5 +1,5 @@
-local codelldb_path = '/usr/bin/codelldb'
-local liblldb_path = '/usr/lib/codelldb/lldb/lib/liblldb.so'
+local codelldb_path = "/usr/bin/codelldb"
+local liblldb_path = "/usr/lib/codelldb/lldb/lib/liblldb.so"
 
 local rt = require("rust-tools")
 local dap = require("dap")
@@ -16,8 +16,7 @@ local opts = {
             vim.keymap.set("n", "gk", vim.diagnostic.goto_prev, opts)
             vim.keymap.set("n", "go", vim.lsp.buf.rename, opts)
             vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-            vim.keymap.set("n", "gr",
-                           require("telescope.builtin").lsp_references, opts)
+            vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, opts)
             vim.keymap.set("n", "ga", vim.lsp.buf.code_action, opts)
             vim.keymap.set("n", "gh", vim.lsp.buf.hover, opts)
             vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
@@ -29,19 +28,27 @@ local opts = {
             vim.keymap.set("n", "gbr", dap.repl.open, opts)
             vim.keymap.set("n", "gbt", dapui.toggle, opts)
 
-            vim.keymap.set("n", "gz", rt.hover_actions.hover_actions,
-                           {buffer = bufnr})
-            vim.keymap.set("n", "<leader>k",
-                           function() rt.move_item.move_item(false) end,
-                           {buffer = bufnr})
-            vim.keymap.set("n", "<leader>y",
-                           function() rt.move_item.move_item(true) end,
-                           {buffer = bufnr})
+            vim.keymap.set("n", "gz", rt.hover_actions.hover_actions, {buffer = bufnr})
+            vim.keymap.set(
+                "n",
+                "<leader>k",
+                function()
+                    rt.move_item.move_item(false)
+                end,
+                {buffer = bufnr}
+            )
+            vim.keymap.set(
+                "n",
+                "<leader>y",
+                function()
+                    rt.move_item.move_item(true)
+                end,
+                {buffer = bufnr}
+            )
         end
     },
     dap = {
-        adapter = require('rust-tools.dap').get_codelldb_adapter(codelldb_path,
-                                                                 liblldb_path)
+        adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
     }
 }
 
