@@ -47,5 +47,7 @@ watcher.sh &
 
 xcape -e 'Super_L=Escape' &
 
+xmousepasteblock &
+
 #start bspwm
 bspwm
