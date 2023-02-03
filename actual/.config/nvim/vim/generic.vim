@@ -81,4 +81,6 @@ set signcolumn=yes
 
 set termguicolors
 
+set linebreak
+
 set completeopt=menu,menuone,noinsert,noselect,preview
