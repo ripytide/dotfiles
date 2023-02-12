@@ -71,7 +71,7 @@ set iskeyword+=-
 set pumheight=6
 
 " Give more space for displaying messages.
-set cmdheight=2
+set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
@@ -80,5 +80,7 @@ set updatetime=50
 set signcolumn=yes
 
 set termguicolors
+
+set linebreak
 
 set completeopt=menu,menuone,noinsert,noselect,preview
