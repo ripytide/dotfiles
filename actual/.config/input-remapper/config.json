@@ -2,7 +2,7 @@
     "autoload": {
         "Razer Razer BlackWidow Chroma": "ripymap",
         "AT Translated Set 2 keyboard": "ripymap",
-		"Dell KB216 Wired Keyboard": "ripymap"
+        "Dell KB216 Wired Keyboard": "ripymap"
     },
     "macros": {
         "keystroke_sleep_ms": 10
@@ -17,5 +17,5 @@
             "y_scroll_speed": 0.5
         }
     },
-    "version": "1.2.2"
+    "version": "1.5.0"
 }
