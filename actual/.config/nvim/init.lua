@@ -19,3 +19,6 @@ require("cmp_config")
 --my old flame ;(
 --colorscheme gruvbox
 vim.cmd.colorscheme("tokyonight-night")
+vim.cmd("hi Search guibg=black guifg=red")
+vim.cmd("hi CurSearch guibg=black guifg=blue")
+vim.cmd("hi IncSearch guibg=green guifg=black")
