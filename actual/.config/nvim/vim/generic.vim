@@ -3,7 +3,7 @@
 set hidden
 
 " allow persistent undoing
-set undodir=~/sync/undodir
+set undodir=$UNDODIR
 set undofile
 
 " an endless source of anoyance
@@ -70,7 +70,7 @@ set iskeyword+=-
 " the number of suggestions shown for suggestions
 set pumheight=6
 
-" Give more space for displaying messages.
+" Give less space for displaying messages.
 set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
