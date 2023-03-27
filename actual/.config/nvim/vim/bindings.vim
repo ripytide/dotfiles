@@ -15,8 +15,8 @@ nnoremap <silent> <C-u> 10<C-y>
 nnoremap <silent> <C-n> <C-o>
 nnoremap <silent> <C-e> <C-i>
 
-nnoremap <leader>_ :lnext<CR>
-nnoremap <leader>, :lprevious<CR>
+nnoremap <leader>_ :cn<CR>
+nnoremap <leader>, :cp<CR>
 
 nnoremap J :m .+1<CR>==
 nnoremap K :m .-2<CR>==
