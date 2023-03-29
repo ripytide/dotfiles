@@ -30,11 +30,17 @@ au FileType rust let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>', '|':'|'})
 Plug 'luochen1990/rainbow'
 let g:rainbow_active = 1
 
+" Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'tami5/sqlite.lua'
 Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
+Plug 'nvim-lua/popup.nvim'
+Plug 'jvgrootveld/telescope-zoxide'
+Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
+"goodbye old friend
+"Plug 'fannheyward/telescope-coc.nvim'
 
 Plug 'tpope/vim-eunuch'
 
@@ -69,12 +75,6 @@ Plug 'ggandor/leap.nvim'
 
 Plug 'rhysd/clever-f.vim'
 
-Plug 'nvim-lua/popup.nvim'
-Plug 'jvgrootveld/telescope-zoxide'
-
-"goodbye old friend
-"Plug 'fannheyward/telescope-coc.nvim'
-
 Plug 'tpope/vim-abolish'
 
 Plug 'ripytide/rust.vim'
@@ -100,6 +100,7 @@ Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'onsails/lspkind.nvim'
+
 " LuaSnip
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
