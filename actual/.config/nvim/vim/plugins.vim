@@ -105,4 +105,8 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 
 Plug 'airblade/vim-gitgutter'
+
+Plug 'matze/vim-move'
+" I use custom bindings
+let g:move_map_keys = 0
 call plug#end()

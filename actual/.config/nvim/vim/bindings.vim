@@ -18,11 +18,11 @@ nnoremap <silent> <C-e> <C-i>
 nnoremap <leader>_ :cp<CR>
 nnoremap <leader>, :cn<CR>
 
-nnoremap J :m .+1<CR>==
-nnoremap K :m .-2<CR>==
+nnoremap J <Plug>MoveLineDown
+nnoremap K <Plug>MoveLineUp
 
-vnoremap J :m '>+1<CR>gv=gv
-vnoremap K :m '<-2<CR>gv=gv
+vnoremap J <Plug>MoveBlockDown
+vnoremap K <Plug>MoveBlockUp
 
 nnoremap H mzJ'z
 
