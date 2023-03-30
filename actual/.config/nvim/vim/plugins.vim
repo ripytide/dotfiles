@@ -83,9 +83,8 @@ Plug 'mbbill/undotree'
 
 Plug 'kdheepak/lazygit.nvim'
 
-" LSP todo switch back to mainline nvim-lspconfig if it fixes my bug
-" at some point
-Plug 'ripytide/nvim-lspconfig'
+" LSP
+Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
 Plug 'simrat39/rust-tools.nvim'

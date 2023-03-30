@@ -8,6 +8,7 @@ local codelldb_path = "/usr/bin/codelldb"
 local liblldb_path = "/usr/lib/codelldb/lldb/lib/liblldb.so"
 local rt = require("rust-tools")
 
+local cmp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 dapui.setup()
 
@@ -37,7 +38,7 @@ end
 local rust_tools_options = {
     server = {
         -- todo remove locationLinks=false once the PR fixing the bug lands
-        --settings = {["rust-analyzer"] = {inlayHints = {locationLinks = false}}},
+		settings = {["rust-analyzer"] = {inlayHints = {locationLinks = false}}},
         on_attach = function(_, bufnr)
 			normal_lsp_mappings(bufnr)
 
@@ -64,23 +65,23 @@ local rust_tools_options = {
         adapter = require("rust-tools.dap").get_codelldb_adapter(codelldb_path, liblldb_path)
     }
 }
+rt.setup(rust_tools_options)
 
 require("mason-lspconfig").setup_handlers {
     -- The first entry (without a key) will be the default handler
     -- and will be called for each installed server that doesn't have
     -- a dedicated handler.
-    function(server_name) -- default handler (optional)
-        require("lspconfig")[server_name].setup {
+	function(server_name) -- default handler (optional)
+		require("lspconfig")[server_name].setup {
 			-- Use an on_attach function to only map the following keys
 			-- after the language server attaches to the current buffer
 			on_attach = function(_, bufnr)
 				normal_lsp_mappings(bufnr)
 			end
 		}
-    end,
+	end,
     -- Next, you can provide a dedicated handler for specific servers.
     -- For example, a handler override for the `rust_analyzer`:
-	["rust_analyzer"] = function()
-		rt.setup(rust_tools_options)
-	end
+	--["rust_analyzer"] = function()
+	--end,
 }
