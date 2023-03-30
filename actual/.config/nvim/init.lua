@@ -11,8 +11,7 @@ require("leap_config")
 require("tree-sitter")
 require("bufferline_config")
 require("lualine_config")
-require("mason_config")
-require("rust_tools_config")
+require("lsp_config")
 require("cmp_config")
 
 --my old flame ;(
