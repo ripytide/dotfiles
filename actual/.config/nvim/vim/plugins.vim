@@ -87,7 +87,7 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-dap'
 Plug 'rcarriga/nvim-dap-ui'
-Plug 'simrat39/rust-tools.nvim'
+Plug 'arindas/rust-tools.nvim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 

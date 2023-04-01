@@ -37,8 +37,7 @@ end
 
 local rust_tools_options = {
     server = {
-        -- todo remove locationLinks=false once the PR fixing the bug lands
-		settings = {["rust-analyzer"] = {inlayHints = {locationLinks = false}}},
+		settings = {["rust-analyzer"] = {inlayHints = false}},
         on_attach = function(_, bufnr)
 			normal_lsp_mappings(bufnr)
 
