@@ -118,8 +118,8 @@ nnoremap <silent>    <leader>w :%bw!<CR>
 nnoremap <silent>    <leader>a mz:%bd!\|e#\|bw!#<CR>'z
 
 " == Leap ==
-nnoremap <silent> z <Plug>(leap-forward-to)
-nnoremap <silent> Z <Plug>(leap-backward-to)
+"nnoremap <silent> z <Plug>(leap-forward-to)
+"nnoremap <silent> Z <Plug>(leap-backward-to)
 
 " == Zoxide ==
 nnoremap <leader>p :lua require("telescope").extensions.zoxide.list()<CR>
