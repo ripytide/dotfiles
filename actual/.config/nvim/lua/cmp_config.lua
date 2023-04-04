@@ -1,14 +1,14 @@
 -- Set up nvim-cmp.
 local cmp = require 'cmp'
 local lspkind = require('lspkind')
-local luasnip = require('luasnip')
-luasnip.setup({history = true})
+--local luasnip = require('luasnip')
+--luasnip.setup({history = true})
 
 cmp.setup({
     snippet = {
         -- REQUIRED - you must specify a snippet engine
         expand = function(args)
-            luasnip.lsp_expand(args.body) -- For `luasnip` users.
+            --luasnip.lsp_expand(args.body) -- For `luasnip` users.
         end
     },
     mapping = cmp.mapping.preset.insert({
@@ -30,13 +30,13 @@ cmp.setup({
                 fallback()
             end
         end,
-        ['<C-p>'] = function(_) luasnip.jump(1) end,
-        ['<C-u>'] = function(_) luasnip.jump(-1) end
+        --['<C-p>'] = function(_) luasnip.jump(1) end,
+        --['<C-u>'] = function(_) luasnip.jump(-1) end
     }),
     sources = cmp.config.sources({
         {name = 'nvim_lsp'}, {name = 'buffer'}, {name = 'path'},
         {name = 'nvim_lua'}, {name = 'nvim_lsp_signature_help'},
-        {name = 'luasnip'}
+        --{name = 'luasnip'}
     }),
     preselect = cmp.PreselectMode.None,
     view = {

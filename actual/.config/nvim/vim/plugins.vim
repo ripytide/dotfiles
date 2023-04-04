@@ -102,8 +102,8 @@ Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
 Plug 'onsails/lspkind.nvim'
 
 " LuaSnip
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
+"Plug 'L3MON4D3/LuaSnip'
+"Plug 'saadparwaiz1/cmp_luasnip'
 
 Plug 'airblade/vim-gitgutter'
 
