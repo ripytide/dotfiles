@@ -1,14 +1,14 @@
 -- Set up nvim-cmp.
 local cmp = require 'cmp'
 local lspkind = require('lspkind')
---local luasnip = require('luasnip')
+local luasnip = require('luasnip')
 --luasnip.setup({history = true})
 
 cmp.setup({
     snippet = {
         -- REQUIRED - you must specify a snippet engine
         expand = function(args)
-            --luasnip.lsp_expand(args.body) -- For `luasnip` users.
+			luasnip.lsp_expand(args.body) -- For `luasnip` users.
         end
     },
     mapping = cmp.mapping.preset.insert({
@@ -34,9 +34,13 @@ cmp.setup({
         --['<C-u>'] = function(_) luasnip.jump(-1) end
     }),
     sources = cmp.config.sources({
-        {name = 'nvim_lsp'}, {name = 'buffer'}, {name = 'path'},
-        {name = 'nvim_lua'}, {name = 'nvim_lsp_signature_help'},
-        --{name = 'luasnip'}
+        {name = 'nvim_lsp', group_index = 1},
+		{name = 'nvim_lsp_signature_help', group_index = 1},
+		{name = 'path', group_index = 1},
+		{name = 'nvim_lua', group_index = 1},
+
+		{name = 'buffer', group_index = 2},
+		--{name = 'luasnip'}
     }),
     preselect = cmp.PreselectMode.None,
     view = {
@@ -49,7 +53,18 @@ cmp.setup({
             maxwidth = 30, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
             ellipsis_char = '...' -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
         })
-    }
+    },
+	sorting = {
+        comparators = {
+            cmp.config.compare.offset,
+            cmp.config.compare.exact,
+            cmp.config.compare.score,
+            cmp.config.compare.kind,
+            cmp.config.compare.sort_text,
+            cmp.config.compare.length,
+            cmp.config.compare.order,
+        },
+    },
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
