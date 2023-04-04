@@ -4,6 +4,8 @@ local lspkind = require('lspkind')
 local luasnip = require('luasnip')
 --luasnip.setup({history = true})
 
+local types = require('cmp.types')
+
 cmp.setup({
     snippet = {
         -- REQUIRED - you must specify a snippet engine
@@ -56,15 +58,34 @@ cmp.setup({
     },
 	sorting = {
         comparators = {
+			--function (entry1, entry2) 
+			  --local snippet1 = entry1:get_kind()== types.lsp.CompletionItemKind.Snippet
+			  --local snippet2 = entry2:get_kind()== types.lsp.CompletionItemKind.Snippet
+
+			  --if snippet1 ~= snippet2 then
+				  --if snippet1 then
+					  --return false
+				  --else
+					  --return true
+				  --end
+			  --end
+			--end,
             cmp.config.compare.offset,
             cmp.config.compare.exact,
             cmp.config.compare.score,
-            cmp.config.compare.kind,
             cmp.config.compare.sort_text,
             cmp.config.compare.length,
             cmp.config.compare.order,
+			cmp.config.compare.kind,
         },
     },
+	matching = {
+      disallow_fuzzy_matching = true,
+      disallow_fullfuzzy_matching = true,
+      disallow_partial_fuzzy_matching = true,
+      disallow_partial_matching = false,
+      disallow_prefix_unmatching = false,
+	}
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
