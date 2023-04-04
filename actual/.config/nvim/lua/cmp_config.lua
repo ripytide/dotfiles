@@ -58,18 +58,18 @@ cmp.setup({
     },
 	sorting = {
         comparators = {
-			--function (entry1, entry2) 
-			  --local snippet1 = entry1:get_kind()== types.lsp.CompletionItemKind.Snippet
-			  --local snippet2 = entry2:get_kind()== types.lsp.CompletionItemKind.Snippet
+			function (entry1, entry2) 
+			  local is1 = entry1:get_kind()== types.lsp.CompletionItemKind.Field
+			  local is2 = entry2:get_kind()== types.lsp.CompletionItemKind.Field
 
-			  --if snippet1 ~= snippet2 then
-				  --if snippet1 then
-					  --return false
-				  --else
-					  --return true
-				  --end
-			  --end
-			--end,
+			  if is1 ~= is2 then
+				  if is1 then
+					  return true
+				  else
+					  return false
+				  end
+			  end
+			end,
             cmp.config.compare.offset,
             cmp.config.compare.exact,
             cmp.config.compare.score,
