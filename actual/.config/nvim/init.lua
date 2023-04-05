@@ -21,6 +21,16 @@ vim.cmd("hi Search guibg=black guifg=red")
 vim.cmd("hi CurSearch guibg=black guifg=blue")
 vim.cmd("hi IncSearch guibg=green guifg=black")
 
+require("dressing").setup({
+	input = {
+		mappings = {
+			i = {
+				["<C-u>"] = false
+			}
+		}
+	}
+})
+
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 
