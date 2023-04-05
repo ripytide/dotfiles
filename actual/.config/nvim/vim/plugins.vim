@@ -39,6 +39,7 @@ Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
 Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
+Plug 'stevearc/dressing.nvim'
 "goodbye old friend
 "Plug 'fannheyward/telescope-coc.nvim'
 
