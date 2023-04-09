@@ -10,7 +10,7 @@ chrony
 cloc
 codelldb-bin
 discord
-delta
+git-delta
 dunst
 firefox
 fish
