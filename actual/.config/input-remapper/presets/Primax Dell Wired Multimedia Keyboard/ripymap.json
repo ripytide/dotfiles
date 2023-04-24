@@ -1,0 +1,125 @@
+{
+    "macros": {},
+    "mapping": {
+        "1,32,1": [
+            "h",
+            "keyboard"
+        ],
+        "1,33,1": [
+            "t",
+            "keyboard"
+        ],
+        "1,17,1": [
+            "d",
+            "keyboard"
+        ],
+        "1,18,1": [
+            "r",
+            "keyboard"
+        ],
+        "1,19,1": [
+            "w",
+            "keyboard"
+        ],
+        "1,20,1": [
+            "b",
+            "keyboard"
+        ],
+        "1,21,1": [
+            "j",
+            "keyboard"
+        ],
+        "1,22,1": [
+            "f",
+            "keyboard"
+        ],
+        "1,23,1": [
+            "u",
+            "keyboard"
+        ],
+        "1,24,1": [
+            "p",
+            "keyboard"
+        ],
+        "1,35,1": [
+            "y",
+            "keyboard"
+        ],
+        "1,36,1": [
+            "n",
+            "keyboard"
+        ],
+        "1,37,1": [
+            "e",
+            "keyboard"
+        ],
+        "1,38,1": [
+            "o",
+            "keyboard"
+        ],
+        "1,39,1": [
+            "i",
+            "keyboard"
+        ],
+        "1,46,1": [
+            "m",
+            "keyboard"
+        ],
+        "1,47,1": [
+            "c",
+            "keyboard"
+        ],
+        "1,48,1": [
+            "v",
+            "keyboard"
+        ],
+        "1,49,1": [
+            "k",
+            "keyboard"
+        ],
+        "1,50,1": [
+            "l",
+            "keyboard"
+        ],
+        "1,58,1": [
+            "Super_L",
+            "keyboard"
+        ],
+        "1,25,1": [
+            "semicolon",
+            "keyboard"
+        ],
+        "1,42,1+1,25,1": [
+            "Shift_L + semicolon\n# Broken mapping:\n# No target can handle all specified keycodes",
+            "keyboard"
+        ],
+        "1,100,1": [
+            "Escape",
+            "keyboard"
+        ],
+        "1,52,1": [
+            "comma",
+            "keyboard"
+        ],
+        "1,53,1": [
+            "period",
+            "keyboard"
+        ],
+        "1,51,1": [
+            "Shift_L + minus\n# Broken mapping:\n# No target can handle all specified keycodes",
+            "keyboard"
+        ],
+        "1,42,1+1,12,1": [
+            "Shift_L + slash\n# Broken mapping:\n# No target can handle all specified keycodes",
+            "keyboard"
+        ],
+        "1,42,1+1,9,1": [
+            "KP_Divide",
+            "keyboard"
+        ],
+        "1,42,1+1,51,1": [
+            "KP_Multiply",
+            "keyboard"
+        ]
+    }
+}
