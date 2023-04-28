@@ -111,4 +111,6 @@ Plug 'airblade/vim-gitgutter'
 Plug 'matze/vim-move'
 " I use custom bindings
 let g:move_map_keys = 0
+
+Plug 'lervag/vimtex'
 call plug#end()
