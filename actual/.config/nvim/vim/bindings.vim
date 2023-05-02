@@ -6,6 +6,9 @@ vmap <SPACE> <leader>
 " workman rebind movement keys back to normal positions
 set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 
+nnoremap <silent> n nzz
+nnoremap <silent> N Nzz
+
 " to temporarily turn off highlighting
 nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 
