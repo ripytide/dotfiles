@@ -9,7 +9,7 @@ if [[ $1 == "--type" ]]; then
 fi
 
 if [[ -n $WAYLAND_DISPLAY ]]; then
-	xdotool="ydotool type --file -"
+	xdotool="sudo ydotool type --file -"
 elif [[ -n $DISPLAY ]]; then
 	xdotool="xdotool type --clearmodifiers --file -"
 else
