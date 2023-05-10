@@ -20,7 +20,7 @@ def new_location(old):
 
 hostname = socket.gethostname()
 
-variables = {"muncher": {"$MONITOR": "eDP-1", "$UNDODIR": "~/sync/undodir"}, "nipper": {"$MONITOR": "HDMI-2", "$UNDODIR": "~/undodir"}}
+variables = {"muncher": {"$MONITOR": "eDP-1", "$UNDODIR": "~/sync/undodir", "$KEYBOARD": "AT Translated Set 2 keyboard"}, "nipper": {"$MONITOR": "HDMI-2", "$UNDODIR": "~/undodir", "$KEYBOARD": "Dell KB216 Wired Keyboard"}}
 
 for dotfile in all_dotfiles:
     with open(dotfile) as input:

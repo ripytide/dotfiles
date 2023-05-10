@@ -1,4 +1,4 @@
-device_name = "Dell KB216 Wired Keyboard"
+device_name = "$KEYBOARD"
 
 [[dual_role]]
 input = "KEY_CAPSLOCK"
