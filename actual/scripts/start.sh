@@ -18,6 +18,8 @@ dunst &
 
 #udiskie &
 
+sudo ydotoold &
+
 aw-server-rust &
 aw-watcher-afk &
 aw-watcher-window &
