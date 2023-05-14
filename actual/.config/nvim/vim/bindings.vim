@@ -9,6 +9,9 @@ set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
 
+" fix wierd x then down does a search bug
+nnoremap <silent> x dl
+
 " to temporarily turn off highlighting
 nnoremap <silent> <ESC> :noh<CR>:match none<CR>
 
