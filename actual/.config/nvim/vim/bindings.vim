@@ -57,7 +57,7 @@ endfor
 " == Commands ==
 nnoremap <leader>h :HardTimeToggle<CR>
 
-nnoremap <leader>u :Telescope find_files<CR>
+nnoremap <leader>u :Telescope frecency workspace=CWD<CR>
 nnoremap <leader>j :Telescope live_grep<CR>
 nnoremap <leader>s :Telescope lsp_dynamic_workspace_symbols<CR>
 
