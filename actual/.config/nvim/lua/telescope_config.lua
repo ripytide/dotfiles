@@ -17,7 +17,12 @@ telescope.setup({
     defaults = {
         -- `hidden = true` is not supported in text grep commands.
         vimgrep_arguments = vimgrep_arguments,
-        mappings = {i = {["<esc>"] = actions.close, ["<C-u>"] = false}}
+        mappings = {i = {["<esc>"] = actions.close, ["<C-u>"] = false}},
+		layout_config = {
+			width = 500, height = 500,
+		},
+		theme = "dropdown",
+		prompt_prefix = "🔍",
     },
     pickers = {
         find_files = {
