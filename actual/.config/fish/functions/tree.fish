@@ -1,3 +1,3 @@
 function tree
-	command exa --tree --icons
+	command exa --tree --git-ignore --icons
 end
