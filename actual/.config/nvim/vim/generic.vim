@@ -1,6 +1,6 @@
 " when set, hidden allows you to :e another file without first saving the file
 " you were on before if that file has unsaved changes
-set hidden
+set nohidden
 
 " allow persistent undoing
 set undodir=$UNDODIR
@@ -32,7 +32,7 @@ set smartcase
 " sets format options see :h fo-table for full list
 " stuff like comments falling onto next line if they get toooooooo
 " loooooooongg
-set formatoptions=tcrj
+set formatoptions=crj
 
 " highlight the line the cursor is on
 set cul
