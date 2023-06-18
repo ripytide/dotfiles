@@ -1,6 +1,6 @@
 " when set, hidden allows you to :e another file without first saving the file
 " you were on before if that file has unsaved changes
-set nohidden
+set hidden
 
 " allow persistent undoing
 set undodir=$UNDODIR

@@ -13,10 +13,13 @@ require("bufferline_config")
 require("lualine_config")
 require("lsp_config")
 require("cmp_config")
+require("dashboard_config")
 
 --my old flame ;(
 --colorscheme gruvbox
---vim.cmd.colorscheme("tokyonight-storm")
+vim.cmd.colorscheme("tokyonight-storm")
+--vim.cmd.colorscheme("blue")
+
 vim.cmd("hi Search guibg=black guifg=red")
 vim.cmd("hi CurSearch guibg=black guifg=blue")
 vim.cmd("hi IncSearch guibg=green guifg=black")
@@ -25,7 +28,7 @@ require("dressing").setup({
 	input = {
 		mappings = {
 			i = {
-				["<C-u>"] = false
+				["<C-u>"] = false,
 				["<C-k>"] = false
 			}
 		}

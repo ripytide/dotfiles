@@ -34,7 +34,7 @@ let g:rainbow_active = 1
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'tami5/sqlite.lua'
-Plug 'nvim-telescope/telescope-frecency.nvim'
+"Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
@@ -113,4 +113,6 @@ Plug 'matze/vim-move'
 let g:move_map_keys = 0
 
 Plug 'lervag/vimtex'
+
+Plug 'nvimdev/dashboard-nvim'
 call plug#end()
