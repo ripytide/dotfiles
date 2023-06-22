@@ -29,7 +29,7 @@ telescope.setup({
             -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
             find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*"},
         },
-		live_grepp = {
+		live_grep = {
             additional_args = { "-g", "!**/.git/*", "-g", "!**/package-lock.json", "-g", "!**/*.svg", "-g", "!**/node_modules/*" }
 		}
     },
