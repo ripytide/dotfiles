@@ -27,8 +27,11 @@ telescope.setup({
     pickers = {
         find_files = {
             -- `hidden = true` will still show the inside of `.git/` as it's not `.gitignore`d.
-            find_command = {"rg", "--files", "--hidden", "--glob", "!.git/*", "--glob", "!package-lock.json", "--glob", "/*.svg"}
-        }
+            find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*"},
+        },
+		live_grepp = {
+            additional_args = { "-g", "!**/.git/*", "-g", "!**/package-lock.json", "-g", "!**/*.svg", "-g", "!**/node_modules/*" }
+		}
     },
 	extensions = {
         zoxide = {
