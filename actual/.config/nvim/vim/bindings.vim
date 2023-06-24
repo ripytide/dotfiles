@@ -32,6 +32,9 @@ vnoremap K <Plug>MoveBlockUp
 
 nnoremap H mzJ'z
 
+"fix annoying langmap bug after periods
+nnoremap . .jk
+
 nmap <leader>t a<CR><ESC>ddP
 
 noremap <leader>m zz
