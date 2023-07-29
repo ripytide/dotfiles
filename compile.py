@@ -20,17 +20,31 @@ def new_location(old):
 
 hostname = socket.gethostname()
 
-variables = {"muncher": {"$MONITOR": "eDP-1", "$UNDODIR": "~/sync/undodir", "$KEYBOARD": "AT Translated Set 2 keyboard"}, "nipper": {"$MONITOR": "HDMI-2", "$UNDODIR": "~/undodir", "$KEYBOARD": "Dell KB216 Wired Keyboard"}}
+variables = {
+    "muncher": {
+        "$MONITOR": "eDP-1",
+        "$UNDODIR": "~/sync/undodir",
+        "$KEYBOARD": "AT Translated Set 2 keyboard",
+    },
+    "nipper": {
+        "$MONITOR": "HDMI-2",
+        "$UNDODIR": "~/undodir",
+        "$KEYBOARD": "Dell KB216 Wired Keyboard",
+    },
+}
 
 for dotfile in all_dotfiles:
     with open(dotfile) as input:
-        string = input.read()
-        for (key, value) in variables[hostname].items():
-            string = string.replace(key, value)
+        try:
+            string = input.read()
+            for key, value in variables[hostname].items():
+                string = string.replace(key, value)
 
-        with open(new_location(dotfile), "w") as output:
-            output.write(string)
+            with open(new_location(dotfile), "w") as output:
+                output.write(string)
 
-        print(f"Processed: {dotfile}->{new_location(dotfile)} Successfully!")
+            print(f"Processed: {dotfile}->{new_location(dotfile)} Successfully!")
+        except:
+            print(f"Non-Text File, Ignoring!")
 
 print(f"\n\nDotfiles Compiled Successfully!\nHostname={hostname}")
