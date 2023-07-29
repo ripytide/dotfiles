@@ -6,6 +6,7 @@ src("generic.vim")
 src("plugins.vim")
 src("bindings.vim")
 --src("neovide.vim")
+
 require("telescope_config")
 require("rainbow_delimiters_config")
 require("leap_config")
@@ -17,9 +18,10 @@ require("cmp_config")
 require("dashboard_config")
 
 --my old flame ;(
---colorscheme gruvbox
-vim.cmd.colorscheme("tokyonight-storm")
+--vim.cmd.colorscheme("gruvbox")
 --vim.cmd.colorscheme("blue")
+--vim.cmd.colorscheme("tokyonight-storm")
+vim.cmd.colorscheme("kanagawa")
 
 vim.cmd("hi Search guibg=black guifg=red")
 vim.cmd("hi CurSearch guibg=black guifg=blue")

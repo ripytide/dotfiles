@@ -12,7 +12,7 @@ local cmp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
 dapui.setup()
 
-vim.diagnostic.config {virtual_text = false}
+--vim.diagnostic.config {virtual_text = false}
 
 local function normal_lsp_mappings(bufnr)
     -- Mappings.
@@ -37,7 +37,7 @@ end
 
 local rust_tools_options = {
     server = {
-		settings = {["rust-analyzer"] = {inlayHints = false}},
+		--settings = {["rust-analyzer"] = {inlayHints = false}},
         on_attach = function(_, bufnr)
 			normal_lsp_mappings(bufnr)
 
