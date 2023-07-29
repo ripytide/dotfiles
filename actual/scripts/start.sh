@@ -7,7 +7,7 @@ echo -e "\n"
 #enable playerctl daemon for media controls to work with the last active media source
 playerctld daemon &
 
-wayland &
+waybar &
 
 dunst &
 
