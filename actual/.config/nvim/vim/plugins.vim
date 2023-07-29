@@ -70,7 +70,7 @@ Plug 'arkav/lualine-lsp-progress'
 
 "Plug 'ActivityWatch/aw-watcher-vim'
 
-Plug 'p00f/nvim-ts-rainbow'
+Plug 'hiphish/rainbow-delimiters.nvim'
 
 Plug 'ggandor/leap.nvim'
 
