@@ -9,9 +9,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin()
-" old flame
-"Plug 'morhetz/gruvbox'
-
 Plug '907th/vim-auto-save'
 let g:auto_save = 1
 let g:auto_save_silent = 1
@@ -67,8 +64,6 @@ Plug 'svermeulen/vim-cutlass'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-"Plug 'folke/tokyonight.nvim'
-"let g:tokyonight_italic_keywords = 0
 
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
@@ -121,6 +116,16 @@ Plug 'lervag/vimtex'
 
 Plug 'nvimdev/dashboard-nvim'
 
-Plug 'rebelot/kanagawa.nvim'
+"colorschemes
+" old flame
+"Plug 'ellisonleao/gruvbox.nvim'
+"
+"Plug 'folke/tokyonight.nvim'
+"let g:tokyonight_italic_keywords = 0
+
+"Plug 'rebelot/kanagawa.nvim'
+
+Plug 'catppuccin/nvim'
+
 
 call plug#end()
