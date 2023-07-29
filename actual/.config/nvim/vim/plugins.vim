@@ -37,9 +37,6 @@ Plug 'jiangmiao/auto-pairs'
 let g:AutoPairsShortcutToggle = '<c-q>'
 au FileType rust let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>', '|':'|'})
 
-Plug 'luochen1990/rainbow'
-let g:rainbow_active = 1
-
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
