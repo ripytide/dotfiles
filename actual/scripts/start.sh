@@ -8,6 +8,7 @@ echo -e "\n"
 playerctld daemon &
 
 waybar &
+killall -SIGUSR1 waybar
 
 dunst &
 
