@@ -10,16 +10,30 @@ local rt = require("rust-tools")
 
 local cmp_capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+local border_style = "single"
+
 dapui.setup()
 
 vim.diagnostic.config {virtual_text = false}
+
+vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(
+ vim.lsp.handlers.hover, {
+   border = border_style,
+   title = "hover"
+ }
+)
+vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(
+ vim.lsp.handlers.signature_help, {
+   border = border_style
+ }
+)
 
 local function normal_lsp_mappings(bufnr)
     -- Mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
 	local opts = {buffer = bufnr, remap = false}
-	vim.keymap.set("n", "gj", vim.diagnostic.goto_next, opts)
-	vim.keymap.set("n", "gk", vim.diagnostic.goto_prev, opts)
+	vim.keymap.set("n", "gj", function() vim.diagnostic.goto_next({float={border=border_style}}) end, opts)
+	vim.keymap.set("n", "gk", function() vim.diagnostic.goto_prev({float={border=border_style}}) end, opts)
 	vim.keymap.set("n", "go", vim.lsp.buf.rename, opts)
 	vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 	vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, opts)
