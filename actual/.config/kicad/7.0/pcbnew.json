@@ -373,7 +373,7 @@
         "0.01 mm"
       ],
       "snap": 0,
-      "style": 1,
+      "style": 0,
       "user_grid_x": "10 mil",
       "user_grid_y": "10 mil"
     },

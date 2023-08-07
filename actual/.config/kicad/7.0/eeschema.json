@@ -245,7 +245,7 @@
       "min_spacing": 10.0,
       "show": true,
       "snap": 0,
-      "style": 1,
+      "style": 0,
       "user_grid_x": "10 mil",
       "user_grid_y": "10 mil"
     },
