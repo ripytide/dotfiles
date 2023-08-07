@@ -243,8 +243,14 @@
     "origin_y": 0.0
   },
   "lib_tree": {
-    "column_widths": null,
-    "columns": []
+    "column_widths": {
+      "Description": 600,
+      "Item": 300
+    },
+    "columns": [
+      "Item",
+      "Description"
+    ]
   },
   "meta": {
     "version": 5

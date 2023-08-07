@@ -11,9 +11,9 @@
   "appearance": {
     "color_theme": "solarized-dark",
     "default_font": "KiCad Font",
-    "edit_label_height": -1,
+    "edit_label_height": 380,
     "edit_label_visible_columns": "0 1 2 3 4 5 6 7",
-    "edit_label_width": -1,
+    "edit_label_width": 975,
     "edit_sheet_height": -1,
     "edit_sheet_visible_columns": "0 1 2 3 4 5 6 7",
     "edit_sheet_width": -1,
@@ -66,7 +66,7 @@
     "selected_plugin": ""
   },
   "color_picker": {
-    "default_tab": 0
+    "default_tab": 1
   },
   "cross_probing": {
     "auto_highlight": true,
@@ -103,7 +103,9 @@
   "field_editor": {
     "column_widths": {},
     "fields_group_by": {},
-    "fields_show": {}
+    "fields_show": {
+      "Reference": true
+    }
   },
   "find_replace": {
     "find_history": [],
@@ -217,12 +219,12 @@
     }
   },
   "symbol_chooser": {
-    "height": -1,
+    "height": 713,
     "keep_symbol": false,
     "place_all_units": true,
-    "sash_pos_h": -1,
+    "sash_pos_h": 440,
     "sash_pos_v": -1,
-    "width": -1
+    "width": 780
   },
   "system": {
     "file_history": [
