@@ -128,8 +128,14 @@
     "esc_clears_net_highlight": true
   },
   "lib_tree": {
-    "column_widths": null,
-    "columns": []
+    "column_widths": {
+      "Description": 301,
+      "Item": 300
+    },
+    "columns": [
+      "Item",
+      "Description"
+    ]
   },
   "lib_view": {
     "cmp_list_width": 150,

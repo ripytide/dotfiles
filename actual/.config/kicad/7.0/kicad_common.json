@@ -41,7 +41,7 @@
     "scroll_modifier_pan_h": 308,
     "scroll_modifier_pan_v": 306,
     "scroll_modifier_zoom": 0,
-    "warp_mouse_on_move": true,
+    "warp_mouse_on_move": false,
     "zoom_acceleration": false,
     "zoom_speed": 1,
     "zoom_speed_auto": true
