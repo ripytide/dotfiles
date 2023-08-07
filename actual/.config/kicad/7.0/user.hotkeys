@@ -201,7 +201,7 @@ eeschema.InspectionTool.showDatasheet	D
 eeschema.InteractiveDrawing.drawArc	
 eeschema.InteractiveDrawing.drawCircle	
 eeschema.InteractiveDrawing.drawRectangle	
-eeschema.InteractiveDrawing.drawSheet	S
+eeschema.InteractiveDrawing.drawSheet	
 eeschema.InteractiveDrawing.drawTextBox	
 eeschema.InteractiveDrawing.finishSheet	
 eeschema.InteractiveDrawing.importSheetPin	
