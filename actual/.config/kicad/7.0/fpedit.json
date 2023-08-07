@@ -1,6 +1,6 @@
 {
   "appearance": {
-    "color_theme": "_builtin_default"
+    "color_theme": "solarized-dark"
   },
   "aui": {
     "appearance_panel_tab": 0,

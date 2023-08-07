@@ -9,7 +9,7 @@
     "sort_order": 0
   },
   "appearance": {
-    "color_theme": "_builtin_default",
+    "color_theme": "solarized-dark",
     "default_font": "KiCad Font",
     "edit_label_height": -1,
     "edit_label_visible_columns": "0 1 2 3 4 5 6 7",
@@ -34,9 +34,9 @@
     "show_sheet_filename_case_sensitivity_dialog": true
   },
   "aui": {
-    "hierarchy_panel_docked_width": -1,
-    "hierarchy_panel_float_height": -1,
-    "hierarchy_panel_float_width": -1,
+    "hierarchy_panel_docked_width": 200,
+    "hierarchy_panel_float_height": 200,
+    "hierarchy_panel_float_width": 200,
     "schematic_hierarchy_float": false,
     "show_schematic_hierarchy": true
   },
@@ -219,7 +219,9 @@
     "width": -1
   },
   "system": {
-    "file_history": [],
+    "file_history": [
+      "/home/ripytide/rail_agvs/kicad/ripybot.kicad_sch"
+    ],
     "first_run_shown": false,
     "last_imperial_units": 0,
     "last_metric_units": 1,
@@ -247,13 +249,13 @@
       "user_grid_x": "10 mil",
       "user_grid_y": "10 mil"
     },
-    "maximized": false,
-    "mru_path": "",
-    "perspective": "",
+    "maximized": true,
+    "mru_path": "/home/ripytide/rail_agvs/kicad/",
+    "perspective": "layout2|name=InfoBar;caption=;state=131454;dir=1;layer=1;row=0;pos=0;prop=100000;bestw=20;besth=30;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MainToolbar;caption=;state=139632;dir=1;layer=6;row=0;pos=0;prop=100000;bestw=1580;besth=40;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=MsgPanel;caption=;state=131452;dir=3;layer=6;row=0;pos=0;prop=100000;bestw=400;besth=38;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=SchematicHierarchy;caption=Schematic Hierarchy;state=2099148;dir=4;layer=3;row=0;pos=0;prop=100000;bestw=200;besth=200;minw=120;minh=60;maxw=-1;maxh=-1;floatx=258;floaty=51;floatw=200;floath=200|name=OptToolbar;caption=;state=139596;dir=4;layer=2;row=0;pos=0;prop=100000;bestw=40;besth=470;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=ToolsToolbar;caption=;state=139596;dir=2;layer=2;row=0;pos=0;prop=100000;bestw=40;besth=904;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|name=DrawFrame;caption=;state=1020;dir=5;layer=0;row=0;pos=0;prop=100000;bestw=400;besth=188;minw=-1;minh=-1;maxw=-1;maxh=-1;floatx=-1;floaty=-1;floatw=-1;floath=-1|dock_size(1,6,0)=40|dock_size(3,6,0)=38|dock_size(4,2,0)=40|dock_size(2,2,0)=40|dock_size(5,0,0)=384|dock_size(4,3,0)=202|",
     "pos_x": 0,
     "pos_y": 0,
-    "size_x": 0,
-    "size_y": 0,
+    "size_x": 1280,
+    "size_y": 720,
     "zoom_factors": []
   }
 }
