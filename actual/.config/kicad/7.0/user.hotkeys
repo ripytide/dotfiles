@@ -67,7 +67,7 @@ common.Control.gridPreset
 common.Control.gridPrev	Shift+N
 common.Control.gridProperties	
 common.Control.gridResetOrigin	Z
-common.Control.gridSetOrigin	S
+common.Control.gridSetOrigin	
 common.Control.highContrastMode	
 common.Control.highContrastModeCycle	H
 common.Control.imperialUnits	
@@ -266,7 +266,7 @@ eeschema.InteractiveSelection.AddItemsToSel
 eeschema.InteractiveSelection.ClearSelection	
 eeschema.InteractiveSelection.RemoveItemFromSel	
 eeschema.InteractiveSelection.RemoveItemsFromSel	
-eeschema.InteractiveSelection.SelectConnection	Alt+4
+eeschema.InteractiveSelection.SelectConnection	S
 eeschema.InteractiveSelection.SelectNode	Alt+3
 eeschema.InteractiveSelection.SelectionMenu	
 eeschema.InteractiveSelection.SyncSelection	
