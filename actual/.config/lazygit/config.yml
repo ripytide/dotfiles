@@ -11,6 +11,12 @@ customCommands:
     context: "files"
     loadingText: "opening commitizen commit tool"
     subprocess: true
+  - key: "u"
+    command: 'git commit --allow-empty-message -m ""'
+    description: "commit with an empty commit message"
+    context: "files"
+    loadingText: "committing..."
+    subprocess: false
 
 git:
   paging:
