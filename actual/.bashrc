@@ -13,6 +13,6 @@ if [ "$HOSTNAME" = nipper ]; then
 	export LIBGL_DRI3_DISABLE=1
 fi
 
-colorscript random
+pokemon-colorscripts -r
 
 exec fish

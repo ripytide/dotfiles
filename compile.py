@@ -31,6 +31,11 @@ variables = {
         "$UNDODIR": "~/undodir",
         "$KEYBOARD": "Dell KB216 Wired Keyboard",
     },
+    "devourer": {
+        "$MONITOR": "DP-1",
+        "$UNDODIR": "~/undodir",
+        "$KEYBOARD": "Dell KB216 Wired Keyboard",
+    },
 }
 
 for dotfile in all_dotfiles:
