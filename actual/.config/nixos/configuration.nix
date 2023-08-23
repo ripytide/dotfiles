@@ -118,6 +118,8 @@
     pass-wayland
 	bottom
 	firefox
+	gcc
+	busybox
 	(import ./packages/evremap.nix {inherit pkgs;})
   ];
 

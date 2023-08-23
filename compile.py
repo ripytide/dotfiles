@@ -4,7 +4,7 @@ import os
 import subprocess
 import socket
 
-subprocess.run(["mkdir" "/home/ripytide/undodir"])
+subprocess.run(["mkdir", "/home/ripytide/undodir"])
 
 subprocess.run(["cp", "-a", "/home/ripytide/dotfiles/actual/.", "/home/ripytide"])
 
