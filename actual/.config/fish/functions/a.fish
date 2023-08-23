@@ -1,3 +1,3 @@
-function a --wraps='tput reset' --description 'alias a=tput reset'
+function a
   tput reset $argv; 
 end

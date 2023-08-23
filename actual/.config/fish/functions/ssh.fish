@@ -1,3 +1,3 @@
-function ssh --description alias\ ssh=TERM=\'vt100\'\ ssh
+function ssh
   TERM='vt100' command ssh $argv; 
 end

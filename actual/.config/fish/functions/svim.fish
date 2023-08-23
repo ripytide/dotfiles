@@ -1,3 +1,3 @@
-function svim --wraps='sudo -E nvim ' --description 'alias svim=sudo -E nvim '
+function svim
   sudo -E nvim  $argv; 
 end

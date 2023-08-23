@@ -1,3 +1,3 @@
-function tre --wraps='fd --type f --hidden --exclude .git | tree --fromfile' --description 'alias tre=fd --type f --hidden --exclude .git | tree --fromfile'
+function tre
   fd --type f --hidden --exclude .git | tree --fromfile $argv; 
 end

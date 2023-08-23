@@ -120,6 +120,9 @@
 	firefox
 	gcc
 	busybox
+	fzf
+	noto-fonts
+	noto-fonts-emoji
 	(import ./packages/evremap.nix {inherit pkgs;})
   ];
 

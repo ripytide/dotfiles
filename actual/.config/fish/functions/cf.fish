@@ -1,4 +1,3 @@
-function cf --wraps='c | r -F -- "-->"' --description 'alias cf c | r -F -- "-->"'
+function cf
   c | r -F -- "-->" $argv
-        
 end

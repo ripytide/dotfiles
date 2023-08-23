@@ -1,4 +1,3 @@
-function cu --wraps='cargo check 2>&1 | r --fixed-strings -- "-->"' --description 'alias cu cargo check 2>&1 | r --fixed-strings -- "-->"'
+function cu
   cargo check 2>&1 | r --fixed-strings -- "-->" $argv
-        
 end
