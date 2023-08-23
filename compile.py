@@ -34,7 +34,8 @@ variables = {
     "devourer": {
         "$MONITOR": "DP-1",
         "$UNDODIR": "~/undodir",
-        "$KEYBOARD": "Dell KB216 Wired Keyboard",
+        "$KEYBOARD": "Razor Razor BlackWidow Chroma",
+        "&HOME": "/home/ripytide",
     },
 }
 
