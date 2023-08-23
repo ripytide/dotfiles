@@ -116,6 +116,9 @@
     playerctl
     waybar
     pass-wayland
+	bottom
+	firefox
+	(import ./packages/evremap.nix {inherit pkgs;})
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

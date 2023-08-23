@@ -3,7 +3,7 @@
 set hidden
 
 " allow persistent undoing
-set undodir=$UNDODIR
+set undodir=~/undodir
 set undofile
 
 " an endless source of anoyance

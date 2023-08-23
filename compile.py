@@ -4,6 +4,8 @@ import os
 import subprocess
 import socket
 
+subprocess.run(["mkdir" "/home/ripytide/undodir"])
+
 subprocess.run(["cp", "-a", "/home/ripytide/dotfiles/actual/.", "/home/ripytide"])
 
 all_dotfiles = []
@@ -23,18 +25,17 @@ hostname = socket.gethostname()
 variables = {
     "muncher": {
         "$MONITOR": "eDP-1",
-        "$UNDODIR": "~/sync/undodir",
         "$KEYBOARD": "AT Translated Set 2 keyboard",
+        "&HOME": "/home/ripytide",
     },
     "nipper": {
         "$MONITOR": "HDMI-2",
-        "$UNDODIR": "~/undodir",
         "$KEYBOARD": "Dell KB216 Wired Keyboard",
+        "&HOME": "/home/ripytide",
     },
     "devourer": {
         "$MONITOR": "DP-1",
-        "$UNDODIR": "~/undodir",
-        "$KEYBOARD": "Razor Razor BlackWidow Chroma",
+        "$KEYBOARD": "Razer Razer BlackWidow Chroma",
         "&HOME": "/home/ripytide",
     },
 }

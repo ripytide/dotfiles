@@ -1,10 +1,5 @@
 #! /bin/sh
-#output date so the logs can understood better
-echo -e "\n"
-date
-echo -e "\n"
 
-#enable playerctl daemon for media controls to work with the last active media source
 playerctld daemon &
 
 waybar &
@@ -13,10 +8,9 @@ killall -SIGUSR1 waybar
 
 dunst &
 
-sudo ydotoold &
+sudo bash -c 'ydotoold &'
+
+sudo bash -c 'evremap remap "/home/ripytide/.config/evremap/evremap.toml" &'
 
 #udiskie &
-
-#aw-server-rust &
-#aw-watcher-afk &
-#aw-watcher-window &
+Hyprland
