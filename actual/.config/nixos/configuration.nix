@@ -78,9 +78,18 @@
     packages = with pkgs; [];
   };
 
-  security.sudo.extraRules = [
-    { groups = [ "wheel" ]; commands = [ "${pkgs.ydotool}/bin/ydotool" "${pkgs.ydotool}/bin/ydotoold" ]; }
-  ];
+  security.sudo = {
+    enable = true;
+    extraRules = [{
+      commands = [
+        {
+          command = "/run/current-system/sw/bin/ydotool";
+          options = [ "NOPASSWD" ];
+        }
+      ];
+      groups = [ "wheel" ];
+    }];
+  };
 
   hardware.opengl = {
     enable = true;
