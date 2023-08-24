@@ -91,38 +91,49 @@
   };
 
   environment.systemPackages = with pkgs; [
-    neovim
-    kitty
-    pavucontrol
-    ripgrep
-    rofi-wayland
-    rustup
-    tealdeer
-    rm-improved
-    zoxide
-    ydotool
-    fish
-    git
-    python312
-    starship
-    exa
-    pokemon-colorscripts-mac
-    lazygit
-    delta
-    fira-code
-    fira-code-nerdfont
-    bat
+
+	fish
     dunst
-    playerctl
-    waybar
-    pass-wayland
-	bottom
-	firefox
+	waybar
+	ydotool
+	starship
+	playerctl
+	pavucontrol
+	rofi-wayland
+	pokemon-colorscripts-mac
+
 	gcc
+	git
+	rustup
 	busybox
+	python312
+
+	exa
 	fzf
+	bat
+	sxiv
+	delta
+	bottom
+	neovim
+	zoxide
+	lazygit
+	ripgrep
+	tealdeer
+	rm-improved
+	pass-wayland
+
 	noto-fonts
 	noto-fonts-emoji
+    fira-code
+    fira-code-nerdfont
+	fira-code-symbols
+
+	kitty
+	firefox
+	libreoffice-fresh
+	kicad
+	freecad
+
 	(import ./packages/evremap.nix {inherit pkgs;})
   ];
 
