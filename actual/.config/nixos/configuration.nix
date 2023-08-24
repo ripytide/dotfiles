@@ -39,7 +39,7 @@
       Type = "simple";
     };
     serviceConfig = {
-      ExecStart = "${pkgs.ydotool}/bin/ydotoold --socket-path /tmp/ydotools";
+      ExecStart = "${pkgs.ydotool}/bin/ydotoold";
     };
     wantedBy = [ "multi-user.target" ];
   };
@@ -73,9 +73,13 @@
 
   users.users.ripytide = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" "uinput" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" ];
     packages = with pkgs; [];
   };
+
+  security.sudo.extraRules = [
+    { groups = [ "wheel" ]; commands = [ "${pkgs.ydotool}/bin/ydotool" "${pkgs.ydotool}/bin/ydotoold" ]; }
+  ];
 
   hardware.opengl = {
     enable = true;

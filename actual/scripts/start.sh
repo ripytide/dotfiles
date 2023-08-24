@@ -1,6 +1,6 @@
 #! /bin/sh
 
-sudo bash -c 'evremap remap "/home/ripytide/.config/evremap/evremap.toml" &'
+sudo bash -c 'evremap remap "&HOME/.config/evremap/evremap.toml" &'
 
 playerctld daemon &
 
