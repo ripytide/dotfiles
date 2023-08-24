@@ -61,15 +61,16 @@
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
-  # console = {
-  #   font = "Lat2-Terminus16";
-  #   keyMap = "us";
-  #   useXkbConfig = true; # use xkbOptions in tty.
-  # };
 
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
+
+  services.printing.enable = true;
+  services.avahi.enable = true;
+  services.avahi.nssmdns = true;
+  # for a WiFi printer
+  services.avahi.openFirewall = true;
 
   users.users.ripytide = {
     isNormalUser = true;
@@ -100,8 +101,17 @@
     enableNvidiaPatches = true;
   };
 
-  environment.systemPackages = with pkgs; [
+  fonts.packages = with pkgs; [
+	nerdfonts
+	noto-fonts
+	noto-fonts-emoji
+    fira-code
+    fira-code-nerdfont
+	fira-code-symbols
+  ];
 
+  environment.systemPackages = with pkgs; [
+  	# Desktop Stuff
 	fish
     dunst
 	waybar
@@ -112,12 +122,14 @@
 	rofi-wayland
 	pokemon-colorscripts-mac
 
+	# Core and Language Stuff
 	gcc
 	git
 	rustup
 	busybox
 	python312
 
+	# CLI Stuff
 	exa
 	fzf
 	bat
@@ -132,18 +144,14 @@
 	rm-improved
 	pass-wayland
 
-	noto-fonts
-	noto-fonts-emoji
-    fira-code
-    fira-code-nerdfont
-	fira-code-symbols
-
+	# GUI Stuff
 	kitty
 	firefox
 	libreoffice-fresh
 	kicad
 	freecad
 
+	# Custom Stuff
 	(import ./packages/evremap.nix {inherit pkgs;})
   ];
 
