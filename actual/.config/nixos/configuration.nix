@@ -32,6 +32,18 @@
 
   services.openssh.enable = false;
 
+  systemd.services.ydotoold = {
+    enable = true;
+    description = "An auto-input utility for wayland";
+    unitConfig = {
+      Type = "simple";
+    };
+    serviceConfig = {
+      ExecStart = "${pkgs.ydotool}/bin/ydotoold --socket-path /tmp/ydotools";
+    };
+    wantedBy = [ "multi-user.target" ];
+  };
+
   networking.hostName = "devourer"; # Define your hostname.
   # Pick only one of the below networking options.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -55,19 +67,13 @@
   #   useXkbConfig = true; # use xkbOptions in tty.
   # };
 
-  # Enable the X11 windowing system.
-  # services.xserver.enable = true;
-
   # Enable sound.
   sound.enable = true;
   hardware.pulseaudio.enable = true;
 
-  # Enable touchpad support (enabled default in most desktopManager).
-  # services.xserver.libinput.enable = true;
-
   users.users.ripytide = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ]; # Enable ‘sudo’ for the user.
+    extraGroups = [ "wheel" "networkmanager" "uinput" ]; # Enable ‘sudo’ for the user.
     packages = with pkgs; [];
   };
 

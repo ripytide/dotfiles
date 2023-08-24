@@ -1,6 +1,5 @@
 #! /bin/sh
 
-sudo bash -c 'ydotoold &'
 sudo bash -c 'evremap remap "/home/ripytide/.config/evremap/evremap.toml" &'
 
 playerctld daemon &
