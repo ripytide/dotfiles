@@ -1,5 +1,6 @@
 [arch]
-linux linux-firmware
+linux
+linux-firmware
 intel-ucode
 base
 base-devel

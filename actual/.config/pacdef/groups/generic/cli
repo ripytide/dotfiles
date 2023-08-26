@@ -3,7 +3,7 @@ exa
 fzf
 bat
 sxiv
-delta
+git-delta
 bottom
 neovim
 zoxide
@@ -11,4 +11,4 @@ lazygit
 ripgrep
 tealdeer
 rm-improved
-pass-wayland
+pass
