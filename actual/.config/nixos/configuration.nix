@@ -24,6 +24,7 @@
 
   services.openssh.enable = false;
 
+  # Custom Services
   systemd.services.ydotoold = {
     enable = true;
     description = "An auto-input utility for wayland";
@@ -32,6 +33,16 @@
     };
     serviceConfig = {
       ExecStart = "${pkgs.ydotool}/bin/ydotoold";
+    };
+    wantedBy = [ "multi-user.target" ];
+  };
+  systemd.services.evremap = {
+    enable = true;
+    unitConfig = {
+      Type = "simple";
+    };
+    serviceConfig = {
+      ExecStart = ''${(import ./packages/evremap.nix { inherit pkgs; })}/bin/evremap remap "&HOME/.config/evremap/evremap.toml"'';
     };
     wantedBy = [ "multi-user.target" ];
   };
@@ -133,6 +144,7 @@
     waybar
     ydotool
     starship
+	libnotify
     playerctl
     pavucontrol
     wl-clipboard
