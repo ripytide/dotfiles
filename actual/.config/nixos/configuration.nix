@@ -154,7 +154,9 @@
     # Core and Language Stuff
     gcc
     git
+	cmake
     rustup
+	gnumake
     busybox
     python312
 
