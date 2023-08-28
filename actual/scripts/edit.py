@@ -6,7 +6,7 @@ options = {
     "fish functions": "&HOME/dotfiles/actual/.config/fish/functions",
     "neovim": "&HOME/dotfiles/actual/.config/nvim/init.lua",
     "groups": "&HOME/dotfiles/actual/.config/pacdef/groups",
-    "hyprland": "&HOME/dotfiles/actual/.config/hypr/hyprland.config",
+    "hyprland": "&HOME/dotfiles/actual/.config/hypr/hyprland.conf",
     ".config": "&HOME/dotfiles/actual/.config",
 }
 
