@@ -22,4 +22,6 @@ selection = options[output]
 
 directory = "/".join(selection.split("/")[:-1])
 
-run(["kitty", "-e", "nvim", selection])
+process = run(["kitty", "-e", "nvim", selection], cwd=directory)
+
+run(["fish", "-c", "compile"])

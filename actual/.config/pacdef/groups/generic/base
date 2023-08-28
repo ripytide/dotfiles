@@ -8,3 +8,4 @@ gcc
 git
 rustup
 python
+python-black
