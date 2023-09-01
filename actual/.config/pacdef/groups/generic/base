@@ -9,3 +9,5 @@ git
 rustup
 python
 python-black
+acpi
+gcr

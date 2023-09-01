@@ -23,14 +23,9 @@ def new_location(old):
 hostname = socket.gethostname()
 
 variables = {
-    "muncher": {
+    "sipper": {
         "$MONITOR": "eDP-1",
         "$KEYBOARD": "AT Translated Set 2 keyboard",
-        "&HOME": "/home/ripytide",
-    },
-    "nipper": {
-        "$MONITOR": "HDMI-2",
-        "$KEYBOARD": "Dell KB216 Wired Keyboard",
         "&HOME": "/home/ripytide",
     },
     "devourer": {
