@@ -28,6 +28,11 @@ variables = {
         "$KEYBOARD": "AT Translated Set 2 keyboard",
         "&HOME": "/home/ripytide",
     },
+    "nipper": {
+        "$MONITOR": "HDMI-A-2",
+        "$KEYBOARD": "Dell KB216 Wired Keyboard",
+        "&HOME": "/home/ripytide",
+    },
     "devourer": {
         "$MONITOR": "DP-1",
         "$KEYBOARD": "Razer Razer BlackWidow Chroma",
