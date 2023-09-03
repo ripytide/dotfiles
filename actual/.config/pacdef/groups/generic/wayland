@@ -6,7 +6,7 @@ ydotool
 starship
 libnotify
 playerctl
-pavucontrol
+pavucontrol-qt
 evremap-git
 wl-clipboard
 hyprland
@@ -15,3 +15,11 @@ grim
 slurp
 rofi
 pokemon-colorscripts-git
+batsignal
+pipewire
+pipewire-audio
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+qpwgraph
