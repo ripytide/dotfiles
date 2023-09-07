@@ -122,12 +122,12 @@ nnoremap M D
 nnoremap <silent>    <leader>e :BufferLineCycleNext<CR>
 nnoremap <silent>    <leader>n :BufferLineCyclePrev<CR>
 " Close buffer
-nnoremap <silent>    <leader>d :wbd!<CR>
+nnoremap <silent>    <leader>d :wa\|bd!<CR>
 " Wipeout buffers
-nnoremap <silent>    <leader>w :%wbd!<CR>
+nnoremap <silent>    <leader>w :wa\|%bd!<CR>
 " Delete all buffers but the current one
 "nnoremap <silent>    <leader>a mz:%bd!\|e#\|bd!#<CR>'z
-nnoremap <silent>    <leader>a :%wbd!\|e#\|normal `"<CR>
+nnoremap <silent>    <leader>a :wa\|%bd!\|e#\|normal `"<CR>
 
 " == Leap ==
 "nnoremap <silent> z <Plug>(leap-forward-to)
