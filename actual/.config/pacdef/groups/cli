@@ -14,3 +14,6 @@ rm-improved
 pass
 syncthing
 less
+
+[rust]
+bacon

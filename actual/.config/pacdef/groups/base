@@ -11,4 +11,6 @@ python
 python-black
 acpi
 gcr
-man-pages
+man-db
+networkmanager
+paru-bin
