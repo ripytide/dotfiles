@@ -161,7 +161,7 @@
     python312
 
     # CLI Stuff
-    exa
+    eza
     fzf
     bat
     sxiv
