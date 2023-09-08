@@ -23,3 +23,5 @@ pipewire-pulse
 pipewire-jack
 wireplumber
 qpwgraph
+swaylock
+swayidle
