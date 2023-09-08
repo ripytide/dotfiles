@@ -20,8 +20,6 @@ show=("${all[@]}")
 
 declare -A texts
 texts[lockscreen]="lock screen"
-texts[switchuser]="switch user"
-texts[logout]="log out"
 texts[suspend]="suspend"
 texts[hibernate]="hibernate"
 texts[hybridsleep]="hybrid sleep"
@@ -30,8 +28,6 @@ texts[shutdown]="shut down"
 
 declare -A icons
 icons[lockscreen]=""
-icons[switchuser]=""
-icons[logout]="😈"
 icons[suspend]="💤"
 icons[hibernate]="🦔"
 icons[hybridsleep]="🛌"
@@ -41,8 +37,6 @@ icons[cancel]="󰜺"
 
 declare -A actions
 actions[lockscreen]="swaylock"
-#actions[switchuser]="???"
-actions[logout]="loginctl terminate-session ${XDG_SESSION_ID-}"
 actions[suspend]="systemctl suspend"
 actions[hibernate]="systemctl hibernate"
 actions[hybridsleep]="systemctl hybrid-sleep"
@@ -50,7 +44,7 @@ actions[reboot]="systemctl reboot"
 actions[shutdown]="systemctl poweroff"
 
 # By default, ask for confirmation for actions that are irreversible
-confirmations=(reboot shutdown logout)
+confirmations=(reboot shutdown)
 
 # By default, no dry run
 dryrun=false

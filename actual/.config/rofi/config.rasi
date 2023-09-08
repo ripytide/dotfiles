@@ -6,6 +6,7 @@ configuration {
 	monitor: "$MONITOR";
 	show-icons: true;
 	terminal: "kitty";
+	matching: "fuzzy";
 	drun-display-format: "{name}";
 	hide-scrollbar: true;
 	display-drun: ">>>";
