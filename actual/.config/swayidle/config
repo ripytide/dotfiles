@@ -1,0 +1,5 @@
+before-sleep 'playerctl pause'
+before-sleep 'swaylock -f'
+timeout 590 'notify-send "locking screen in 10 seconds"'
+timeout 600 'swaylock -f'
+timeout 800 'systemctl suspend'

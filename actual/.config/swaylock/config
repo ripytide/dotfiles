@@ -1,0 +1,7 @@
+ignore-empty-password
+show-failed-attempts
+indicator-caps-lock
+indicator-idle-visible
+indicator-radius=100
+indicator-thickness=20
+color=160019
