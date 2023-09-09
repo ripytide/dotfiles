@@ -51,7 +51,17 @@ end
 
 local rust_tools_options = {
     server = {
-		settings = {["rust-analyzer"] = {inlayHints = {chainingHints = false, parameterHints = false, typeHints = false, closingBraceHints = false}}},
+		settings = {
+			["rust-analyzer"] = {
+				cargo = {features = "all"},
+				inlayHints = {
+					chainingHints = false,
+					parameterHints = false,
+					typeHints = false,
+					closingBraceHints = false
+				},
+			},
+		},
         on_attach = function(_, bufnr)
 			normal_lsp_mappings(bufnr)
 
