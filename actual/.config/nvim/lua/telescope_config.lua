@@ -17,7 +17,16 @@ telescope.setup({
     defaults = {
         -- `hidden = true` is not supported in text grep commands.
         vimgrep_arguments = vimgrep_arguments,
-        mappings = {i = {["<esc>"] = actions.close, ["<C-u>"] = false}},
+        mappings = {
+			i = {
+				["<esc>"] = actions.close,
+				["<C-u>"] = false,
+			    ["<C-q>"] = actions.send_to_qflist,
+			},
+			n = {
+			    ["<C-q>"] = actions.send_to_qflist,
+			}
+		},
 		layout_config = {
 			width = 500, height = 500,
 		},
