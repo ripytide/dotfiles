@@ -55,6 +55,7 @@ local rust_tools_options = {
     server = {
 		settings = {
 			["rust-analyzer"] = {
+				check = {command = "clippy"},
 				cargo = {features = "all"},
 				inlayHints = {
 					chainingHints = false,
