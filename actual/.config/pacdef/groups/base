@@ -8,7 +8,6 @@ gcc
 git
 rustup
 python
-python-black
 acpi
 gcr
 man-db

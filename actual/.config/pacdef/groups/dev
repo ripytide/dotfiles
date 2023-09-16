@@ -1,0 +1,5 @@
+[arch]
+python-black
+
+[rust]
+bacon
