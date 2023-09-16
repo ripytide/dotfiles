@@ -20,8 +20,6 @@ def new_location(old):
     return old.replace("/home/ripytide/dotfiles/actual/", "/home/ripytide/")
 
 
-hostname = socket.gethostname()
-
 variables = {
     "sipper": {
         "$MONITOR": "eDP-1",
@@ -38,7 +36,14 @@ variables = {
         "$KEYBOARD": "Razer Razer BlackWidow Chroma",
         "&HOME": "/home/ripytide",
     },
+    "spooner": {
+        "$MONITOR": "NOT_APPLICABLE",
+        "$KEYBOARD": "NOT_APPLICABLE",
+        "&HOME": "/home/ripytide",
+    },
 }
+
+hostname = socket.gethostname()
 
 for dotfile in all_dotfiles:
     with open(dotfile) as input:
