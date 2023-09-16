@@ -59,4 +59,6 @@ for dotfile in all_dotfiles:
         except:
             print(f"Non-Text File, Ignoring!")
 
+subprocess.run(["chmod", "700", "/home/ripytide/.gnupg"])
+
 print(f"\n\nDotfiles Compiled Successfully!\nHostname={hostname}")
