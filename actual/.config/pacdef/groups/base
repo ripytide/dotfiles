@@ -1,14 +1,12 @@
 [arch]
 linux
 linux-firmware
-intel-ucode
 base
 base-devel
 gcc
 git
 rustup
 python
-acpi
 gcr
 man-db
 networkmanager
