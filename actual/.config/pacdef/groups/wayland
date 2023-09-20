@@ -18,7 +18,6 @@ pipewire-alsa
 pipewire-pulse
 pipewire-jack
 wireplumber
-qpwgraph
 swaylock
 swayidle
 zenity
