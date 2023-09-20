@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Mirror and run GitLab CI
-        uses: SvanBoxel/gitlab-mirror-and-ci-action@master
+        uses: SvanBoxel/gitlab-mirror-and-ci-action@0.4
         with:
           args: "https://gitlab.com/ripytide/dotfiles"
         env:
