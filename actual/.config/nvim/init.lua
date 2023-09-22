@@ -16,6 +16,7 @@ require("lualine_config")
 require("lsp_config")
 require("cmp_config")
 require("dashboard_config")
+require("crates_config")
 
 require("catppuccin").setup({
 	flavour = "macchiato",
