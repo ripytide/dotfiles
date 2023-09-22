@@ -1,3 +1,3 @@
-function la
-    ls --long --group $argv
+function ll
+	ls --long --group $argv
 end
