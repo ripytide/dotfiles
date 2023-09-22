@@ -15,4 +15,6 @@ export QT_STYLE_OVERRIDE=adwaita-dark
 
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
+source export-esp.sh
+
 exec fish

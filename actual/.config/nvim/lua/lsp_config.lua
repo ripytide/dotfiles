@@ -57,6 +57,7 @@ local rust_tools_options = {
 			["rust-analyzer"] = {
 				check = {command = "clippy"},
 				cargo = {features = "all"},
+				diagnostics = {experimental = {enable = true}},
 				inlayHints = {
 					chainingHints = false,
 					parameterHints = false,
