@@ -127,5 +127,6 @@ Plug 'nvimdev/dashboard-nvim'
 
 Plug 'catppuccin/nvim'
 
+Plug 'Saecki/crates.nvim'
 
 call plug#end()
