@@ -39,7 +39,12 @@ telescope.setup({
             find_command = { "rg", "--files", "--hidden", "--glob", "!**/.git/*"},
         },
 		live_grep = {
-            additional_args = { "-g", "!**/.git/*", "-g", "!**/package-lock.json", "-g", "!**/*.svg", "-g", "!**/node_modules/*" }
+            additional_args = {
+				"-g", "!**/.git/*",
+				"-g", "!**/package-lock.json",
+				"-g", "!**/*.svg",
+				"-g", "!**/node_modules/*",
+			}
 		}
     },
 	extensions = {

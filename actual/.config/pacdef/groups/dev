@@ -1,5 +1,6 @@
 [arch]
 python-black
+clang
 
 [rust]
 bacon
