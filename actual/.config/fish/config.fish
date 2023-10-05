@@ -6,5 +6,3 @@ starship init fish | source
 zoxide init fish --cmd n | source
 
 set fish_greeting
-
-pokemon-colorscripts -r

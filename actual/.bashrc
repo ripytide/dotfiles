@@ -17,4 +17,6 @@ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
 source export-esp.sh
 
+pokemon-colorscripts -r
+
 exec fish
