@@ -1,4 +1,7 @@
 [arch]
+arp-scan
+dog
+unzip
 eza
 fzf
 bat

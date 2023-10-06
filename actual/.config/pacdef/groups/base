@@ -1,4 +1,6 @@
 [arch]
+arch-install-scripts
+dnsmasq
 linux
 linux-firmware
 base
@@ -10,4 +12,9 @@ python
 gcr
 man-db
 networkmanager
+
 paru-bin
+pacdef-git
+
+intel-ucode
+amd-ucode

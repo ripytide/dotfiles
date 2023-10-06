@@ -1,6 +1,14 @@
 [arch]
+cargo-udeps
+gnuplot
+mosquitto
+npm
+opencv
+python-opencv
+tokei
 python-black
 clang
 
 [rust]
+cargo-binstall
 bacon
