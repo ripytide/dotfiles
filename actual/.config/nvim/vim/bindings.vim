@@ -9,6 +9,11 @@ set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO
 nnoremap <silent> n nzz
 nnoremap <silent> N Nzz
 
+inoremap <silent> <C-e> <End>
+inoremap <silent> <C-a> <Home>
+inoremap <silent> <C-k> <Esc>lDa
+inoremap <silent> <C-u> <Esc>ld0i
+
 " fix wierd x then down does a search bug
 nnoremap <silent> x dl
 
