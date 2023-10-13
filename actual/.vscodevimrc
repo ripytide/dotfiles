@@ -1,0 +1,18 @@
+:syntax off
+noremap n j
+noremap j n
+noremap e k
+noremap k e
+noremap y h
+noremap h y
+noremap o l
+noremap l o
+
+noremap N J
+noremap J N
+noremap E K
+noremap K E
+noremap Y H
+noremap H Y
+noremap O L
+noremap L O
