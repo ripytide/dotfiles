@@ -41,6 +41,8 @@ local function normal_lsp_mappings(bufnr)
 	vim.keymap.set("n", "gr", require("telescope.builtin").lsp_references, opts)
 	vim.keymap.set("n", "ga", vim.lsp.buf.code_action, opts)
 	vim.keymap.set("n", "gh", vim.lsp.buf.hover, opts)
+	vim.keymap.set("n", "<leader>f", function() vim.lsp.buf.format({async = false}) end, opts)
+
 	vim.keymap.set("i", "<C-h>", vim.lsp.buf.signature_help, opts)
 
 	vim.keymap.set("n", "gbb", dap.toggle_breakpoint, opts)
@@ -56,7 +58,7 @@ local rust_tools_options = {
 		settings = {
 			["rust-analyzer"] = {
 				check = {command = "clippy"},
-				cargo = {features = "all"},
+				--cargo = {features = "all"},
 				diagnostics = {experimental = {enable = false}},
 				inlayHints = {
 					chainingHints = false,
