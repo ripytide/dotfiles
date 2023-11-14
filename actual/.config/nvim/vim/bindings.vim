@@ -44,6 +44,8 @@ nmap <leader>t a<CR><ESC>ddP
 
 noremap <leader>m zz
 
+nnoremap <silent> <leader>q :RustOpenExternalDocs<CR>
+
 " == Insert and Append Instant ==
 " extra append/insert immediate keybinds
 " this is so cursed lol
