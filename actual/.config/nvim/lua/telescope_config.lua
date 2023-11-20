@@ -46,6 +46,7 @@ telescope.setup({
 				"-g", "!**/node_modules/*",
 				"-g", "!**/libs/*",
 				"-g", "!**/Cargo.lock",
+				"-g", "!**/venv/",
 			},
         },
 		live_grep = {
@@ -56,6 +57,7 @@ telescope.setup({
 				"-g", "!**/node_modules/*",
 				"-g", "!**/libs/*",
 				"-g", "!**/Cargo.lock",
+				"-g", "!**/venv/",
 			}
 		}
     },
