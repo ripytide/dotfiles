@@ -5,6 +5,7 @@ local function my_lsp_mappings(bufnr)
 	local opts = { buffer = bufnr, remap = false }
 	vim.keymap.set("n", "gj", vim.diagnostic.goto_next, opts)
 	vim.keymap.set("n", "gk", vim.diagnostic.goto_prev, opts)
+	vim.keymap.set("n", "go", vim.lsp.buf.rename, opts)
 	vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 	vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
 	vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)

@@ -55,7 +55,7 @@ let g:neoformat_enabled_python = ["black"]
 
 Plug 'neovimhaskell/haskell-vim'
 
-Plug 'https://github.com/svermeulen/vim-subversive'
+Plug 'gbprod/substitute.nvim'
 
 Plug 'svermeulen/vim-cutlass'
 
@@ -115,7 +115,5 @@ Plug 'Saecki/crates.nvim'
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
 Plug 'rcarriga/nvim-notify'
-
-Plug 'smjonas/inc-rename.nvim'
 
 call plug#end()
