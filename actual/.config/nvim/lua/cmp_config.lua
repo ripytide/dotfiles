@@ -1,8 +1,8 @@
-local cmp = require 'cmp'
-local luasnip = require('luasnip')
+local cmp = require("cmp")
+local luasnip = require("luasnip")
+local types = require("cmp.types")
 --luasnip.setup({history = true})
 
-local fixed_width = 40;
 local symbols = {
 	Text = "󰉿",
 	Method = "󰆧",
@@ -83,40 +83,60 @@ cmp.setup({
 	},
 	formatting = {
 		fields = { "abbr", "menu", "kind" },
-		format = function(entry, item)
-			-- Set the fixed width of the completion menu to 60 characters.
-			-- fixed_width = 20
-
-			-- Set 'fixed_width' to false if not provided.
-			fixed_width = fixed_width or false
-
-			-- Get the completion entry text shown in the completion window.
-			local content = item.abbr
-
-			-- Set the fixed completion window width.
-			if fixed_width then
-				vim.o.pumwidth = fixed_width
-			end
-
-			-- Get the width of the current window.
-			local win_width = vim.api.nvim_win_get_width(0)
-
-			-- Set the max content width based on either: 'fixed_width'
-			-- or a percentage of the window width, in this case 20%.
-			-- We subtract 10 from 'fixed_width' to leave room for 'kind' fields.
-			local max_content_width = fixed_width and fixed_width - 10 or math.floor(win_width * 0.2)
-
-			-- Truncate the completion entry text if it's longer than the
-			-- max content width. We subtract 3 from the max content width
-			-- to account for the "..." that will be appended to it.
-			if #content > max_content_width then
-				item.abbr = vim.fn.strcharpart(content, 0, max_content_width - 3) .. "..."
+		format = function(_, item)
+			local max_abbr_width = 30;
+			if #item.abbr > max_abbr_width then
+				item.abbr = vim.fn.strcharpart(item.abbr, 0, max_abbr_width - 3) .. "..."
 			else
-				item.abbr = content .. (" "):rep(max_content_width - #content)
+				item.abbr = item.abbr .. (" "):rep(max_abbr_width - #item.abbr)
 			end
+
+			local max_menu_width = 30;
+			if item.menu then
+				if #item.menu > max_menu_width then
+					item.menu = vim.fn.strcharpart(item.menu, 0, max_menu_width - 3) .. "..."
+				else
+					item.menu = item.menu .. (" "):rep(max_menu_width - #item.menu)
+				end
+			else
+				item.menu = ""
+			end
+
+			item.kind = (symbols[item.kind] or "") .. " " .. item.kind
+
 			return item
 		end,
 	},
+	sorting = {
+		comparators = {
+			function(entry1, entry2)
+				local is1 = entry1:get_kind() == types.lsp.CompletionItemKind.Field
+				local is2 = entry2:get_kind() == types.lsp.CompletionItemKind.Field
+
+				if is1 ~= is2 then
+					if is1 then
+						return true
+					else
+						return false
+					end
+				end
+			end,
+			cmp.config.compare.offset,
+			cmp.config.compare.exact,
+			cmp.config.compare.score,
+			cmp.config.compare.sort_text,
+			cmp.config.compare.length,
+			cmp.config.compare.order,
+			cmp.config.compare.kind,
+		},
+	},
+	matching = {
+		disallow_fuzzy_matching = true,
+		disallow_fullfuzzy_matching = true,
+		disallow_partial_fuzzy_matching = true,
+		disallow_partial_matching = false,
+		disallow_prefix_unmatching = false,
+	}
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).

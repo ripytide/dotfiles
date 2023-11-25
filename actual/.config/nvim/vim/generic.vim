@@ -68,7 +68,7 @@ set nowrap
 set iskeyword+=-
 
 " the number of suggestions shown for suggestions
-set pumheight=6
+set pumheight=8
 
 " Give less space for displaying messages.
 set cmdheight=1
