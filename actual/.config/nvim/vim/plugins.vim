@@ -93,7 +93,6 @@ Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-nvim-lua'
 Plug 'hrsh7th/cmp-cmdline'
 Plug 'hrsh7th/cmp-nvim-lsp-signature-help'
-Plug 'onsails/lspkind.nvim'
 
 " LuaSnip
 Plug 'L3MON4D3/LuaSnip'

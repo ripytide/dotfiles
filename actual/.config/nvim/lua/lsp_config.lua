@@ -31,6 +31,8 @@ local function my_lsp_mappings(bufnr)
 	--vim.keymap.set("n", "gbt", dapui.toggle, opts)
 end
 
+local capabilities = require("cmp_nvim_lsp").default_capabilities();
+
 require("rust-tools").setup({
 	server = {
 		settings = {
@@ -42,11 +44,17 @@ require("rust-tools").setup({
 				parameterHints = false,
 				typeHints = false,
 				closingBraceHints = false
-			}
+			},
+			completion = {
+				autoself = { enable = false },
+				fullFunctionSignatures = { enable = true },
+				privateEditable = { enable = true },
+			},
 		},
 		on_attach = function(_, bufnr)
 			my_lsp_mappings(bufnr)
 		end,
+		capabilities = capabilities,
 	},
 })
 
@@ -57,6 +65,7 @@ require("mason-lspconfig").setup_handlers {
 			on_attach = function(_, bufnr)
 				my_lsp_mappings(bufnr)
 			end,
+			capabilities = capabilities,
 		}
 	end,
 	-- dedicated handlers
@@ -74,6 +83,7 @@ require("mason-lspconfig").setup_handlers {
 			on_attach = function(_, bufnr)
 				my_lsp_mappings(bufnr)
 			end,
+			capabilities = capabilities,
 		}
 	end,
 }
