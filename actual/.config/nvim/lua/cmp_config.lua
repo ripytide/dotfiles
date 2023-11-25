@@ -3,6 +3,40 @@ local lspkind = require('lspkind')
 local luasnip = require('luasnip')
 --luasnip.setup({history = true})
 
+lspkind.init({
+	preset = 'codicons',
+	-- override preset symbols
+	--
+	-- default: {}
+	symbol_map = {
+		Text = "󰉿",
+		Method = "󰆧",
+		Function = "󰊕",
+		Constructor = "",
+		Field = "󰜢",
+		Variable = "󰀫",
+		Class = "󰠱",
+		Interface = "",
+		Module = "",
+		Property = "󰜢",
+		Unit = "󰑭",
+		Value = "󰎠",
+		Enum = "",
+		Keyword = "󰌋",
+		Snippet = "",
+		Color = "󰏘",
+		File = "󰈙",
+		Reference = "󰈇",
+		Folder = "󰉋",
+		EnumMember = "",
+		Constant = "󰏿",
+		Struct = "󰙅",
+		Event = "",
+		Operator = "󰆕",
+		TypeParameter = "",
+	},
+})
+
 cmp.setup({
 	snippet = {
 		-- REQUIRED - you must specify a snippet engine
@@ -18,6 +52,7 @@ cmp.setup({
 			border = 'single',
 		},
 	},
+	preselect = cmp.PreselectMode.None,
 	mapping = cmp.mapping.preset.insert({
 		['<C-b>'] = cmp.mapping.scroll_docs(-4),
 		['<C-f>'] = cmp.mapping.scroll_docs(4),
@@ -48,21 +83,18 @@ cmp.setup({
 		{ name = 'buffer',                  group_index = 2 },
 		--{name = 'luasnip'}
 	}),
-	preselect = cmp.PreselectMode.None,
 	view = {
 		entries = { name = 'custom', selection_order = 'near_cursor' },
 		selection_order = 'near_cursor'
 	},
 	formatting = {
-		formatting = {
-			format = lspkind.cmp_format({
-				mode = 'symbol_text', -- show only symbol annotations
-				maxwidth = 40,    -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
-				ellipsis_char =
-				'...'             -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
-			})
-		},
-	}
+		format = lspkind.cmp_format({
+			mode = 'symbol_text', -- show only symbol annotations
+			maxwidth = 40, -- prevent the popup from showing more than provided characters (e.g 50 will not show more than 50 characters)
+			ellipsis_char =
+			'...'        -- when popup menu exceed maxwidth, the truncated part would show ellipsis_char instead (must define maxwidth first)
+		})
+	},
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).

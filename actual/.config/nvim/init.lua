@@ -23,6 +23,5 @@ require("dressing_config")
 -- misc stuff
 require("leap_config")
 require("visuals")
-require("misc")
 require("crates_config")
 require("rainbow_delimiters_config")

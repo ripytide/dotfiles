@@ -43,8 +43,6 @@ Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
 Plug 'gbrlsnchs/telescope-lsp-handlers.nvim'
 Plug 'stevearc/dressing.nvim'
-"goodbye old friend
-"Plug 'fannheyward/telescope-coc.nvim'
 
 Plug 'tpope/vim-eunuch'
 
@@ -63,11 +61,9 @@ Plug 'svermeulen/vim-cutlass'
 
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
-
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'arkav/lualine-lsp-progress'
 
 Plug 'hiphish/rainbow-delimiters.nvim'
 
@@ -87,6 +83,7 @@ Plug 'kdheepak/lazygit.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
+Plug 'simrat39/rust-tools.nvim'
 
 " Autocompletion
 Plug 'hrsh7th/nvim-cmp'
@@ -105,8 +102,6 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'matze/vim-move'
 " I use custom bindings
 let g:move_map_keys = 0
-
-Plug 'lervag/vimtex'
 
 Plug 'nvimdev/dashboard-nvim'
 

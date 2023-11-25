@@ -1,5 +1,5 @@
 require("mason").setup()
-require("mason-lspconfig").setup({ ensure_installed = { "lua_ls", "rust_analyzer" } })
+require("mason-lspconfig").setup({ ensure_installed = { "lua_ls" } })
 
 local function my_lsp_mappings(bufnr)
 	local opts = { buffer = bufnr, remap = false }
@@ -31,6 +31,24 @@ local function my_lsp_mappings(bufnr)
 	--vim.keymap.set("n", "gbt", dapui.toggle, opts)
 end
 
+require("rust-tools").setup({
+	server = {
+		settings = {
+			check = { command = "clippy" },
+			-- cargo = {features = "all"},
+			diagnostics = { experimental = { enable = false } },
+			inlayHints = {
+				chainingHints = false,
+				parameterHints = false,
+				typeHints = false,
+				closingBraceHints = false
+			}
+		},
+		on_attach = function(_, bufnr)
+			my_lsp_mappings(bufnr)
+		end,
+	},
+})
 
 require("mason-lspconfig").setup_handlers {
 	-- default handler
@@ -42,24 +60,6 @@ require("mason-lspconfig").setup_handlers {
 		}
 	end,
 	-- dedicated handlers
-	["rust_analyzer"] = function()
-		require("lspconfig")["rust_analyzer"].setup {
-			settings = {
-				check = { command = "clippy" },
-				-- cargo = {features = "all"},
-				diagnostics = { experimental = { enable = false } },
-				inlayHints = {
-					chainingHints = false,
-					parameterHints = false,
-					typeHints = false,
-					closingBraceHints = false
-				}
-			},
-			on_attach = function(_, bufnr)
-				my_lsp_mappings(bufnr)
-			end,
-		}
-	end,
 	["lua_ls"] = function()
 		require("lspconfig")["lua_ls"].setup {
 			settings = {
