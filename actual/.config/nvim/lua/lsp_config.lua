@@ -39,12 +39,7 @@ require("rust-tools").setup({
 			check = { command = "clippy" },
 			-- cargo = {features = "all"},
 			diagnostics = { experimental = { enable = false } },
-			inlayHints = {
-				chainingHints = false,
-				parameterHints = false,
-				typeHints = false,
-				closingBraceHints = false
-			},
+			inlayHints = { enable = false },
 			completion = {
 				autoself = { enable = false },
 				fullFunctionSignatures = { enable = true },
