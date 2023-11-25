@@ -111,20 +111,17 @@ Plug 'lervag/vimtex'
 Plug 'nvimdev/dashboard-nvim'
 
 "colorschemes
-" old flame
 "Plug 'ellisonleao/gruvbox.nvim'
-"
 "Plug 'folke/tokyonight.nvim'
 "let g:tokyonight_italic_keywords = 0
-
 "Plug 'rebelot/kanagawa.nvim'
 
 Plug 'catppuccin/nvim'
 
 Plug 'Saecki/crates.nvim'
 
-Plug 'folke/noice.nvim'
-Plug 'MunifTanjim/nui.nvim'
-Plug 'rcarriga/nvim-notify'
+"Plug 'folke/noice.nvim'
+"Plug 'MunifTanjim/nui.nvim'
+"Plug 'rcarriga/nvim-notify'
 
 call plug#end()
