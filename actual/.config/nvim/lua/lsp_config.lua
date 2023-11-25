@@ -32,7 +32,6 @@ local function my_lsp_mappings(bufnr)
 end
 
 
-local capabilities = require('cmp_nvim_lsp').default_capabilities();
 require("mason-lspconfig").setup_handlers {
 	-- default handler
 	function(server_name)
@@ -40,7 +39,6 @@ require("mason-lspconfig").setup_handlers {
 			on_attach = function(_, bufnr)
 				my_lsp_mappings(bufnr)
 			end,
-			capabilities = capabilities,
 		}
 	end,
 	-- dedicated handlers
@@ -60,7 +58,6 @@ require("mason-lspconfig").setup_handlers {
 			on_attach = function(_, bufnr)
 				my_lsp_mappings(bufnr)
 			end,
-			capabilities = capabilities,
 		}
 	end,
 	["lua_ls"] = function()
@@ -77,7 +74,6 @@ require("mason-lspconfig").setup_handlers {
 			on_attach = function(_, bufnr)
 				my_lsp_mappings(bufnr)
 			end,
-			capabilities = capabilities,
 		}
 	end,
 }
