@@ -38,7 +38,6 @@ au FileType rust let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>', '|':'|'})
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'tami5/sqlite.lua'
-"Plug 'nvim-telescope/telescope-frecency.nvim'
 Plug 'nvim-telescope/telescope-ui-select.nvim'
 Plug 'nvim-lua/popup.nvim'
 Plug 'jvgrootveld/telescope-zoxide'
@@ -86,9 +85,6 @@ Plug 'kdheepak/lazygit.nvim'
 
 " LSP
 Plug 'neovim/nvim-lspconfig'
-Plug 'mfussenegger/nvim-dap'
-Plug 'rcarriga/nvim-dap-ui'
-Plug 'arindas/rust-tools.nvim'
 Plug 'williamboman/mason.nvim'
 Plug 'williamboman/mason-lspconfig.nvim'
 
@@ -105,8 +101,6 @@ Plug 'onsails/lspkind.nvim'
 " LuaSnip
 Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
-
-Plug 'airblade/vim-gitgutter'
 
 Plug 'matze/vim-move'
 " I use custom bindings
@@ -128,5 +122,9 @@ Plug 'nvimdev/dashboard-nvim'
 Plug 'catppuccin/nvim'
 
 Plug 'Saecki/crates.nvim'
+
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'rcarriga/nvim-notify'
 
 call plug#end()

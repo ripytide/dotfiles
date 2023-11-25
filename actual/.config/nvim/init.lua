@@ -2,61 +2,27 @@ local function src(name)
 	vim.cmd("source " .. "~/.config/nvim/vim/" .. name)
 end
 
+-- core stuff
 src("generic.vim")
-src("plugins.vim")
 src("bindings.vim")
+src("plugins.vim")
 --src("neovide.vim")
 
+-- lsp/ui stuff, things end in "_config" to avoid name collisions with
+-- the plugins themselves
 require("telescope_config")
-require("rainbow_delimiters_config")
-require("leap_config")
-require("tree-sitter")
+require("tree_sitter_config")
 require("bufferline_config")
 require("lualine_config")
-require("lsp_config")
 require("cmp_config")
+require("lsp_config")
 require("dashboard_config")
+require("noice_config")
+require("dressing_config")
+
+-- misc stuff
+require("leap_config")
+require("visuals")
+require("misc")
 require("crates_config")
-
-require("catppuccin").setup({
-	flavour = "macchiato",
-	styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-		comments = { "italic" }, -- Change the style of comments
-		conditionals = { "italic" },
-		loops = {},
-		functions = {},
-		keywords = { "bold" },
-		strings = {},
-		variables = {},
-		numbers = {},
-		booleans = {},
-		properties = {},
-		types = {},
-		operators = { "bold" },
-	},
-	color_overrides = {macchiato = {base = "#1F1F28"}}
-})
-
---my old flame ;(
---vim.cmd.colorscheme("gruvbox")
---vim.cmd.colorscheme("blue")
---vim.cmd.colorscheme("tokyonight-storm")
---vim.cmd.colorscheme("kanagawa")
-vim.cmd.colorscheme("catppuccin")
-
-vim.cmd("hi Search guibg=black guifg=red")
-vim.cmd("hi CurSearch guibg=black guifg=blue")
-vim.cmd("hi IncSearch guibg=green guifg=black")
-
-require("dressing").setup({
-	input = {
-		mappings = {
-			i = {
-				["<C-u>"] = false,
-				["<C-k>"] = false
-			}
-		}
-	}
-})
-
-vim.g.vimtex_quickfix_open_on_warning = 0
+require("rainbow_delimiters_config")
