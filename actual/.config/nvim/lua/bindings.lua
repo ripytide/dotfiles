@@ -19,9 +19,6 @@ vim.keymap.set("i", "<C-e>", "<End>", opts)
 vim.keymap.set("i", "<C-a>", "<Home>", opts)
 vim.keymap.set("i", "<C-k>", "<Esc>lDa", opts)
 
--- to temporarily turn off highlighting
-vim.keymap.set("n", "<Esc>", "noh<CR>:match none<CR>", opts)
-
 vim.keymap.set("n", "<C-u>", "10<C-y>", opts)
 vim.keymap.set("n", "<C-d>", "10<C-e>", opts)
 

@@ -34,12 +34,16 @@ end
 local capabilities = require("cmp_nvim_lsp").default_capabilities();
 
 require("rust-tools").setup({
+	tools = {
+		inlay_hints = {
+			auto = false,
+		}
+	},
 	server = {
 		settings = {
 			check = { command = "clippy" },
 			-- cargo = {features = "all"},
 			diagnostics = { experimental = { enable = false } },
-			inlayHints = { enable = false },
 			completion = {
 				autoself = { enable = false },
 				fullFunctionSignatures = { enable = true },
