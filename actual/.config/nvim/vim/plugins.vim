@@ -67,8 +67,6 @@ Plug 'nvim-lualine/lualine.nvim'
 
 Plug 'hiphish/rainbow-delimiters.nvim'
 
-Plug 'ggandor/leap.nvim'
-
 Plug 'rhysd/clever-f.vim'
 
 Plug 'tpope/vim-abolish'
@@ -114,8 +112,10 @@ Plug 'catppuccin/nvim'
 
 Plug 'Saecki/crates.nvim'
 
-"Plug 'folke/noice.nvim'
-"Plug 'MunifTanjim/nui.nvim'
-"Plug 'rcarriga/nvim-notify'
+Plug 'folke/noice.nvim'
+Plug 'MunifTanjim/nui.nvim'
+Plug 'rcarriga/nvim-notify'
+
+Plug 'smjonas/inc-rename.nvim'
 
 call plug#end()

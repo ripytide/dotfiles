@@ -4,8 +4,8 @@ end
 
 -- core stuff
 src("generic.vim")
-src("bindings.vim")
 src("plugins.vim")
+require("bindings")
 --src("neovide.vim")
 
 -- lsp/ui stuff, things end in "_config" to avoid name collisions with
@@ -21,7 +21,7 @@ require("noice_config")
 require("dressing_config")
 
 -- misc stuff
-require("leap_config")
+--require("leap_config")
 require("visuals")
 require("crates_config")
 require("rainbow_delimiters_config")

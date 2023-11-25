@@ -17,7 +17,7 @@ require("lualine").setup {
 				sections = { "error", "warn" }
 			},
 		},
-		lualine_x = { "filetype" },
+		lualine_x = { "ruler", "filetype" },
 		lualine_y = { "progress" },
 		lualine_z = { "location" }
 	},
