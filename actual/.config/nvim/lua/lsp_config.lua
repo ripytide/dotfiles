@@ -42,7 +42,7 @@ require("rust-tools").setup({
 	server = {
 		settings = {
 			check = { command = "clippy" },
-			-- cargo = {features = "all"},
+			 cargo = {features = "all"},
 			diagnostics = { experimental = { enable = false } },
 			completion = {
 				autoself = { enable = false },
@@ -56,6 +56,8 @@ require("rust-tools").setup({
 		capabilities = capabilities,
 	},
 })
+
+require 'lspconfig'.typos_lsp.setup {}
 
 require("mason-lspconfig").setup_handlers {
 	-- default handler

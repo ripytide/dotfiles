@@ -7,13 +7,14 @@ vim.cmd("set langmap=nj,jn,ek,ke,yh,hy,ol,lo,NJ,JN,EK,KE,YH,HY,OL,LO")
 
 local opts = { silent = true }
 
--- fix wierd x then down does a search bug
+-- fix weird x then down does a search bug
 vim.keymap.set("n", "n", "nzz", opts)
 vim.keymap.set("n", "N", "Nzz", opts)
 vim.keymap.set("n", "N", "Nzz", opts)
 vim.keymap.set("n", "x", "dl", opts)
 vim.keymap.set("n", ".", ".jk", opts)
 vim.keymap.set("n", "D", "Djk", opts)
+vim.keymap.set("n", ".", ".jk", { silent = true, remap = true })
 
 vim.keymap.set("i", "<C-e>", "<End>", opts)
 vim.keymap.set("i", "<C-a>", "<Home>", opts)
