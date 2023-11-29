@@ -9,10 +9,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 \| endif
 
 call plug#begin()
-Plug '907th/vim-auto-save'
-let g:auto_save = 1
-let g:auto_save_silent = 1
-
 Plug 'tpope/vim-surround'
 
 Plug 'scrooloose/nerdcommenter'
