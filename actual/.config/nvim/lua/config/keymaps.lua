@@ -14,7 +14,9 @@ local diagnostic_goto = function(next, severity)
   end
 end
 
-vim.keymap.set("n", "n", diagnostic_goto(true))
-vim.keymap.set("n", "N", diagnostic_goto(false))
-vim.keymap.set("n", "_", "N")
-vim.keymap.set("n", ",", "n")
+vim.keymap.set("n", "n", diagnostic_goto(true), {desc = "Jump to next diagnostic message"})
+vim.keymap.set("n", "N", diagnostic_goto(false), {desc = "Jump to previous diagnostic message"})
+vim.keymap.set("n", "_", "N", {desc = "Jump to previous search result"})
+vim.keymap.set("n", ",", "n", {desc = "Jump to next search result"})
+
+vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
