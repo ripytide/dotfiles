@@ -15,17 +15,3 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 vim.o.undodir = "/home/ripytide/undodir"
 vim.o.swapfile = false
 vim.o.backup = false
-
-vim.diagnostic.config({
-  virtual_text = false,
-  update_in_insert = false,
-  severity_sort = true,
-  float = {
-    focusable = false,
-    border = "single",
-    source = "always",
-    header = "",
-    prefix = "",
-  },
-})
-
