@@ -18,3 +18,6 @@ vim.diagnostic.config({
 })
 
 vim.g.clipboard = "unnamed";
+
+vim.g.tabstop = 4
+vim.g.shiftwidth = 4
