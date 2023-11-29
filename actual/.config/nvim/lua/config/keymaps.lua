@@ -2,7 +2,6 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
-vim.keymap.set("n", "<leader>k", require("telescope.builtin").keymaps)
 vim.keymap.set("n", "<C-d>", "16jzz")
 vim.keymap.set("n", "<C-u>", "16kzz")
 

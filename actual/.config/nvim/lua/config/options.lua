@@ -16,3 +16,5 @@ vim.diagnostic.config({
         prefix = ""
     }
 })
+
+vim.g.clipboard = "unnamed";
