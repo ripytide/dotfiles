@@ -20,3 +20,8 @@ vim.keymap.set("n", "_", "N", {desc = "Jump to previous search result"})
 vim.keymap.set("n", ",", "n", {desc = "Jump to next search result"})
 
 vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
+
+vim.keymap.set("n", "s", require('substitute').operator, { noremap = true })
+vim.keymap.set("n", "ss", require('substitute').line, { noremap = true })
+vim.keymap.set("n", "S", require('substitute').eol, { noremap = true })
+vim.keymap.set("x", "s", require('substitute').visual, { noremap = true })

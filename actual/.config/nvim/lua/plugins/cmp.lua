@@ -56,10 +56,6 @@ return {
           selection_order = "near_cursor",
         },
       },
-      window = {
-        completion = { border = "single" },
-        documentation = { border = "single" },
-      },
     },
   },
 }
