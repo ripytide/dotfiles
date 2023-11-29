@@ -31,3 +31,6 @@ vim.keymap.set("n", "<leader>gg", require("lazy").show, { desc = "Open lazy.nvim
 vim.keymap.set("n", "<leader>l", function()
   Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })
+
+vim.keymap.set("n", ";n", "A,<esc>")
+vim.keymap.set("n", ";t", "A;<esc>")

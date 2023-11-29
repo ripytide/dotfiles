@@ -5,7 +5,14 @@ return {
       servers = {
         rust_analyzer = {
           keys = {
-            { "K", vim.lsp.buf.hover },
+            { "K", false },
+          },
+          settings = {
+            ["rust-analyzer"] = {
+              lens = {
+                enable = false,
+              },
+            },
           },
         },
       },
@@ -18,6 +25,7 @@ return {
       keys[#keys + 1] = { "K", false }
       -- add a keymap
       keys[#keys + 1] = { "gt", vim.lsp.buf.type_definition }
+      keys[#keys + 1] = { "gi", vim.lsp.buf.implementation }
     end,
   },
   {
