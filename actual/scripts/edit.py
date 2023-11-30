@@ -22,6 +22,6 @@ selection = options[output]
 
 directory = "/".join(selection.split("/")[:-1])
 
-process = run(["wezterm", "-e", "nvim", selection], cwd=directory)
+process = run(["wezterm", "-e", "--cwd", directory, "nvim", selection])
 
 run(["fish", "-c", "compile"])

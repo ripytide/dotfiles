@@ -1,6 +1,9 @@
 return {
 	"folke/flash.nvim",
 	opts = {
+		highlight = {
+			backdrop = false
+		},
 		modes = {
 			char = {
 				multi_line = false,

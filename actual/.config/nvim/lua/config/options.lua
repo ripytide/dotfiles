@@ -21,7 +21,4 @@ vim.cmd("hi Search guibg=black guifg=red")
 vim.cmd("hi CurSearch guibg=black guifg=blue")
 vim.cmd("hi IncSearch guibg=green guifg=black")
 
-vim.cmd("hi FlashMatch guibg=black guifg=red")
-vim.cmd("hi FlashCurrent guibg=black guifg=blue")
-vim.cmd("hi FlashBackdrop guibg=green guifg=black")
-vim.cmd("hi FlashLabel guibg=black guifg=green")
+vim.cmd("hi FlashCursor guibg=black guifg=orange")
