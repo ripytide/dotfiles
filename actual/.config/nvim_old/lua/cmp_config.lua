@@ -36,23 +36,23 @@ cmp.setup({
 		-- REQUIRED - you must specify a snippet engine
 		expand = function(args)
 			luasnip.lsp_expand(args.body)
-		end,
+		end
 	},
 	window = {
 		completion = {
-			border = "single",
+			border = 'single',
 		},
 		documentation = {
-			border = "single",
+			border = 'single',
 		},
 	},
 	preselect = cmp.PreselectMode.None,
 	mapping = cmp.mapping.preset.insert({
-		["<C-b>"] = cmp.mapping.scroll_docs(-4),
-		["<C-f>"] = cmp.mapping.scroll_docs(4),
-		["<C-e>"] = cmp.mapping.abort(),
-		["<CR>"] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-		["<TAB>"] = function(fallback)
+		['<C-b>'] = cmp.mapping.scroll_docs(-4),
+		['<C-f>'] = cmp.mapping.scroll_docs(4),
+		['<C-e>'] = cmp.mapping.abort(),
+		['<CR>'] = cmp.mapping.confirm({ select = false }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
+		['<TAB>'] = function(fallback)
 			if cmp.visible() then
 				cmp.select_next_item()
 			else
@@ -68,29 +68,29 @@ cmp.setup({
 		end,
 	}),
 	sources = cmp.config.sources({
-		{ name = "nvim_lsp", group_index = 1 },
-		{ name = "path", group_index = 1 },
-		{ name = "nvim_lua", group_index = 1 },
-		{ name = "crates", group_index = 1 },
+		{ name = 'nvim_lsp',                group_index = 1 },
+		{ name = 'path',                    group_index = 1 },
+		{ name = 'nvim_lua',                group_index = 1 },
+		{ name = 'crates',                  group_index = 1 },
 
-		{ name = "buffer", group_index = 2 },
+		{ name = 'buffer',                  group_index = 2 },
 		--{name = 'luasnip'}
 	}),
 	view = {
-		entries = { name = "custom", selection_order = "near_cursor" },
-		selection_order = "near_cursor",
+		entries = { name = 'custom', selection_order = 'near_cursor' },
+		selection_order = 'near_cursor'
 	},
 	formatting = {
 		fields = { "abbr", "menu", "kind" },
 		format = function(_, item)
-			local max_abbr_width = 30
+			local max_abbr_width = 30;
 			if #item.abbr > max_abbr_width then
 				item.abbr = vim.fn.strcharpart(item.abbr, 0, max_abbr_width - 3) .. "..."
 			else
 				item.abbr = item.abbr .. (" "):rep(max_abbr_width - #item.abbr)
 			end
 
-			local max_menu_width = 30
+			local max_menu_width = 30;
 			if item.menu then
 				if #item.menu > max_menu_width then
 					item.menu = vim.fn.strcharpart(item.menu, 0, max_menu_width - 3) .. "..."
@@ -135,17 +135,17 @@ cmp.setup({
 		disallow_partial_fuzzy_matching = true,
 		disallow_partial_matching = false,
 		disallow_prefix_unmatching = false,
-	},
+	}
 })
 
 -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline({ "/", "?" }, {
+cmp.setup.cmdline({ '/', '?' }, {
 	mapping = cmp.mapping.preset.cmdline(),
-	sources = { { name = "buffer" } },
+	sources = { { name = 'buffer' } }
 })
 
 -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-cmp.setup.cmdline(":", {
+cmp.setup.cmdline(':', {
 	mapping = cmp.mapping.preset.cmdline(),
-	sources = cmp.config.sources({ { name = "path" } }, { { name = "cmdline" } }),
+	sources = cmp.config.sources({ { name = 'path' } }, { { name = 'cmdline' } })
 })

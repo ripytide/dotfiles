@@ -4,22 +4,9 @@ end
 
 -- core stuff
 src("generic.vim")
+src("plugins.vim")
 require("bindings")
-
--- plugins
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-  vim.fn.system({
-    "git",
-    "clone",
-    "--filter=blob:none",
-    "https://github.com/folke/lazy.nvim.git",
-    "--branch=stable", -- latest stable release
-    lazypath,
-  })
-end
-vim.opt.rtp:prepend(lazypath)
-require("lazy").setup("plugins")
+--src("neovide.vim")
 
 -- lsp/ui stuff, things end in "_config" to avoid name collisions with
 -- the plugins themselves
@@ -39,4 +26,3 @@ require("visuals")
 require("crates_config")
 require("rainbow_delimiters_config")
 require("substitute_config")
-

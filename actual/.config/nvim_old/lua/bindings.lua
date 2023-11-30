@@ -44,73 +44,9 @@ vim.keymap.set("n", "<leader>g", ":RustOpenExternalDocs<CR>", opts)
 -- == Insert and Append Instant ==
 -- extra append/insert immediate keybinds
 -- this is so cursed lol
-local all = {
-	"a",
-	"b",
-	"c",
-	"d",
-	"e",
-	"f",
-	"g",
-	"h",
-	"i",
-	"j",
-	"k",
-	"l",
-	"m",
-	"n",
-	"o",
-	"p",
-	"q",
-	"r",
-	"s",
-	"t",
-	"u",
-	"v",
-	"w",
-	"x",
-	"y",
-	"z",
-	"0",
-	"1",
-	"2",
-	"3",
-	"4",
-	"5",
-	"6",
-	"7",
-	"8",
-	"9",
-	"_",
-	"*",
-	"[",
-	"]",
-	"{",
-	"}",
-	"(",
-	")",
-	",",
-	".",
-	"-",
-	"+",
-	";",
-	"!",
-	"@",
-	"#",
-	"$",
-	"%",
-	"^",
-	"&",
-	"/",
-	"|",
-	"\\",
-	"`",
-	"~",
-	"<",
-	">",
-	'"',
-	"'",
-}
+local all = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u',
+	'v', 'w', 'x', 'y', 'z', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '_', '*', '[', ']', '{', '}', '(', ')',
+	',', '.', '-', '+', ';', '!', '@', '#', '$', '%', '^', '&', '/', '|', '\\', '`', '~', '<', '>', '"', "'" }
 
 for _, char in ipairs(all) do
 	vim.keymap.set("n", "q" .. char, "A" .. char .. "<Esc>", opts)
@@ -127,11 +63,12 @@ vim.keymap.set("n", "<leader>j", ":Telescope live_grep<CR>", opts)
 vim.keymap.set("n", "<leader>s", ":Telescope lsp_dynamic_workspace_symbols<CR>", opts)
 vim.keymap.set("n", "<leader>r", ":Telescope resume<CR>", opts)
 
+
 -- == substitute.nvim ==
-vim.keymap.set("n", "s", require("substitute").operator, opts)
-vim.keymap.set("n", "ss", require("substitute").line, opts)
-vim.keymap.set("n", "S", require("substitute").eol, opts)
-vim.keymap.set("x", "s", require("substitute").visual, opts)
+vim.keymap.set("n", "s", require('substitute').operator, opts)
+vim.keymap.set("n", "ss", require('substitute').line, opts)
+vim.keymap.set("n", "S", require('substitute').eol, opts)
+vim.keymap.set("x", "s", require('substitute').visual, opts)
 
 -- == Vim cutlass
 -- map m to a new cut key
