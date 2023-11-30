@@ -1,3 +1,4 @@
+local cmp = require("cmp")
 return {
 	{
 		"L3MON4D3/LuaSnip",
@@ -10,7 +11,6 @@ return {
 		---@param opts cmp.ConfigSchema
 		opts = function(_, opts)
 			local luasnip = require("luasnip")
-			local cmp = require("cmp")
 
 			local has_words_before = function()
 				unpack = unpack or table.unpack
@@ -48,6 +48,7 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		opts = {
+			preselect = "None",
 			completion = {
 				completeopt = "menu,menuone,noinsert,noselect",
 			},
@@ -60,6 +61,40 @@ return {
 			window = {
 				completion = { border = "single" },
 				documentation = { border = "single" },
+			},
+			sorting = {
+				comparators = {
+					function(entry1, entry2)
+						local isfield1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.Field
+						local isfield2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.Field
+
+						if isfield1 ~= isfield2 then
+							return isfield1
+						end
+					end,
+					function(entry1, entry2)
+						local isenum_member1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
+						local isenum_member2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
+
+						if isenum_member1 ~= isenum_member2 then
+							return isenum_member1
+						end
+					end,
+					cmp.config.compare.offset,
+					cmp.config.compare.exact,
+					cmp.config.compare.score,
+					cmp.config.compare.sort_text,
+					cmp.config.compare.length,
+					cmp.config.compare.order,
+					cmp.config.compare.kind,
+				},
+			},
+			matching = {
+				disallow_fuzzy_matching = true,
+				disallow_fullfuzzy_matching = true,
+				disallow_partial_fuzzy_matching = true,
+				disallow_partial_matching = false,
+				disallow_prefix_unmatching = false,
 			},
 		},
 	},
