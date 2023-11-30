@@ -1,8 +1,8 @@
 require("catppuccin").setup({
 	flavour = "macchiato",
 	styles = {             -- Handles the styles of general hi groups (see `:h highlight-args`):
-		comments = { "italic" }, -- Change the style of comments
-		conditionals = { "italic" },
+		comments = { }, -- Change the style of comments
+		conditionals = { },
 		loops = {},
 		functions = {},
 		keywords = { "bold" },

@@ -176,7 +176,7 @@
     pass-wayland
 
     # GUI Stuff
-    kitty
+    wezterm
     firefox
     libreoffice-fresh
     kicad

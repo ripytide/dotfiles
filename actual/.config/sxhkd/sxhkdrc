@@ -85,15 +85,15 @@ super + space
 
 # terminal emulator
 super + y
-	kitty
+	wezterm
 
 # firefox
 super + o
-	kitty -e lf
+	wezterm -e lf
 
 # neovide
 super + l
-	kitty -e nvim
+	wezterm -e nvim
 	#neovide --novsync --nofork --multigrid --maximized
 
 # firefox bookmarks

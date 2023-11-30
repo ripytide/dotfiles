@@ -1,14 +1,30 @@
 return {
   {
-    "folke/tokyonight.nvim",
+    "catppuccin/nvim",
     lazy = false,
     priority = 1000,
-    opts = { style = "night" },
+    opts = {
+      flavour = "macchiato",
+      styles = {
+        comments = {},
+        conditionals = {},
+        loops = {},
+        functions = {},
+        keywords = { "bold" },
+        strings = {},
+        variables = {},
+        numbers = { "bold" },
+        booleans = {},
+        properties = {},
+        types = {},
+        operators = { "bold" },
+      },
+    },
   },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "tokyonight",
+      colorscheme = "catppuccin-macchiato",
     },
   },
 }
