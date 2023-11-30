@@ -20,5 +20,17 @@ vim.opt.mouse = ""
 vim.cmd("hi Search guibg=black guifg=red")
 vim.cmd("hi CurSearch guibg=black guifg=blue")
 vim.cmd("hi IncSearch guibg=green guifg=black")
-
 vim.cmd("hi FlashCursor guibg=black guifg=orange")
+
+vim.diagnostic.config({
+  virtual_text = false,
+  update_in_insert = false,
+  severity_sort = true,
+  float = {
+    focusable = false,
+    border = "single",
+    source = "always",
+    header = "",
+    prefix = "",
+  },
+})
