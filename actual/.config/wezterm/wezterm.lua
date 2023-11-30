@@ -19,6 +19,13 @@ config.hide_tab_bar_if_only_one_tab = true
 config.scrollback_lines = 50000
 config.font_size = 13
 config.window_close_confirmation = 'NeverPrompt'
+config.force_reverse_video_cursor = true
+config.window_padding = {
+  left = 8,
+  right = 8,
+  top = 0,
+  bottom = 0,
+}
 
 -- and finally, return the configuration to wezterm
 return config

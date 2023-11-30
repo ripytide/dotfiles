@@ -4,14 +4,24 @@
 
 vim.g.autoformat = false
 
-vim.o.hidden = false
+vim.opt.hidden = false
 
-vim.o.tabstop = 4
-vim.o.shiftwidth = 4
-vim.o.expandtab = false
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = false
 
 vim.api.nvim_set_option("clipboard", "unnamed")
 
-vim.o.undodir = "/home/ripytide/undodir"
-vim.o.swapfile = false
-vim.o.backup = false
+vim.opt.undodir = "/home/ripytide/undodir"
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.mouse = ""
+
+vim.cmd("hi Search guibg=black guifg=red")
+vim.cmd("hi CurSearch guibg=black guifg=blue")
+vim.cmd("hi IncSearch guibg=green guifg=black")
+
+vim.cmd("hi FlashMatch guibg=black guifg=red")
+vim.cmd("hi FlashCurrent guibg=black guifg=blue")
+vim.cmd("hi FlashBackdrop guibg=green guifg=black")
+vim.cmd("hi FlashLabel guibg=black guifg=green")
