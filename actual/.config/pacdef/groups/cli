@@ -5,6 +5,7 @@ unzip
 eza
 fzf
 bat
+sd
 sxiv
 git-delta
 bottom
@@ -16,6 +17,7 @@ tealdeer
 rm-improved
 pass
 less
+lf
 
 fish
 starship

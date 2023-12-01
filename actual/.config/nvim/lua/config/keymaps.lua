@@ -36,5 +36,6 @@ vim.keymap.set("n", ";n", "A,<esc>")
 vim.keymap.set("n", ";t", "A;<esc>")
 
 vim.keymap.set("n", "<leader><leader>", require("telescope.builtin").find_files)
+vim.keymap.set("n", "<leader>/", require("telescope.builtin").live_grep)
 
 vim.keymap.set("n", "ga", vim.lsp.buf.code_action)
