@@ -3,8 +3,8 @@
 -- Add any additional keymaps here
 local Util = require("lazyvim.util")
 
-vim.keymap.set("n", "<C-d>", "16jzz")
-vim.keymap.set("n", "<C-u>", "16kzz")
+-- vim.keymap.set("n", "<C-d>", "16jzz")
+-- vim.keymap.set("n", "<C-u>", "16kzz")
 
 local diagnostic_goto = function(next, severity)
   local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
