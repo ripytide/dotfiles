@@ -39,3 +39,5 @@ vim.keymap.set("n", "<leader><leader>", require("telescope.builtin").find_files)
 vim.keymap.set("n", "<leader>/", require("telescope.builtin").live_grep)
 
 vim.keymap.set("n", "ga", vim.lsp.buf.code_action)
+vim.keymap.set("n", "gl", vim.lsp.buf.rename)
+vim.keymap.set("n", "0", "^")
