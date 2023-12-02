@@ -73,11 +73,16 @@ return {
 						end
 					end,
 					function(entry1, entry2)
-						local isenum_member1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
-						local isenum_member2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
+						local enum1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
+						local enum2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
 
-						if isenum_member1 ~= isenum_member2 then
-							return isenum_member1
+						local snip1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.Snippet
+						local snip2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.Snippet
+
+						if enum1 and snip2 then
+							return true
+						elseif enum2 and snip1 then
+							return false
 						end
 					end,
 					cmp.config.compare.offset,
