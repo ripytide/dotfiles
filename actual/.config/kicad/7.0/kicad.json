@@ -56,7 +56,7 @@
     "use_theme": false
   },
   "system": {
-    "check_for_updates": 0,
+    "check_for_updates": 2,
     "file_history": [
       "/home/ripytide/rail_agvs/kicad/ripybot.kicad_pro"
     ],
@@ -64,9 +64,7 @@
     "last_imperial_units": 0,
     "last_metric_units": 1,
     "max_undo_items": 0,
-    "open_projects": [
-      "/home/ripytide/rail_agvs/kicad/ripybot.kicad_pro"
-    ],
+    "open_projects": [],
     "units": 1
   },
   "window": {

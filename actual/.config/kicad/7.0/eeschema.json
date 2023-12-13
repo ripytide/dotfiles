@@ -9,7 +9,7 @@
     "sort_order": 0
   },
   "appearance": {
-    "color_theme": "solarized-dark",
+    "color_theme": "user",
     "default_font": "KiCad Font",
     "edit_label_height": 380,
     "edit_label_visible_columns": "0 1 2 3 4 5 6 7",
@@ -231,6 +231,7 @@
   },
   "system": {
     "file_history": [
+      "/home/ripytide/sync/3d/rail_agvs/kicad/ripybot.kicad_sch",
       "/home/ripytide/rail_agvs/kicad/ripybot.kicad_sch"
     ],
     "first_run_shown": false,
@@ -267,6 +268,28 @@
     "pos_y": 0,
     "size_x": 1280,
     "size_y": 720,
-    "zoom_factors": []
+    "zoom_factors": [
+      0.05,
+      0.07,
+      0.1,
+      0.15,
+      0.2,
+      0.3,
+      0.5,
+      0.7,
+      1.0,
+      1.5,
+      2.0,
+      3.0,
+      4.5,
+      6.5,
+      10.0,
+      15.0,
+      20.0,
+      30.0,
+      45.0,
+      65.0,
+      100.0
+    ]
   }
 }
