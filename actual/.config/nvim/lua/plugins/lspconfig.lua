@@ -17,6 +17,7 @@ return {
 			},
 			servers = {
 				rust_analyzer = {
+					cmd = { "rust-analyzer" },
 					keys = {
 						{ "K", false },
 					},
