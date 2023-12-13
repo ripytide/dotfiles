@@ -17,7 +17,7 @@ return {
 			},
 			servers = {
 				rust_analyzer = {
-					cmd = { "rust-analyzer" },
+					cmd = { "/home/ripytide/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer" },
 					keys = {
 						{ "K", false },
 					},
