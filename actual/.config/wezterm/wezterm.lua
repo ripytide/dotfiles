@@ -14,7 +14,7 @@ end
 
 -- For example, changing the color scheme:
 
-config.scrollback_lines = 50000
+config.scrollback_lines = 5000
 config.hide_tab_bar_if_only_one_tab = true
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
