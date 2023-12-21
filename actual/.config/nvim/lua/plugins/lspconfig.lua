@@ -17,7 +17,7 @@ return {
 			},
 			servers = {
 				rust_analyzer = {
-					cmd = { "/home/ripytide/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer" },
+					mason = false,
 					keys = {
 						{ "K", false },
 					},
@@ -30,6 +30,9 @@ return {
 							},
 						},
 					},
+				},
+				typos_lsp = {
+					mason = false,
 				},
 			},
 		},
