@@ -7,11 +7,11 @@ local Util = require("lazyvim.util")
 -- vim.keymap.set("n", "<C-u>", "16kzz")
 
 local diagnostic_goto = function(next, severity)
-  local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
-  severity = severity and vim.diagnostic.severity[severity] or nil
-  return function()
-    go({ severity = severity })
-  end
+	local go = next and vim.diagnostic.goto_next or vim.diagnostic.goto_prev
+	severity = severity and vim.diagnostic.severity[severity] or nil
+	return function()
+		go({ severity = severity })
+	end
 end
 
 vim.keymap.set("n", "n", diagnostic_goto(true), { desc = "Jump to next diagnostic message" })
@@ -29,7 +29,7 @@ vim.keymap.set("x", "s", require("substitute").visual, { noremap = true })
 vim.keymap.del("n", "<leader>gG")
 vim.keymap.set("n", "<leader>gg", require("lazy").show, { desc = "Open lazy.nvim" })
 vim.keymap.set("n", "<leader>l", function()
-  Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
+	Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
 end, { desc = "Lazygit (cwd)" })
 
 vim.keymap.set("n", ";n", "A,<esc>")
@@ -41,3 +41,7 @@ vim.keymap.set("n", "<leader>/", require("telescope.builtin").live_grep)
 vim.keymap.set("n", "ga", vim.lsp.buf.code_action)
 vim.keymap.set("n", "gl", vim.lsp.buf.rename)
 vim.keymap.set("n", "0", "^")
+
+vim.keymap.set("i", "<C-e>", "<End>", { noremap = true })
+vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
+vim.keymap.set("i", "<C-k>", "<Esc>lDa", { noremap = true })
