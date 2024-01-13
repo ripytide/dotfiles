@@ -10,7 +10,6 @@ options = {
     ".config": "&HOME/dotfiles/actual/.config",
 }
 
-
 choices = "\n".join(options.keys())
 
 p1 = Popen(["echo", choices], stdout=PIPE)
@@ -23,5 +22,3 @@ selection = options[output]
 directory = "/".join(selection.split("/")[:-1])
 
 process = run(["wezterm", "-e", "--cwd", directory, "nvim", selection])
-
-run(["fish", "-c", "compile"])

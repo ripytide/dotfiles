@@ -1,3 +1,3 @@
 function compile
-	fish -c "cd ~/dotfiles && python compile.py"
+	fish -c "cd ~/dotfiles && dotter"
 end

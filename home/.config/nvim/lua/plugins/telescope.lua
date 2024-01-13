@@ -63,6 +63,8 @@ return {
 			},
 			live_grep = {
 				additional_args = {
+					"--smart-case",
+					"--hidden",
 					"-g",
 					"!**/.git/*",
 					"-g",

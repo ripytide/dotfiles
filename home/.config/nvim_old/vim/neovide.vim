@@ -1,9 +1,0 @@
-let g:neovide_scale_factor = 0.6
-let g:neovide_refresh_rate = 1000
-let g:neovide_refresh_rate_idle = 3
-let g:neovide_confirm_quit = v:false
-let g:neovide_remember_window_size = v:false
-let g:neovide_profiler = v:false
-let g:neovide_cursor_animation_length=0.15
-let g:neovide_cursor_trail_size = 0.4
-let g:neovide_cursor_vfx_mode = "railgun"
