@@ -42,7 +42,7 @@
       Type = "simple";
     };
     serviceConfig = {
-      ExecStart = ''${(import ./packages/evremap.nix { inherit pkgs; })}/bin/evremap remap "&HOME/.config/evremap/evremap.toml"'';
+      ExecStart = ''${(import ./packages/evremap.nix { inherit pkgs; })}/bin/evremap remap "{{home_dir}}/.config/evremap/evremap.toml"'';
     };
     wantedBy = [ "multi-user.target" ];
   };

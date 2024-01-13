@@ -1,4 +1,4 @@
-device_name = "$KEYBOARD"
+device_name = "{{keyboard}}"
 
 [[dual_role]]
 input = "KEY_CAPSLOCK"

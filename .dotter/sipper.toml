@@ -1,4 +1,6 @@
 packages = ["main"]
 
 [variables]
-
+monitor = "eDP-1"
+keyboard = "AT Translated Set 2 keyboard"
+home_dir = "/home/ripytide"
