@@ -19,20 +19,12 @@ return {
 		{ "s", false },
 		{ "S", false },
 		{
-			"q",
+			"Q",
 			mode = { "n", "x", "o" },
 			function()
 				require("flash").jump()
 			end,
 			desc = "Flash",
-		},
-		{
-			"Q",
-			mode = { "n", "x", "o" },
-			function()
-				require("flash").treesitter()
-			end,
-			desc = "Flash Treesitter",
 		},
 	},
 }
