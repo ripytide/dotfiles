@@ -3,11 +3,11 @@
 from subprocess import Popen, PIPE, run
 
 options = {
-    "fish functions": "&HOME/dotfiles/actual/.config/fish/functions",
-    "neovim": "&HOME/dotfiles/actual/.config/nvim/init.lua",
-    "groups": "&HOME/dotfiles/actual/.config/pacdef/groups",
-    "hyprland": "&HOME/dotfiles/actual/.config/hypr/hyprland.conf",
-    ".config": "&HOME/dotfiles/actual/.config",
+    "fish functions": "{{home_dir}}/dotfiles/home/.config/fish/functions",
+    "neovim": "{{home_dir}}/dotfiles/home/.config/nvim/init.lua",
+    "groups": "{{home_dir}}/dotfiles/home/.config/pacdef/groups",
+    "hyprland": "{{home_dir}}/dotfiles/home/.config/hypr/hyprland.conf",
+    ".config": "{{home_dir}}/dotfiles/home/.config",
 }
 
 choices = "\n".join(options.keys())
