@@ -1,7 +1,7 @@
 {
   "action_plugins": [],
   "appearance": {
-    "color_theme": "solarized-dark"
+    "color_theme": "user"
   },
   "aui": {
     "appearance_expand_layer_display": false,
@@ -37,7 +37,7 @@
   "drc_dialog": {
     "refill_zones": true,
     "severities": 24,
-    "test_all_track_errors": false,
+    "test_all_track_errors": true,
     "test_footprints": true
   },
   "editing": {
@@ -100,10 +100,10 @@
     "search_and_replace": false
   },
   "footprint_chooser": {
-    "height": -1,
-    "sash_h": -1,
-    "sash_v": -1,
-    "width": -1
+    "height": 680,
+    "sash_h": 440,
+    "sash_v": 460,
+    "width": 880
   },
   "footprint_viewer": {
     "autozoom": true,
@@ -223,8 +223,8 @@
     "merge_pth_npth": false,
     "minimal_header": false,
     "mirror": false,
-    "unit_drill_is_inch": true,
-    "use_route_for_oval_holes": true,
+    "unit_drill_is_inch": false,
+    "use_route_for_oval_holes": false,
     "zeros_format": 0
   },
   "graphics": {
@@ -276,7 +276,7 @@
     "pad_numbers": true,
     "ratsnest_curved": false,
     "ratsnest_footprint": true,
-    "ratsnest_global": false,
+    "ratsnest_global": true,
     "show_page_borders": true,
     "text_fill": true,
     "track_clearance_mode": 2,
@@ -298,11 +298,11 @@
     "all_layers_on_one_page": 1,
     "check_zones_before_plotting": true,
     "edgecut_on_all_layers": true,
-    "fine_scale_x": 0.0,
-    "fine_scale_y": 0.0,
+    "fine_scale_x": 1.0,
+    "fine_scale_y": 1.0,
     "mirror": false,
     "pads_drill_mode": 2,
-    "ps_fine_width_adjust": 0.0
+    "ps_fine_width_adjust": 1e-06
   },
   "printing": {
     "background": false,
@@ -337,7 +337,7 @@
     "first_run_shown": false,
     "last_footprint3d_dir": "/usr/share/kicad/3dmodels/",
     "last_footprint_lib_dir": "",
-    "last_imperial_units": 0,
+    "last_imperial_units": 5,
     "last_metric_units": 1,
     "max_undo_items": 0,
     "units": 1
@@ -363,8 +363,8 @@
       "shove_vias": true,
       "smart_pads": true,
       "smooth_dragged_segments": true,
-      "snap_to_pads": false,
-      "snap_to_tracks": false,
+      "snap_to_pads": true,
+      "snap_to_tracks": true,
       "start_diagonal": false,
       "suggest_finish": false,
       "via_force_prop_iteration_limit": 40,
@@ -374,7 +374,7 @@
   },
   "window": {
     "cursor": {
-      "always_show_cursor": true,
+      "always_show_cursor": false,
       "fullscreen_cursor": true
     },
     "display": 0,
@@ -383,7 +383,7 @@
       "axes_enabled": false,
       "fast_grid_1": 4,
       "fast_grid_2": 5,
-      "last_size": 4,
+      "last_size": 14,
       "line_width": 1.0,
       "min_spacing": 10.0,
       "show": true,
