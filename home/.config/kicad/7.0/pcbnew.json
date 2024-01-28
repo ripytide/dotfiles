@@ -6,7 +6,7 @@
   "aui": {
     "appearance_expand_layer_display": false,
     "appearance_expand_net_display": false,
-    "appearance_panel_tab": 0,
+    "appearance_panel_tab": 1,
     "properties_panel_width": 20,
     "properties_splitter_proportion": 0.5,
     "right_panel_width": 303,
