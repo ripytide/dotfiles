@@ -5,3 +5,4 @@ root ALL=(ALL:ALL) ALL
 ALL ALL=NOPASSWD: /bin/ydotool
 
 Defaults insults
+Defaults passwd_timeout=0
