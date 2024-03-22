@@ -19,7 +19,6 @@ config.hide_tab_bar_if_only_one_tab = true
 config.window_close_confirmation = "NeverPrompt"
 config.force_reverse_video_cursor = true
 config.automatically_reload_config = false
-config.show_update_window = false
 config.check_for_updates = false
 
 config.font = wezterm.font("Fira Code", { weight = "Medium" })
@@ -31,6 +30,7 @@ config.window_padding = {
 	top = 0,
 	bottom = 0,
 }
+config.enable_wayland = false
 
 -- and finally, return the configuration to wezterm
 return config
