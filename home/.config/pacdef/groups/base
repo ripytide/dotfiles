@@ -14,7 +14,9 @@ man-db
 networkmanager
 
 paru-bin
-pacdef-git
+pacdef
+dotter-rs-bin
+downgrade
 
 intel-ucode
 amd-ucode

@@ -1,4 +1,6 @@
 [arch]
+dua-cli
+rsync
 arp-scan
 dog
 unzip
