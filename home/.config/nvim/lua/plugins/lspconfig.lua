@@ -2,34 +2,9 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		opts = {
-			-- options for vim.diagnostic.config()
-			diagnostics = {
-				underline = true,
-				update_in_insert = false,
-				virtual_text = false,
-				severity_sort = true,
-			},
-			-- Enable this to enable the builtin LSP inlay hints on Neovim >= 0.10.0
-			-- Be aware that you also will need to properly configure your LSP server to
-			-- provide the inlay hints.
-			inlay_hints = {
-				enabled = false,
-			},
 			servers = {
 				rust_analyzer = {
 					mason = false,
-					keys = {
-						{ "K", false },
-					},
-					settings = {
-						["rust-analyzer"] = {
-							cargo = { allFeatures = false },
-							checkOnSave = { allFeatures = false },
-							lens = {
-								enable = false,
-							},
-						},
-					},
 				},
 				typos_lsp = {
 					mason = false,
@@ -48,13 +23,53 @@ return {
 		end,
 	},
 	{
-		"simrat39/rust-tools.nvim",
+		"mrcjkb/rustaceanvim",
+		version = "^4", -- Recommended
+		ft = { "rust" },
 		opts = {
-			tools = {
-				inlay_hints = {
-					auto = false,
+			server = {
+				on_attach = function(_, bufnr)
+					vim.keymap.set("n", "<leader>cR", function()
+						vim.cmd.RustLsp("codeAction")
+					end, { desc = "Code Action", buffer = bufnr })
+					vim.keymap.set("n", "<leader>dr", function()
+						vim.cmd.RustLsp("debuggables")
+					end, { desc = "Rust Debuggables", buffer = bufnr })
+				end,
+				keys = {
+					{ "K", false },
+				},
+				default_settings = {
+					-- rust-analyzer language server configuration
+					["rust-analyzer"] = {
+						lens = {
+							enable = false,
+						},
+						cargo = {
+							allFeatures = false,
+							loadOutDirsFromCheck = true,
+							runBuildScripts = true,
+						},
+						-- Add clippy lints for Rust.
+						checkOnSave = {
+							allFeatures = true,
+							command = "clippy",
+							extraArgs = { "--no-deps" },
+						},
+						procMacro = {
+							enable = true,
+							ignored = {
+								["async-trait"] = { "async_trait" },
+								["napi-derive"] = { "napi" },
+								["async-recursion"] = { "async_recursion" },
+							},
+						},
+					},
 				},
 			},
 		},
+		config = function(_, opts)
+			vim.g.rustaceanvim = vim.tbl_deep_extend("keep", vim.g.rustaceanvim or {}, opts or {})
+		end,
 	},
 }
