@@ -8,8 +8,7 @@ return {
 			"gbrlsnchs/telescope-lsp-handlers.nvim",
 		},
 	},
-	config = function(_, opts)
-		require("telescope").setup(opts)
+	init = function(_)
 		require("telescope").load_extension("undo")
 		require("telescope").load_extension("lsp_handlers")
 	end,

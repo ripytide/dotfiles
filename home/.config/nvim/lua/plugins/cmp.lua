@@ -1,4 +1,11 @@
 local cmp = require("cmp")
+local luasnip = require("luasnip")
+local has_words_before = function()
+	unpack = unpack or table.unpack
+	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
+	return col ~= 0 and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
+end
+
 return {
 	{
 		"L3MON4D3/LuaSnip",
@@ -36,17 +43,7 @@ return {
 				disallow_partial_matching = false,
 				disallow_prefix_unmatching = false,
 			},
-		},
-		config = function(_, opts)
-			local luasnip = require("luasnip")
-
-			local has_words_before = function()
-				unpack = unpack or table.unpack
-				local line, col = unpack(vim.api.nvim_win_get_cursor(0))
-				return col ~= 0
-					and vim.api.nvim_buf_get_lines(0, line - 1, line, true)[1]:sub(col, col):match("%s") == nil
-			end
-			opts.mapping = vim.tbl_extend("force", opts.mapping, {
+			mapping = {
 				["<Tab>"] = cmp.mapping(function(fallback)
 					if cmp.visible() then
 						-- You could replace select_next_item() with confirm({ select = true }) to get VS Code autocompletion behavior
@@ -70,10 +67,15 @@ return {
 						fallback()
 					end
 				end, { "i", "s" }),
-			})
-
-			cmp.setup(opts)
-
+			},
+			formatting = {
+				format = function(_, vim_item)
+					vim_item.menu = nil
+					return vim_item
+				end,
+			},
+		},
+		init = function(_)
 			-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 			cmp.setup.cmdline({ "/", "?" }, {
 				mapping = cmp.mapping.preset.cmdline(),
