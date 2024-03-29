@@ -24,35 +24,9 @@ return {
 				documentation = { border = "single" },
 			},
 			sorting = {
+				priority_weight = 2,
 				comparators = {
-					function(entry1, entry2)
-						local isfield1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.Field
-						local isfield2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.Field
-
-						if isfield1 ~= isfield2 then
-							return isfield1
-						end
-					end,
-					function(entry1, entry2)
-						local enum1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
-						local enum2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
-
-						local snip1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.Snippet
-						local snip2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.Snippet
-
-						if enum1 and snip2 then
-							return true
-						elseif enum2 and snip1 then
-							return false
-						end
-					end,
-					cmp.config.compare.offset,
-					cmp.config.compare.exact,
-					cmp.config.compare.score,
-					cmp.config.compare.sort_text,
-					cmp.config.compare.length,
 					cmp.config.compare.order,
-					cmp.config.compare.kind,
 				},
 			},
 			matching = {
@@ -62,12 +36,6 @@ return {
 				disallow_partial_matching = false,
 				disallow_prefix_unmatching = false,
 			},
-		},
-	},
-	{
-		"hrsh7th/nvim-cmp",
-		dependencies = {
-			"hrsh7th/cmp-cmdline",
 		},
 		config = function(_, opts)
 			local luasnip = require("luasnip")
