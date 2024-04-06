@@ -6,7 +6,7 @@
 	ui = true
 [core]
 	pager = delta
-	hooksPath = /home/ripytide/sync/coding/githooks
+	hooksPath = /home/ripytide/.config/githooks
 	;excludesfile = /home/ripytide/sync/.gitignore
 [credential]
 	helper = cache
