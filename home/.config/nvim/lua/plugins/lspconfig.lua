@@ -56,6 +56,7 @@ return {
 					["rust-analyzer"] = {
 						check = {
 							workspace = false,
+							command = "clippy",
 						},
 						lens = {
 							enable = false,
@@ -64,12 +65,6 @@ return {
 							allFeatures = false,
 							loadOutDirsFromCheck = true,
 							runBuildScripts = true,
-						},
-						-- Add clippy lints for Rust.
-						checkOnSave = {
-							allFeatures = true,
-							command = "clippy",
-							extraArgs = { "--no-deps" },
 						},
 						procMacro = {
 							enable = true,
