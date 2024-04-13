@@ -64,19 +64,6 @@ return {
 						lens = {
 							enable = false,
 						},
-						cargo = {
-							allFeatures = false,
-							loadOutDirsFromCheck = true,
-							runBuildScripts = true,
-						},
-						procMacro = {
-							enable = true,
-							ignored = {
-								["async-trait"] = { "async_trait" },
-								["napi-derive"] = { "napi" },
-								["async-recursion"] = { "async_recursion" },
-							},
-						},
 					},
 				},
 			},
