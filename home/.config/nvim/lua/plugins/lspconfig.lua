@@ -55,8 +55,11 @@ return {
 					-- rust-analyzer language server configuration
 					["rust-analyzer"] = {
 						check = {
-							workspace = false,
+							workspace = true,
 							command = "clippy",
+						},
+						references = {
+							excludeImports = true,
 						},
 						lens = {
 							enable = false,
