@@ -1,5 +1,3 @@
-local cmp = require("cmp")
-local luasnip = require("luasnip")
 local has_words_before = function()
 	unpack = unpack or table.unpack
 	local line, col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -16,63 +14,27 @@ return {
 	{
 		"hrsh7th/nvim-cmp",
 		dependencies = {
-			"hrsh7th/cmp-cmdline",
+			"zjp-CN/nvim-cmp-lsp-rs",
 		},
-		opts = {
-			preselect = "None",
-			completion = {
+		--@param opts cmp.ConfigSchema
+		opts = function(_, opts)
+			local cmp = require("cmp")
+			local luasnip = require("luasnip")
+			local compare = require("cmp").config.compare
+
+			opts.preselect = cmp.PreselectMode.None
+			opts.completion = {
 				completeopt = "menu,menuone,noinsert,noselect",
-			},
-			view = {
+			}
+
+			opts.view = {
 				entries = {
 					name = "custom",
 					selection_order = "near_cursor",
 				},
-			},
-			window = {
-				completion = { border = "single" },
-				documentation = { border = "single" },
-			},
-			sorting = {
-				comparators = {
-					function(entry1, entry2)
-						local isfield1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.Field
-						local isfield2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.Field
+			}
 
-						if isfield1 ~= isfield2 then
-							return isfield1
-						end
-					end,
-					function(entry1, entry2)
-						local enum1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
-						local enum2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.EnumMember
-
-						local snip1 = entry1:get_kind() == require("cmp.types").lsp.CompletionItemKind.Snippet
-						local snip2 = entry2:get_kind() == require("cmp.types").lsp.CompletionItemKind.Snippet
-
-						if enum1 and snip2 then
-							return true
-						elseif enum2 and snip1 then
-							return false
-						end
-					end,
-					cmp.config.compare.offset,
-					cmp.config.compare.exact,
-					cmp.config.compare.score,
-					cmp.config.compare.sort_text,
-					cmp.config.compare.length,
-					cmp.config.compare.order,
-					cmp.config.compare.kind,
-				},
-			},
-			matching = {
-				disallow_fuzzy_matching = true,
-				disallow_fullfuzzy_matching = true,
-				disallow_partial_fuzzy_matching = true,
-				disallow_partial_matching = false,
-				disallow_prefix_unmatching = false,
-			},
-			mapping = {
+			local my_mapping = {
 				["<Tab>"] = cmp.mapping(function(fallback)
 					if cmp.visible() then
 						-- You could replace select_next_item() with confirm({ select = true }) to get VS Code autocompletion behavior
@@ -96,15 +58,45 @@ return {
 						fallback()
 					end
 				end, { "i", "s" }),
-			},
-			formatting = {
+			}
+
+			opts.mapping = vim.tbl_deep_extend("force", opts.mapping, my_mapping)
+
+			opts.formatting = {
 				format = function(_, vim_item)
 					vim_item.menu = nil
 					return vim_item
 				end,
-			},
-		},
+			}
+
+			opts.window = {
+				completion = { border = "single" },
+				documentation = { border = "single" },
+			}
+
+			local cmp_rs = require("cmp_lsp_rs")
+			local comparators = cmp_rs.comparators
+
+			opts.sorting.comparators = {
+				-- compare.kind,
+				-- comparators.inherent_import_inscope,
+				-- comparators.inscope_inherent,
+				compare.score,
+				comparators.inscope_inherent_import,
+				comparators.sort_by_label_but_underscore_last,
+				-- compare.recently_used,
+				-- compare.sort_text,
+			}
+
+			for _, source in ipairs(opts.sources) do
+				cmp_rs.filter_out.entry_filter(source)
+			end
+
+			return opts
+		end,
 		init = function(_)
+			local cmp = require("cmp")
+
 			-- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
 			cmp.setup.cmdline({ "/", "?" }, {
 				mapping = cmp.mapping.preset.cmdline(),
