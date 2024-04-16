@@ -57,6 +57,7 @@ return {
 						check = {
 							workspace = true,
 							command = "clippy",
+							-- features = "all",
 						},
 						references = {
 							excludeImports = true,
