@@ -15,6 +15,7 @@ return {
 		"hrsh7th/nvim-cmp",
 		dependencies = {
 			"zjp-CN/nvim-cmp-lsp-rs",
+			"hrsh7th/cmp-cmdline",
 		},
 		--@param opts cmp.ConfigSchema
 		opts = function(_, opts)
