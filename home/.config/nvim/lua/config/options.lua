@@ -17,7 +17,7 @@ vim.opt.swapfile = false
 vim.opt.backup = false
 vim.opt.mouse = ""
 vim.opt.scrolloff = 8
-vim.opt.textwidth = 80
+vim.opt.textwidth = 75
 vim.opt.linebreak = true
 
 vim.cmd("hi Search guibg=black guifg=red")

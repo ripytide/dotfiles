@@ -46,6 +46,7 @@ return {
 		},
 		pickers = {
 			find_files = {
+				follow = true,
 				find_command = {
 					"rg",
 					"--files",
@@ -55,6 +56,7 @@ return {
 			},
 			live_grep = {
 				additional_args = {
+					"-L",
 					"--smart-case",
 					"--hidden",
 				},

@@ -2,7 +2,9 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		opts = {
-			-- options for vim.diagnostic.config()
+			inlay_hints = {
+				enabled = false,
+			},
 			diagnostics = {
 				underline = true,
 				update_in_insert = false,
