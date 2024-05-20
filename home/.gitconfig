@@ -34,3 +34,5 @@
 
 [hooks]
 maxfilesize = 1m
+[fetch]
+	prune = true
