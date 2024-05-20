@@ -19,6 +19,7 @@ vim.opt.mouse = ""
 vim.opt.scrolloff = 8
 vim.opt.textwidth = 75
 vim.opt.linebreak = true
+vim.opt.conceallevel = 0
 
 vim.cmd("hi Search guibg=black guifg=red")
 vim.cmd("hi CurSearch guibg=black guifg=blue")
