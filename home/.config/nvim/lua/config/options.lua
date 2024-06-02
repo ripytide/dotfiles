@@ -10,8 +10,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
 
-vim.api.nvim_set_option("clipboard", "unnamed")
-
+vim.opt.clipboard = "unnamed"
 vim.opt.undodir = "/home/ripytide/undodir"
 vim.opt.swapfile = false
 vim.opt.backup = false
@@ -27,14 +26,14 @@ vim.cmd("hi IncSearch guibg=green guifg=black")
 vim.cmd("hi FlashCursor guibg=black guifg=orange")
 
 vim.diagnostic.config({
-  virtual_text = false,
-  update_in_insert = false,
-  severity_sort = true,
-  float = {
-    focusable = false,
-    border = "single",
-    source = "always",
-    header = "",
-    prefix = "",
-  },
+	virtual_text = false,
+	update_in_insert = false,
+	severity_sort = true,
+	float = {
+		focusable = false,
+		border = "single",
+		source = "always",
+		header = "",
+		prefix = "",
+	},
 })

@@ -21,10 +21,19 @@ vim.keymap.set("n", ",", "n", { desc = "Jump to next search result" })
 
 vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
 
-vim.keymap.set("n", "s", require("substitute").operator, { noremap = true })
-vim.keymap.set("n", "ss", require("substitute").line, { noremap = true })
-vim.keymap.set("n", "S", require("substitute").eol, { noremap = true })
-vim.keymap.set("x", "s", require("substitute").visual, { noremap = true })
+local substitute_config = { register = "" }
+vim.keymap.set("n", "s", function()
+	require("substitute").operator(substitute_config)
+end, { noremap = true })
+vim.keymap.set("n", "ss", function()
+	require("substitute").line(substitute_config)
+end, { noremap = true })
+vim.keymap.set("n", "S", function()
+	require("substitute").eol(substitute_config)
+end, { noremap = true })
+vim.keymap.set("x", "s", function()
+	require("substitute").visual(substitute_config)
+end, { noremap = true })
 
 vim.keymap.del("n", "<leader>gG")
 vim.keymap.set("n", "<leader>gg", require("lazy").show, { desc = "Open lazy.nvim" })
