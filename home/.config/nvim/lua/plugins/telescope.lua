@@ -35,9 +35,9 @@ return {
 				"*.jpg",
 				"*.svg",
 				"*.jpeg",
-				"/node_modules/",
-				"/target/",
-				"/.git/",
+				"node_modules/",
+				"target/",
+				".git/",
 			},
 			layout_config = {
 				width = 500,
