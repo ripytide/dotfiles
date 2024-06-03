@@ -12,9 +12,6 @@ return {
 				severity_sort = true,
 			},
 			servers = {
-				rust_analyzer = {
-					mason = false,
-				},
 				typos_lsp = {
 					mason = false,
 				},
