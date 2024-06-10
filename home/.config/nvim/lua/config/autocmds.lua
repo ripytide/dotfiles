@@ -1,3 +1,16 @@
 -- Autocmds are automatically loaded on the VeryLazy event
 -- Default autocmds that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/autocmds.lua
 -- Add any additional autocmds here
+
+-- local function augroup(name)
+--   return vim.api.nvim_create_augroup("lazyvim_" .. name, { clear = true })
+-- end
+-- Dosn't work and I decided I didn't want it anyway but I'm leaving it
+-- here as an example.
+-- vim.api.nvim_create_autocmd({ "FileType" }, {
+-- 	group = augroup("no_conceal"),
+-- 	pattern = { "octo" },
+-- 	callback = function()
+-- 		vim.opt_local.conceallevel = 0
+-- 	end,
+-- })

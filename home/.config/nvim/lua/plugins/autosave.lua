@@ -17,7 +17,7 @@ return {
 
 			local modifiable = fn.getbufvar(buf, "&modifiable") == 1
 			local filetype = fn.getbufvar(buf, "&filetype")
-			local ignored_filetypes = utils.not_in(filetype, { "oil" })
+			local ignored_filetypes = utils.not_in(filetype, { "oil", "octo" })
 
 			if modifiable and ignored_filetypes then
 				return true -- met condition(s), can save
