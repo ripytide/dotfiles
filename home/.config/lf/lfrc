@@ -9,16 +9,11 @@ map O $mimeopen --ask $f
 # use '<delete>' key for either 'trash' or 'delete' command
 map <delete> trash
 
-map y updir
-map n down
-map e up
 map o open
 map <enter> open
 
-map j search-next
-map J search-prev
-
-map h copy
+map , search-next
+map _ search-prev
 
 cmd delete %rip "$fx"
 cmd mkdir %{{
@@ -34,7 +29,6 @@ cmd nvimnewfile %{{
 
 set previewer colorbat
 
-map md mkdir
 map d
 map dd delete
 map x cut

@@ -7,7 +7,7 @@
 [core]
 	pager = delta
 	hooksPath = /home/ripytide/.config/githooks
-	;excludesfile = /home/ripytide/sync/.gitignore
+	excludesfile = /home/ripytide/sync/.gitignore
 [credential]
 	helper = cache
 [cola]

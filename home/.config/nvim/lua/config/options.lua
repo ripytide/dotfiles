@@ -10,7 +10,7 @@ vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = false
 
-vim.opt.clipboard = "unnamed"
+-- vim.opt.clipboard = "unnamed"
 vim.opt.undodir = "/home/ripytide/undodir"
 vim.opt.swapfile = false
 vim.opt.backup = false
