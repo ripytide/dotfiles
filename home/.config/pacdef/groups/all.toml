@@ -130,4 +130,4 @@ arch = [
 	"krabby-bin",
 ]
 
-cargo = ["cargo-binstall", "bacon"]
+rustup = ["cargo-binstall", "bacon"]
