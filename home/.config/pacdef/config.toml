@@ -1,0 +1,7 @@
+arch_package_manager = "paru"
+arch_rm_args = ["-ns"]
+
+hostname_groups_enabled = true
+
+[hostname_groups]
+sipper = []

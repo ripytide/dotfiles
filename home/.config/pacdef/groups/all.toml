@@ -1,0 +1,133 @@
+arch = [
+	# base
+	"arch-install-scripts",
+	"dnsmasq",
+	"linux",
+	"linux-firmware",
+	"base",
+	"base-devel",
+	"gcc",
+	"git",
+	"rustup",
+	"python",
+	"gcr",
+	"man-db",
+	"networkmanager",
+
+	# package/dotfile management
+	"paru-bin",
+	"pacdef",
+	"dotter-rs-bin",
+	"downgrade",
+
+	# cpu ucode
+	"intel-ucode",
+	"amd-ucode",
+
+	# fonts
+	"noto-fonts",
+	"noto-fonts-emoji",
+	"ttf-fira-code",
+	"ttf-firacode-nerd",
+	"ttf-nerd-fonts-symbols",
+	"ttf-font-awesome",
+	"nerd-fonts",
+
+	# dev
+	"cargo-udeps",
+	"gnuplot",
+	"mosquitto",
+	"npm",
+	"opencv",
+	"python-opencv",
+	"tokei",
+	"python-black",
+	"clang",
+
+	# laptop
+	"bluetuith-bin",
+	"acpi",
+	"batsignal",
+
+	# wayland
+	"dunst",
+	"waybar",
+	"ydotool",
+	"libnotify",
+	"playerctl",
+	"pavucontrol-qt",
+	"evremap-git",
+	"wl-clipboard",
+	"cliphist",
+	"hyprland",
+	"xdg-desktop-portal-hyprland",
+	"wf-recorder",
+	"grim",
+	"slurp",
+	"rofi-lbonn-wayland-git",
+	"pipewire",
+	"pipewire-audio",
+	"pipewire-alsa",
+	"pipewire-pulse",
+	"pipewire-jack",
+	"wireplumber",
+	"swaylock",
+	"swayidle",
+	"zenity",
+	"gnome-themes-extra",
+	"adwaita-qt5-git",
+	"adwaita-qt6-git",
+	"brightnessctl",
+
+	# core apps
+	"firefox",
+
+	# extra apps
+	"gnome-characters",
+	"discord",
+	"gparted",
+	"gucharmap",
+	"obsidian",
+	"pdfarranger",
+	"teams",
+	"ungoogled-chromium-bin",
+	"libreoffice-fresh",
+	"kicad",
+	"freecad",
+	"inkscape",
+	"calibre",
+	"syncthing",
+	"vlc",
+	"gimp",
+
+	# cli
+	"dua-cli",
+	"rsync",
+	"arp-scan",
+	"dog",
+	"unzip",
+	"eza",
+	"fzf",
+	"bat",
+	"sd",
+	"sxiv",
+	"git-delta",
+	"bottom",
+	"neovim",
+	"zoxide",
+	"lazygit",
+	"ripgrep",
+	"tealdeer",
+	"rm-improved",
+	"pass",
+	"less",
+	"lf",
+	"parallel",
+
+	# shell
+	"fish",
+	"starship",
+	"krabby-bin",
+]
+
+cargo = ["cargo-binstall", "bacon"]
