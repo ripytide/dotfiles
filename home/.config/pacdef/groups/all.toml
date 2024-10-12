@@ -13,16 +13,18 @@ arch = [
 	"gcr",
 	"man-db",
 	"networkmanager",
+	"inetutils",
+	"net-tools",
+	"openssl-1.1",
+	"usbutils",
+	"zram-generator",
 
 	# package/dotfile management
+	"reflector",
 	"paru-bin",
 	"pacdef",
 	"dotter-rs-bin",
 	"downgrade",
-
-	# cpu ucode
-	"intel-ucode",
-	"amd-ucode",
 
 	# fonts
 	"noto-fonts",
@@ -80,17 +82,22 @@ arch = [
 	"brightnessctl",
 
 	# core apps
+	"kitty",
 	"firefox",
+	"bitwarden",
+	"chromium",
+	"network-manager-applet",
 
 	# extra apps
 	"gnome-characters",
 	"discord",
 	"gparted",
 	"gucharmap",
+	"qbittorrent",
 	"obsidian",
 	"pdfarranger",
 	"teams",
-	"ungoogled-chromium-bin",
+	"hunspell-en_gb",
 	"libreoffice-fresh",
 	"kicad",
 	"freecad",
@@ -99,6 +106,10 @@ arch = [
 	"syncthing",
 	"vlc",
 	"gimp",
+	"code",
+	"kooha",
+	"krita",
+	"mullvad-vpn-bin",
 
 	# cli
 	"dua-cli",
@@ -123,11 +134,63 @@ arch = [
 	"less",
 	"lf",
 	"parallel",
+	"p7zip",
+	"unrar",
+	"zip",
+	"unzip",
+	"fastfetch",
+	"jq",
+	"trippy",
+
+	# file explorer
+	"thunar",
+	"thunar-archive-plugin",
+	"thunar-media-tags-plugin",
+	"thunar-volman",
+	"ffmpegthumbnailer",
+	"gvfs",
+	"gvfs-smb",
+	"tumbler",
+
+	# lsp
+	"typos",
+	"typos-lsp-bin",
 
 	# shell
 	"fish",
 	"starship",
 	"krabby-bin",
+
+	# docker
+	"docker",
+	"docker-compose",
+
+	# formatters
+	"lua-format",
+	"mdformat",
+	"shfmt",
+
+	# amd
+	"amd-ucode",
+	"amdvlk",
+	"mesa",
+	"libva-mesa-driver",
+	"mesa-vdpau",
+	"vulkan-radeon",
+
+	# intel
+	"intel-ucode",
+	"vulkan-intel",
 ]
 
-rustup = ["cargo-binstall", "bacon"]
+cargo = [
+	"bacon",
+	"cargo-benchcmp",
+	"cargo-binstall",
+	"cargo-clone",
+	"cargo-machete",
+	"cargo-outdated",
+	"cargo-release",
+	"cargo-semver-checks",
+	{ package = "pacdef", git = "https://github.com/ripytide/pacdef" },
+]
