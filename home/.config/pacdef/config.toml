@@ -1,6 +1,5 @@
 disabled_backends = ["rustup"]
 
 arch_package_manager = "paru"
-arch_rm_args = ["-ns"]
 
 hostname_groups_enabled = false
