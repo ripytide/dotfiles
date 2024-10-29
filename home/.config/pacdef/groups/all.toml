@@ -96,7 +96,6 @@ arch = [
 	"qbittorrent",
 	"obsidian",
 	"pdfarranger",
-	"teams",
 	"hunspell-en_gb",
 	"libreoffice-fresh",
 	"kicad",

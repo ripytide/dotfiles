@@ -6,7 +6,6 @@
 	ui = true
 [core]
 	pager = delta
-	hooksPath = /home/ripytide/.config/githooks
 	excludesfile = /home/ripytide/sync/.gitignore
 [credential]
 	helper = cache
@@ -32,7 +31,5 @@
 [pull]
 	rebase = true
 
-[hooks]
-maxfilesize = 1m
 [fetch]
 	prune = true

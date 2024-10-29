@@ -9,6 +9,10 @@ export VISUAL="nvim"
 export PATH="/home/ripytide/.cargo/bin/:/home/ripytide/scripts/:/home/ripytide/.local/bin/:$PATH"
 export MANPAGER="nvim +Man!"
 export TERM="kitty"
+export PAGER="bat"
+export SYSTEMD_PAGER="bat -l syslog -p"
+export SYSTEMD_COLORS="false"
+export SYSTEMD_PAGERSECURE="true"
 
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 
