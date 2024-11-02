@@ -36,7 +36,6 @@ arch = [
 	"nerd-fonts",
 
 	# dev
-	"cargo-udeps",
 	"gnuplot",
 	"mosquitto",
 	"npm",
@@ -111,6 +110,7 @@ arch = [
 	"mullvad-vpn-bin",
 
 	# cli
+	"fd"
 	"dua-cli",
 	"rsync",
 	"arp-scan",
@@ -140,6 +140,7 @@ arch = [
 	"fastfetch",
 	"jq",
 	"trippy",
+	"git-cliff",
 
 	# file explorer
 	"thunar",
@@ -191,5 +192,9 @@ cargo = [
 	"cargo-outdated",
 	"cargo-release",
 	"cargo-semver-checks",
+	"cargo-aur",
+	"cargo-dist",
+	"cargo-update",
+	"cargo-udeps",
 	{ package = "pacdef", git = "https://github.com/ripytide/pacdef" },
 ]
