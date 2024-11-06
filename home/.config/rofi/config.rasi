@@ -3,7 +3,6 @@ configuration {
 	width: 30;
 	lines: 10;
 	font: "fira code 16";
-	monitor: "{{monitor}}";
 	show-icons: true;
 	terminal: "wezterm";
 	matching: "normal";

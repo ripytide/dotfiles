@@ -36,16 +36,6 @@
     };
     wantedBy = [ "multi-user.target" ];
   };
-  systemd.services.evremap = {
-    enable = true;
-    unitConfig = {
-      Type = "simple";
-    };
-    serviceConfig = {
-      ExecStart = ''${(import ./packages/evremap.nix { inherit pkgs; })}/bin/evremap remap "{{home_dir}}/.config/evremap/evremap.toml"'';
-    };
-    wantedBy = [ "multi-user.target" ];
-  };
 
   networking.hostName = "devourer"; # Define your hostname.
   # Pick only one of the below networking options.

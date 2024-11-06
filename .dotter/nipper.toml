@@ -1,6 +1,1 @@
 packages = ["main"]
-
-[variables]
-monitor = "HDMI-A-2"
-keyboard = "Dell KB216 Wired Keyboard"
-home_dir = "/home/ripytide"
