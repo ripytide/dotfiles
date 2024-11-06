@@ -110,7 +110,7 @@ arch = [
 	"mullvad-vpn-bin",
 
 	# cli
-	"fd"
+	"fd",
 	"dua-cli",
 	"rsync",
 	"arp-scan",
