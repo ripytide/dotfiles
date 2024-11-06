@@ -5,16 +5,13 @@ workmode = true
 personalmode = false
 
 [files]
-config = "~/.config"
-nvim = "~/AppData/Local/nvim"
-lazygitconfig.yml = "~/AppData/Local/lazygit/config.yml"
-. = "$PROFILE"
-. = "~/komorebi.json"
-. = "~/.config/whkdrc"
-. = "/coding/.prettierrc.toml"
-. = "~/.gitconfig"
-sshconfig = "~/.ssh/config"
-windowsterminalsettings.json = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
-. = "~\AppData\Roaming\nushell\env.nu"
-. = "~\AppData\Roaming\nushell\config.nu"
-. = "~\kanata.kbd"
+"./home/.config" = "~/AppData/Local"
+"./home/.config/powershell" = "~/OneDrive - Renishaw plc/Documents/PowerShell/"
+"./home/.config/windowsterminal" = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
+"./home/.config/komorebi" = "~"
+"./home/.config/kanata" = "~"
+"./home/.config/whkdrc" = "~/whkdrc"
+"./home/.gitconfig" = "~/.gitconfig"
+"./home/.config/nushell" = "~/AppData/Roaming/nushell"
+
+"./root/coding" = "C:/coding"
