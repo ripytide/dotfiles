@@ -1,3 +1,2 @@
 [main.files]
 home = "~"
-"home/.config/lf/lfrc" = { target = "~/.config/lf/lfrc", type = "symbolic" }

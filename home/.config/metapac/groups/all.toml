@@ -131,7 +131,6 @@ arch = [
 	"rm-improved",
 	"pass",
 	"less",
-	"lf",
 	"parallel",
 	"p7zip",
 	"unrar",
