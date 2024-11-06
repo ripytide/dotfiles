@@ -57,7 +57,6 @@ arch = [
 	"libnotify",
 	"playerctl",
 	"pavucontrol-qt",
-	"kanata",
 	"wl-clipboard",
 	"cliphist",
 	"hyprland",
@@ -195,5 +194,6 @@ cargo = [
 	"cargo-dist",
 	"cargo-update",
 	"cargo-udeps",
-	{ package = "pacdef", git = "https://github.com/ripytide/pacdef" },
+	"metapac",
+	{ package = "kanata", version = "1.7.0-prerelease-2" },
 ]

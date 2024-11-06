@@ -1,3 +1,5 @@
+use std *
+
 $env.config = {
 	show_banner: false,
 	display_errors: {
@@ -29,17 +31,17 @@ $env.config = {
 	]
 }
 
+path add --append /home/ripytide/.cargo/bin /home/ripytide/scripts /home/ripytide/.local/bin
+
 $env.TRANSIENT_PROMPT_COMMAND = "> "
 $env.EDITOR = "nvim"
 $env.VISUAL = "nvim"
-$env.PATH = "/home/ripytide/.cargo/bin/:/home/ripytide/scripts/:/home/ripytide/.local/bin/:$PATH"
 $env.MANPAGER = "nvim +Man!"
 $env.TERM = "kitty"
 $env.PAGER = "bat"
 $env.SYSTEMD_PAGER = "bat -l syslog -p"
 $env.SYSTEMD_COLORS = "false"
 $env.SYSTEMD_PAGERSECURE = "true"
-
 $env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
 
 # Dark Mode
