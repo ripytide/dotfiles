@@ -1,0 +1,7 @@
+[Service]
+WorkingDirectory=/home/ripytide
+ExecStart=bash -c kanata
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

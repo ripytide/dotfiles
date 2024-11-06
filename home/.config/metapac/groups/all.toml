@@ -57,7 +57,7 @@ arch = [
 	"libnotify",
 	"playerctl",
 	"pavucontrol-qt",
-	"evremap-git",
+	"kanata",
 	"wl-clipboard",
 	"cliphist",
 	"hyprland",
