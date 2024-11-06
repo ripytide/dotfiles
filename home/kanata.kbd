@@ -1,0 +1,55 @@
+(defcfg
+  process-unmapped-keys yes
+  concurrent-tap-hold yes
+  override-release-on-activation yes
+)
+
+(defvar
+  tap-timeout   150
+  hold-timeout  200
+  tt $tap-timeout
+  ht $hold-timeout
+)
+
+(defsrc)
+
+
+(deflayermap (base-layer)
+	CapsLock (tap-hold-press 200 200 Escape AltLeft)
+	AltLeft AltRight
+	NumLock Backspace
+
+	KeyW KeyD
+	KeyE KeyR
+	KeyR KeyW
+	KeyT KeyB
+	KeyY KeyJ
+	KeyU KeyF
+	KeyI KeyU
+	KeyO KeyP
+	KeyP Semicolon
+	KeyD KeyH
+	KeyF KeyT
+	KeyH KeyY
+	KeyJ KeyN
+	KeyK KeyE
+	KeyL KeyO
+	Semicolon KeyI
+	KeyC KeyM
+	KeyV KeyC
+	KeyB KeyV
+	KeyN KeyK
+	KeyM KeyL
+)
+
+(defoverrides
+	(ShiftLeft Minus) (ShiftLeft Slash)
+	(ShiftLeft Comma) (ShiftLeft Digit8)
+	(ShiftLeft Period) (ShiftLeft Comma)
+	(ShiftLeft Digit8) (Slash)
+	(ShiftLeft Slash) (ShiftLeft Period)
+
+	(Comma) (ShiftLeft Minus)
+	(Period) (Comma)
+	(Slash) (Period)
+)
