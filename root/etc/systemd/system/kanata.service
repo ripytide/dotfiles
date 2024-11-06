@@ -1,6 +1,6 @@
 [Service]
 WorkingDirectory=/home/ripytide
-ExecStart=bash -c kanata
+ExecStart=bash -c "/home/ripytide/.cargo/bin/kanata --cfg /home/ripytide/.config/kanata/kanata.kbd"
 Restart=always
 
 [Install]

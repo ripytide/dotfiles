@@ -1,6 +1,2 @@
-#command
 / forw-search ^W
 ? back-search ^W
-
-n forw-line
-e back-line

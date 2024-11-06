@@ -25,4 +25,4 @@ source export-esp.sh
 
 krabby random
 
-exec fish
+exec nu
