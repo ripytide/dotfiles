@@ -1,1 +1,5 @@
 packages = ["main"]
+
+[variables]
+personalmode = true
+workmode = false

@@ -1,35 +1,49 @@
-[user]
-	email = james.forsterer@gmail.com
-	name = ripytide
-	signingkey = 459BC3A0DE88C984
 [color]
 	ui = true
 [core]
 	pager = delta
-	excludesfile = /home/ripytide/sync/.gitignore
-[credential]
-	helper = cache
-[cola]
-	spellcheck = true
-	tabwidth = 4
-	hidpi = 1.5
-	theme = flat-dark-red
-	icontheme = dark
-	statusshowtotals = true
-	startupmode = folder
 [commit]
 	gpgsign = true
 [interactive]
     diffFilter = delta --color-only
 [delta]
-    navigate = true    # use n and N to move between diff sections
-    light = false      # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    navigate = true
 [merge]
     conflictstyle = diff3
 [diff]
     colorMoved = default
+[push]
+	default = upstream
 [pull]
 	rebase = true
-
 [fetch]
 	prune = true
+
+{{#if personalmode}}
+
+[user]
+	email = james.forsterer@gmail.com
+	name = ripytide
+	signingkey = 459BC3A0DE88C984
+[name]
+	email = james.forster@renishaw.com
+[credential]
+	helper = cache
+
+{{else if workmode}}
+
+[user]
+	name = James Forster
+	email = jf154126@renishaw.com
+[credential]
+	helper = manager
+	provider = generic
+[credential "spd-bitbucket"]
+	provider = generic
+[credential "bitbucket.org"]
+	provider = bitbucket
+	username = jf154126@renishaw.com
+[credential "github.com"]
+	provider = github
+
+{{/if}}
