@@ -156,7 +156,7 @@ arch = [
 	"typos-lsp-bin",
 
 	# shell
-	"fish",
+	"nushell",
 	"starship",
 	"krabby-bin",
 
