@@ -19,10 +19,10 @@ vim.keymap.set("n", "N", diagnostic_goto(false), { desc = "Jump to previous diag
 vim.keymap.set("n", "_", "N", { desc = "Jump to previous search result" })
 vim.keymap.set("n", ",", "n", { desc = "Jump to next search result" })
 
+vim.keymap.set("n", "p", "p`[", { desc = "Paste without moving the cursor" })
+vim.keymap.set("n", "P", "P`[", { desc = "Paste without moving the cursor" })
+
 vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
-vim.keymap.set("x", "p", function()
-	return 'pgv"' .. vim.v.register .. "y"
-end, { remap = false, expr = true })
 
 local substitute_config = { register = "" }
 vim.keymap.set("n", "s", function()

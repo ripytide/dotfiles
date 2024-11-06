@@ -12,9 +12,8 @@ return {
 				severity_sort = true,
 			},
 			servers = {
-				typos_lsp = {
-					mason = false,
-				},
+				typst_lsp = {},
+				typos_lsp = {},
 			},
 		},
 		init = function()

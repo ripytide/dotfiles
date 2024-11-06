@@ -1,0 +1,16 @@
+{
+  "OnPropertyChange": {
+    "prefix": "opc",
+    "body": [
+      "private ${1:Type} ${2:_property};",
+      "public ${1:Type} ${3:Property}",
+      "{",
+      "    get => ${2:_property};",
+      "    set {",
+      "        SetProperty(ref ${2:_property}, value);",
+      "    }",
+      "}",
+      "$0"
+    ]
+  }
+}

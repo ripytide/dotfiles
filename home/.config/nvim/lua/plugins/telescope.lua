@@ -20,10 +20,16 @@ return {
 					["<esc>"] = require("telescope.actions").close,
 					["<C-u>"] = false,
 					["<C-k>"] = false,
-					["<C-q>"] = require("telescope.actions").send_to_qflist,
+					["<C-q>"] = function(prompt_bufnr)
+						require("telescope.actions").send_to_qflist(prompt_bufnr)
+						vim.cmd(".cc")
+					end,
 				},
 				n = {
-					["<C-q>"] = require("telescope.actions").send_to_qflist,
+					["<C-q>"] = function(prompt_bufnr)
+						require("telescope.actions").send_to_qflist(prompt_bufnr)
+						vim.cmd(".cc")
+					end,
 				},
 			},
 			file_ignore_patterns = {
@@ -38,6 +44,9 @@ return {
 				"node_modules/",
 				"target/",
 				".git/",
+				"node_modules\\",
+				"target\\",
+				".git\\",
 			},
 			layout_config = {
 				width = 500,
