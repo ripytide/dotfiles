@@ -1,0 +1,11 @@
+promptToReturnFromSubprocess: false
+os:
+  #https://github.com/jesseduffield/lazygit/issues/996#issuecomment-1624329763
+  edit: 'nvim --server "$NVIM" --remote-tab {{filename}}'
+  editAtLine: 'nvim --server "$NVIM" --remote-tab {{filename}}; [ -z "$NVIM" ] || nvim --server "$NVIM" --remote-send ":{{line}}<CR>"'
+  editAtLineAndWait: 'nvim +{{line}} {{filename}}'
+git:
+  overrideGpg: true
+  paging:
+    colorArg: always
+    pager: delta --dark --paging=never
