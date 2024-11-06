@@ -1,0 +1,13 @@
+cp -Force -Recurse ~/.config ./config
+cp -Force -Recurse ~/AppData/Local/nvim ./nvim
+cp -Force -Recurse ~/AppData/Local/lazygit/config.yml lazygitconfig.yml
+cp -Force -Recurse $PROFILE .
+cp -Force -Recurse ~/komorebi.json .
+cp -Force -Recurse ~/.config/whkdrc .
+cp -Force -Recurse /coding/.prettierrc.toml .
+cp -Force -Recurse ~/.gitconfig .
+cp -Force -Recurse ~/.ssh/config sshconfig
+cp -Force -Recurse ~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json windowsterminalsettings.json
+cp -Force -Recurse C:\Users\jf154126\AppData\Roaming\nushell\env.nu .
+cp -Force -Recurse C:\Users\jf154126\AppData\Roaming\nushell\config.nu .
+cp -Force -Recurse C:\Users\jf154126\kanata.kbd .

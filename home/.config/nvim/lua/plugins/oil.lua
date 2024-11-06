@@ -7,7 +7,6 @@ return {
 		"stevearc/oil.nvim",
 		opts = {
 			keymaps = {
-				["<esc>"] = "actions.parent",
 				["q"] = function()
 					require("oil").save({ confirm = false })
 					require("oil").close()

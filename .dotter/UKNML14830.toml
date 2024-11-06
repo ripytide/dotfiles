@@ -5,3 +5,16 @@ workmode = true
 personalmode = false
 
 [files]
+config = "~/.config"
+nvim = "~/AppData/Local/nvim"
+lazygitconfig.yml = "~/AppData/Local/lazygit/config.yml"
+. = "$PROFILE"
+. = "~/komorebi.json"
+. = "~/.config/whkdrc"
+. = "/coding/.prettierrc.toml"
+. = "~/.gitconfig"
+sshconfig = "~/.ssh/config"
+windowsterminalsettings.json = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState/settings.json"
+. = "~\AppData\Roaming\nushell\env.nu"
+. = "~\AppData\Roaming\nushell\config.nu"
+. = "~\kanata.kbd"
