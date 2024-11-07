@@ -61,4 +61,6 @@ mkdir ~/.cache/zoxide
 zoxide init nushell --cmd n | save -f ~/.cache/zoxide/zoxide.nu
 source ~/.cache/zoxide/zoxide.nu
 
+print "\e[?12l"
+
 krabby random -i
