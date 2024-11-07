@@ -11,10 +11,6 @@ return {
 				virtual_text = false,
 				severity_sort = true,
 			},
-			servers = {
-				typst_lsp = {},
-				typos_lsp = {},
-			},
 		},
 		init = function()
 			local keys = require("lazyvim.plugins.lsp.keymaps").get()
@@ -28,8 +24,38 @@ return {
 		end,
 	},
 	{
+		"williamboman/mason.nvim",
+		opts = {
+			ensure_installed = {
+				"typst-lsp",
+				"typos-lsp",
+				"bash-language-server",
+				"clangd",
+				"codelldb",
+				"csharpier",
+				"json-lsp",
+				"lua-language-server",
+				"markdown-toc",
+				"markdownlint",
+				"markdownlint-cli2",
+				"marksman",
+				"netcoredbg",
+				"omnisharp",
+				"prettier",
+				"pyright",
+				"ruff",
+				"ruff-lsp",
+				"shellcheck",
+				"shfmt",
+				"sqlfluff",
+				"stylua",
+				"taplo",
+				"yaml-language-server",
+			},
+		},
+	},
+	{
 		"mrcjkb/rustaceanvim",
-		version = "^4", -- Recommended
 		ft = { "rust" },
 		opts = {
 			tools = {
@@ -38,14 +64,6 @@ return {
 				},
 			},
 			server = {
-				on_attach = function(_, bufnr)
-					vim.keymap.set("n", "<leader>cR", function()
-						vim.cmd.RustLsp("codeAction")
-					end, { desc = "Code Action", buffer = bufnr })
-					vim.keymap.set("n", "<leader>dr", function()
-						vim.cmd.RustLsp("debuggables")
-					end, { desc = "Rust Debuggables", buffer = bufnr })
-				end,
 				keys = {
 					{ "K", false },
 				},
@@ -67,8 +85,5 @@ return {
 				},
 			},
 		},
-		config = function(_, opts)
-			vim.g.rustaceanvim = vim.tbl_deep_extend("keep", vim.g.rustaceanvim or {}, opts or {})
-		end,
 	},
 }
