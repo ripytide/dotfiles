@@ -1,5 +1,3 @@
-use std *
-
 $env.config = {
 	show_banner: false,
 	display_errors: {
@@ -31,22 +29,29 @@ $env.config = {
 	]
 }
 
-if $nu.os-info.name != "windows" {
-	path add --append /home/ripytide/.cargo/bin /home/ripytide/scripts /home/ripytide/.local/bin
+if $nu.os-info.name == "windows" {
+} else {
+	$env.TERM = "kitty"
+	$env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
+
+	$env.PATH = (
+		$env.PATH
+			| split row (char esep)
+			| append /home/ripytide/.cargo/bin
+			| append /home/ripytide/scripts
+			| append /home/ripytide/.local/bin
+			| uniq
+	)
 }
 
 $env.TRANSIENT_PROMPT_COMMAND = "> "
 $env.EDITOR = "nvim"
 $env.VISUAL = "nvim"
 $env.MANPAGER = "nvim +Man!"
-$env.TERM = "kitty"
 $env.PAGER = "bat"
 $env.SYSTEMD_PAGER = "bat -l syslog -p"
 $env.SYSTEMD_COLORS = "false"
 $env.SYSTEMD_PAGERSECURE = "true"
-if $nu.os-info.name != "windows" {
-	$env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
-}
 
 # Dark Mode
 $env.GTK_THEME = "Adwaita:dark"
@@ -60,7 +65,5 @@ use ~/.cache/starship/init.nu
 mkdir ~/.cache/zoxide
 zoxide init nushell --cmd n | save -f ~/.cache/zoxide/zoxide.nu
 source ~/.cache/zoxide/zoxide.nu
-
-print "\e[?12l"
 
 krabby random -i
