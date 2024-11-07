@@ -2,8 +2,6 @@
 	ui = true
 [core]
 	pager = delta
-[commit]
-	gpgsign = true
 [interactive]
     diffFilter = delta --color-only
 [delta]
@@ -25,6 +23,8 @@
 	email = james.forsterer@gmail.com
 	name = ripytide
 	signingkey = 459BC3A0DE88C984
+[commit]
+	gpgsign = true
 [name]
 	email = james.forster@renishaw.com
 [credential]
@@ -35,6 +35,8 @@
 [user]
 	name = James Forster
 	email = jf154126@renishaw.com
+[commit]
+	gpgsign = false
 [credential]
 	helper = manager
 	provider = generic

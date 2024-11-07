@@ -31,7 +31,9 @@ $env.config = {
 	]
 }
 
-path add --append /home/ripytide/.cargo/bin /home/ripytide/scripts /home/ripytide/.local/bin
+if $nu.os-info.name != "windows" {
+	path add --append /home/ripytide/.cargo/bin /home/ripytide/scripts /home/ripytide/.local/bin
+}
 
 $env.TRANSIENT_PROMPT_COMMAND = "> "
 $env.EDITOR = "nvim"
@@ -42,7 +44,9 @@ $env.PAGER = "bat"
 $env.SYSTEMD_PAGER = "bat -l syslog -p"
 $env.SYSTEMD_COLORS = "false"
 $env.SYSTEMD_PAGERSECURE = "true"
-$env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
+if $nu.os-info.name != "windows" {
+	$env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
+}
 
 # Dark Mode
 $env.GTK_THEME = "Adwaita:dark"
