@@ -1,4 +1,4 @@
 return {
-	"lukas-reineke/headlines.nvim",
+	"MeanderingProgrammer/render-markdown.nvim",
 	enabled = false,
 }
