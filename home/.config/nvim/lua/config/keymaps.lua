@@ -1,7 +1,6 @@
 -- Keymaps are automatically loaded on the VeryLazy event
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
-local Util = require("lazyvim.util")
 
 -- vim.keymap.set("n", "<C-d>", "16jzz")
 -- vim.keymap.set("n", "<C-u>", "16kzz")
@@ -41,8 +40,8 @@ end, { noremap = true })
 vim.keymap.del("n", "<leader>gG")
 vim.keymap.set("n", "<leader>gg", require("lazy").show, { desc = "Open lazy.nvim" })
 vim.keymap.set("n", "<leader>l", function()
-	Util.terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false })
-end, { desc = "Lazygit (cwd)" })
+	require("snacks").lazygit.open()
+end, { desc = "LazyGit" })
 
 vim.keymap.set("n", ";n", "A,<esc>")
 vim.keymap.set("n", ";t", "A;<esc>")
