@@ -39,7 +39,6 @@ return {
 				"markdownlint-cli2",
 				"marksman",
 				"netcoredbg",
-				"omnisharp",
 				"prettier",
 				"pyright",
 				"ruff",
