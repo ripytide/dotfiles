@@ -61,7 +61,7 @@
             "bellStyle": "audible",
             "colorScheme": "Tokyo Night",
             "cursorShape": "filledBox",
-            "elevate": true,
+            "elevate": false,
             "experimental.repositionCursorWithMouse": true,
             "experimental.retroTerminalEffect": false,
             "font": 
@@ -127,6 +127,7 @@
             },
             {
                 "commandline": "C:\\Users\\jf154126\\.cargo\\bin\\nu.exe",
+                "elevate": true,
                 "guid": "{7d36e938-51bf-462e-9d74-09e675ab5fb7}",
                 "hidden": false,
                 "icon": "none",
