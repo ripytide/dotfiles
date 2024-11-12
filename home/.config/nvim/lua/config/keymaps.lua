@@ -21,6 +21,8 @@ vim.keymap.set("n", ",", "n", { desc = "Jump to next search result" })
 vim.keymap.set("n", "p", "p`[", { desc = "Paste without moving the cursor" })
 vim.keymap.set("n", "P", "P`[", { desc = "Paste without moving the cursor" })
 
+vim.keymap.set("x", "p", "P", { desc = "Paste without overwriting the buffer" })
+
 vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
 
 local substitute_config = { register = "" }
