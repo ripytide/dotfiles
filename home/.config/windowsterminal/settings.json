@@ -42,7 +42,7 @@
             "keys": "ctrl+l"
         }
     ],
-    "alwaysShowTabs": false,
+    "alwaysShowTabs": true,
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{7d36e938-51bf-462e-9d74-09e675ab5fb7}",
