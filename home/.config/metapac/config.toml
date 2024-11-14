@@ -2,4 +2,8 @@ disabled_backends = ["rustup"]
 
 arch_package_manager = "paru"
 
-hostname_groups_enabled = false
+hostname_groups_enabled = true
+
+[hostname_groups]
+UKNML14830 = ["windows"]
+sipper = ["linux"]

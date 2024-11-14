@@ -22,7 +22,7 @@ arch = [
 	# package/dotfile management
 	"reflector",
 	"paru-bin",
-	"pacdef",
+	"metapac-bin",
 	"dotter-rs-bin",
 	"downgrade",
 
@@ -195,6 +195,5 @@ cargo = [
 	"cargo-dist",
 	"cargo-update",
 	"cargo-udeps",
-	"metapac",
 	{ package = "kanata", version = "1.7.0-prerelease-2" },
 ]
