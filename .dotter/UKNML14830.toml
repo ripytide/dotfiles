@@ -6,12 +6,13 @@ personalmode = false
 
 [files]
 "home/.config" = "~/AppData/Local"
+"home/.config/metapac" = "~/AppData/Roaming/metapac"
+"home/.config/nushell" = "~/AppData/Roaming/nushell"
 "home/.config/lazygit" = { target = "~/AppData/Local/lazygit", type = "symbolic" }
-"home/.config/powershell" = "~/OneDrive - Renishaw plc/Documents/WindowsPowerShell/"
+"home/.config/powershell" = "~/OneDrive - Renishaw plc/Documents/WindowsPowerShell"
 "home/.config/windowsterminal" = "~/AppData/Local/Packages/Microsoft.WindowsTerminal_8wekyb3d8bbwe/LocalState"
 "home/.config/komorebi" = "~"
 "home/.config/kanata" = "~"
 "home/.config/whkdrc" = "~/.config/whkdrc"
 "home/.gitconfig" = "~/.gitconfig"
-"home/.config/nushell" = "~/AppData/Roaming/nushell"
 "root/coding" = "C:/coding"
