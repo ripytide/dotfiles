@@ -58,6 +58,10 @@ $env.GTK_THEME = "Adwaita:dark"
 $env.GTK2_RC_FILES = "/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
 $env.QT_STYLE_OVERRIDE = "Adwaita-Dark"
 
+alias ll = ls -l
+alias la = ls -al
+alias rg = rg --smart-case
+
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
 use ~/.cache/starship/init.nu
