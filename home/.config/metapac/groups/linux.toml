@@ -36,7 +36,6 @@ arch = [
 	"nerd-fonts",
 
 	# dev
-	"aurpublish",
 	"rust-analyzer",
 	"gnuplot",
 	"mosquitto",
