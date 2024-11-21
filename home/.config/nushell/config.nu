@@ -58,8 +58,9 @@ $env.GTK_THEME = "Adwaita:dark"
 $env.GTK2_RC_FILES = "/usr/share/themes/Adwaita-dark/gtk-2.0/gtkrc"
 $env.QT_STYLE_OVERRIDE = "Adwaita-Dark"
 
-alias ll = ls -l
-alias la = ls -al
+alias ll = eza --long --group --icons --group-directories-first --git -s modified
+alias la = eza --all --long --group --icons --group-directories-first --git -s modified
+alias tree = eza --tree --git-ignore --icons
 alias rg = rg --smart-case
 
 mkdir ~/.cache/starship
