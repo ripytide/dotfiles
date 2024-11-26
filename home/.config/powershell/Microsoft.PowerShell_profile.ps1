@@ -1,4 +1,4 @@
-Set-PSReadLineOption -EditMode Emacs
+Set-PSReadLineOption -EditMode Vi
 
 # Install-PSResource -Name PSReadLine
 # Import-Module -Name CompletionPredictor
@@ -12,3 +12,5 @@ $ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
 if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
+
+krabby random -i
