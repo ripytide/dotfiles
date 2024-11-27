@@ -1,7 +1,9 @@
 plugins = [
 	'C:\Users\jf154126\AppData\Roaming\npm\node_modules\@prettier\plugin-xml\src\plugin.js',
 ]
-xmlWhitespaceSensitivity = "ignore"
+# xmlWhitespaceSensitivity = "strict"
+# xmlWhitespaceSensitivity = "ignore"
+xmlWhitespaceSensitivity = "preserve"
 singleAttributePerLine = true
 
 overrides = [{ files = "*.{xaml,xml}|*.*proj", options = { parser = "xml" } }]
