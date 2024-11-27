@@ -11,3 +11,4 @@ git:
     pager: delta --dark --paging=never
 gui:
   switchTabsWithPanelJumpKeys: false
+  showCommandLog: false
