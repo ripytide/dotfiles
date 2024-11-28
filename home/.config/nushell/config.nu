@@ -64,6 +64,9 @@ alias la = eza --all --long --group --icons --group-directories-first --git -s m
 alias tree = eza --tree --git-ignore --icons
 alias rg = rg --smart-case
 
+def rgnvim [pattern] {
+	nvim ...(rg -l $pattern | lines)
+}
 
 mkdir ~/.cache/starship
 starship init nu | save -f ~/.cache/starship/init.nu
