@@ -14,5 +14,6 @@ personalmode = false
 "home/.config/komorebi" = "~"
 "home/.config/kanata" = "~"
 "home/.config/whkdrc" = "~/.config/whkdrc"
+"home/.config/zellij" = "~/.config/whkdrc"
 "home/.gitconfig" = "~/.gitconfig"
 "root/coding" = "C:/coding"

@@ -12,3 +12,4 @@ git:
 gui:
   switchTabsWithPanelJumpKeys: false
   showCommandLog: false
+  skipDiscardChangeWarning: true
