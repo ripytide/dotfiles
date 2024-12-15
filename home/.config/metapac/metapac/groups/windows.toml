@@ -29,6 +29,7 @@ cargo = [
 	"metapac",
 	{ package = "kanata", version = "1.7.0-prerelease-2" },
 ]
+
 winget = [
 	"7zip.7zip",
 	"Adobe.Acrobat.Reader.32-bit",

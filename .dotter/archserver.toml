@@ -1,6 +1,8 @@
 packages = ["main"]
 
 [variables]
-monitor = "UNSUPPORTED"
-keyboard = "UNSUPPORTED"
-home_dir = "/home/ripytide"
+personalmode = true
+workmode = false
+
+[files]
+"home/.config/lazygit" = { target = "~/.config/lazygit", type = "symbolic" }

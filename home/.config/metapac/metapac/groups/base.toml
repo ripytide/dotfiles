@@ -1,0 +1,111 @@
+arch = [
+	# base
+	"arch-install-scripts",
+	"dnsmasq",
+	"linux",
+	"linux-firmware",
+	"base",
+	"base-devel",
+	"gcc",
+	"git",
+	"rustup",
+	"python",
+	"gcr",
+	"man-db",
+	"networkmanager",
+	"inetutils",
+	"net-tools",
+	"openssl-1.1",
+	"usbutils",
+	"zram-generator",
+
+	# package/dotfile management
+	"reflector",
+	"paru-bin",
+	"metapac-bin",
+	"dotter-rs-bin",
+	"downgrade",
+
+	# fonts
+	"noto-fonts",
+	"noto-fonts-emoji",
+	"ttf-fira-code",
+	"ttf-firacode-nerd",
+	"ttf-nerd-fonts-symbols",
+	"ttf-font-awesome",
+	"nerd-fonts",
+
+	# dev
+	"rust-analyzer",
+	"gnuplot",
+	"mosquitto",
+	"npm",
+	"opencv",
+	"python-opencv",
+	"tokei",
+	"python-black",
+	"clang",
+
+	# cli
+	"fd",
+	"yazi",
+	"dua-cli",
+	"rsync",
+	"arp-scan",
+	"dog",
+	"unzip",
+	"eza",
+	"fzf",
+	"bat",
+	"sd",
+	"sxiv",
+	"git-delta",
+	"bottom",
+	"neovim",
+	"zoxide",
+	"lazygit",
+	"ripgrep",
+	"tealdeer",
+	"less",
+	"parallel",
+	"p7zip",
+	"unrar",
+	"zip",
+	"unzip",
+	"fastfetch",
+	"jq",
+	"trippy",
+	"git-cliff",
+
+	# lsp
+	"typos",
+	"typos-lsp-bin",
+
+	# shell
+	"nushell",
+	"starship",
+	"krabby-bin",
+
+	# docker
+	"docker",
+	"docker-compose",
+
+	# formatters
+	"lua-format",
+	"mdformat",
+	"shfmt",
+
+	# amd
+	"amd-ucode",
+	"amdvlk",
+	"mesa",
+	"vulkan-radeon",
+
+	# intel
+	"intel-ucode",
+	"vulkan-intel",
+
+	# nvidia
+]
+
+cargo = ["rip2"]

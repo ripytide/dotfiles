@@ -1,0 +1,15 @@
+cargo = [
+	"bacon",
+	"cargo-benchcmp",
+	"cargo-binstall",
+	"cargo-clone",
+	"cargo-machete",
+	"cargo-outdated",
+	"cargo-release",
+	"cargo-semver-checks",
+	"cargo-aur",
+	"cargo-dist",
+	"cargo-update",
+	"cargo-udeps",
+	{ package = "kanata", version = "1.7.0-prerelease-2" },
+]
