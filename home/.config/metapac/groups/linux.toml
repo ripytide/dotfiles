@@ -111,6 +111,7 @@ arch = [
 
 	# cli
 	"fd",
+	"yazi",
 	"dua-cli",
 	"rsync",
 	"arp-scan",
