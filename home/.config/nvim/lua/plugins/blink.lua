@@ -10,14 +10,12 @@ return {
 	---@type blink.cmp.Config
 	opts = {
 		keymap = {
-			preset = "default",
+			preset = "enter",
 			["<Tab>"] = {
+				"snippet_forward",
+				"select_next",
 				function(cmp)
-					if cmp.snippet_active({ direction = 1 }) then
-						return cmp.snippet_forward()
-					elseif cmp.is_visible() then
-						return cmp.select_next()
-					elseif has_words_before() then
+					if has_words_before() then
 						return cmp.accept()
 					else
 						return false
@@ -26,15 +24,8 @@ return {
 				"fallback",
 			},
 			["<S-Tab>"] = {
-				function(cmp)
-					if cmp.snippet_active({ direction = -1 }) then
-						return cmp.snippet_backward()
-					elseif cmp.is_visible() then
-						return cmp.select_prev()
-					else
-						return false
-					end
-				end,
+				"snippet_backward",
+				"select_prev",
 				"fallback",
 			},
 		},
@@ -45,6 +36,20 @@ return {
 			menu = {
 				border = "rounded",
 			},
+		},
+		sources = {
+			cmdline = function()
+				local type = vim.fn.getcmdtype()
+				-- Search forward and backward
+				if type == "/" or type == "?" then
+					return { "buffer" }
+				end
+				-- Commands
+				if type == ":" then
+					return { "cmdline" }
+				end
+				return {}
+			end,
 		},
 	},
 }
