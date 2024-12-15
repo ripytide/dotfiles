@@ -15,9 +15,8 @@ end
 
 vim.keymap.set("n", "n", diagnostic_goto(true), { desc = "Jump to next diagnostic message" })
 vim.keymap.set("n", "N", diagnostic_goto(false), { desc = "Jump to previous diagnostic message" })
-vim.keymap.set("n", ",", "N", { desc = "Jump to previous search result" })
-vim.keymap.set("n", ".", "n", { desc = "Jump to next search result" })
-vim.keymap.set("n", ")", ".", { desc = "Repeat the last action" })
+vim.keymap.set("n", "_", "N", { desc = "Jump to previous search result" })
+vim.keymap.set("n", ",", "n", { desc = "Jump to next search result" })
 
 vim.keymap.set("n", "p", "p`[", { desc = "Paste without moving the cursor" })
 vim.keymap.set("n", "P", "P`[", { desc = "Paste without moving the cursor" })
