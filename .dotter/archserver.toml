@@ -1,0 +1,6 @@
+packages = ["main"]
+
+[variables]
+monitor = "UNSUPPORTED"
+keyboard = "UNSUPPORTED"
+home_dir = "/home/ripytide"
