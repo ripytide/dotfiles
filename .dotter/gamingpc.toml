@@ -1,0 +1,8 @@
+packages = ["main"]
+
+[variables]
+personalmode = true
+workmode = false
+
+[files]
+"home/.config/lazygit" = { target = "~/.config/lazygit", type = "symbolic" }

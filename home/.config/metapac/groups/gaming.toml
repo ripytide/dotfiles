@@ -1,0 +1,6 @@
+arch = [
+    "gamescope",
+    "lib32-mangohud",
+    "lutris",
+    "mangohud",
+]
