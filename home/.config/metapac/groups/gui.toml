@@ -1,15 +1,11 @@
 arch = [
 	# wayland
-	"dunst",
-	"waybar",
 	"ydotool",
 	"libnotify",
 	"playerctl",
 	"pavucontrol-qt",
 	"wl-clipboard",
 	"cliphist",
-	"hyprland",
-	"xdg-desktop-portal-hyprland",
 	"wf-recorder",
 	"grim",
 	"slurp",
@@ -20,9 +16,6 @@ arch = [
 	"pipewire-pulse",
 	"pipewire-jack",
 	"wireplumber",
-	"swaylock",
-	"swayidle",
-	"zenity",
 	"gnome-themes-extra",
 	"adwaita-qt5-git",
 	"adwaita-qt6-git",
@@ -57,14 +50,4 @@ arch = [
 	"krita",
 	"mullvad-vpn-bin",
     "rustdesk-bin",
-
-	# file explorer
-	"thunar",
-	"thunar-archive-plugin",
-	"thunar-media-tags-plugin",
-	"thunar-volman",
-	"ffmpegthumbnailer",
-	"gvfs",
-	"gvfs-smb",
-	"tumbler",
 ]

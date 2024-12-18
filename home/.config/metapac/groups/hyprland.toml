@@ -1,0 +1,18 @@
+arch = [
+	"hyprland",
+	"xdg-desktop-portal-hyprland",
+	"dunst",
+	"waybar",
+	"swaylock",
+	"swayidle",
+
+	# file explorer
+	"thunar",
+	"thunar-archive-plugin",
+	"thunar-media-tags-plugin",
+	"thunar-volman",
+	"ffmpegthumbnailer",
+	"gvfs",
+	"gvfs-smb",
+	"tumbler",
+]
