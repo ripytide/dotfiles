@@ -47,7 +47,7 @@ arch = [
 	"clang",
 
 	# cli
-    "nmap",
+	"nmap",
 	"fd",
 	"gpg-tui",
 	"yazi",
@@ -98,8 +98,8 @@ arch = [
 	"shfmt",
 
 	# drivers
-    "libva-utils",
-    "vulkan-tools",
+	"libva-utils",
+	"vulkan-tools",
 	"vulkan-icd-loader",
 	"lib32-vulkan-icd-loader",
 	"mesa",
@@ -108,7 +108,7 @@ arch = [
 	# amd
 	"amd-ucode",
 	"vulkan-radeon",
-    "lib32-vulkan-radeon",
+	"lib32-vulkan-radeon",
 
 	# intel
 	"intel-ucode",
