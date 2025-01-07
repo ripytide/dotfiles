@@ -4,6 +4,9 @@ return {
 		-- todo uncomment when skim supports windows
 		-- fzf_bin = "sk",
 		file_ignore_patterns = { "-E %.git/ -E node_modules/ -E target/ -E %.lock$ -E COPYING" },
+		defaults = {
+			header = false,
+		},
 		actions = {
 			files = {
 				["default"] = require("fzf-lua").actions.file_edit,
@@ -33,7 +36,10 @@ return {
 				["ctrl-o"] = "toggle",
 			},
 		},
-		fzf_opts = {},
+		fzf_opts = {
+			["--header"] = "",
+			["--layout"] = "default",
+		},
 		files = {
 			fd_opts = [[--type file --hidden --follow --color=never]],
 		},
