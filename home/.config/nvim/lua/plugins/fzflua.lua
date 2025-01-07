@@ -3,7 +3,22 @@ return {
 	opts = {
 		-- todo uncomment when skim supports windows
 		-- fzf_bin = "sk",
-		file_ignore_patterns = { "-E %.git/ -E node_modules/ -E target/ -E %.lock$ -E COPYING" },
+		file_ignore_patterns = {
+			"Cargo%.lock",
+			"COPYING",
+			"%.aig$",
+			"%.dgr$",
+			"%.png$",
+			"%.jpg$",
+			"%.svg$",
+			"%.jpeg$",
+			"node_modules/",
+			"node_modules\\",
+			"target/",
+			"target\\",
+			"%.git/",
+			"%.git\\",
+		},
 		defaults = {
 			header = false,
 		},
