@@ -47,6 +47,7 @@ arch = [
 	"clang",
 
 	# cli
+	"skim",
 	"nmap",
 	"fd",
 	"gpg-tui",

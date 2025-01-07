@@ -1,4 +1,5 @@
 cargo = [
+	"skim",
     "cargo-binstall",
     "bat",
     "bottom",
