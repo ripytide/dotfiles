@@ -44,8 +44,8 @@ return {
 		keymap = {
 			builtin = {},
 			fzf = {
-				["tab"] = "down",
-				["btab"] = "up",
+				["tab"] = "up",
+				["btab"] = "down",
 				["up"] = "toggle+up",
 				["down"] = "toggle+down",
 				["ctrl-o"] = "toggle",
