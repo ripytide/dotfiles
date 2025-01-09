@@ -1,0 +1,13 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/sda2
+UUID=1b3d3280-8a28-4a0b-85e7-e935f4a53d41 / ext4 rw,relatime 0 1
+
+# /dev/sda1
+UUID=CAF8-5BCA /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
+
+//192.168.188.3/SDD-2TB-A /mnt/SDD-2TB-A cifs username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.3/SDD-2TB-B /mnt/SDD-2TB-B cifs username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.3/HDD-4TB /mnt/HDD-4TB cifs username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
