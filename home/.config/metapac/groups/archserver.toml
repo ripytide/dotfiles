@@ -1,0 +1,7 @@
+arch = [
+	"frpc-bin",
+	"logitechmediaserver-git",
+	"zigbee2mqtt",
+	"mosquitto",
+	"openssh",
+]

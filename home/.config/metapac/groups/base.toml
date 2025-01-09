@@ -7,6 +7,8 @@ arch = [
 	"base",
 	"base-devel",
 	"gcc",
+	"clang",
+	"compiler-rt",
 	"git",
 	"rustup",
 	"python",
@@ -18,6 +20,8 @@ arch = [
 	"openssl-1.1",
 	"usbutils",
 	"zram-generator",
+	"cifs-utils",
+	"ffmpeg",
 
 	# package/dotfile management
 	"reflector",
@@ -33,6 +37,7 @@ arch = [
 	"gpg-tui",
 	"yazi",
 	"dua-cli",
+	"ncdu",
 	"rsync",
 	"arp-scan",
 	"dog",
