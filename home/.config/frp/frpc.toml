@@ -1,0 +1,18 @@
+serverAddr = "128.140.78.174"
+serverPort = 7000
+
+auth.token = "xYH8GgMvruDg0oYzcT9CD3Bu9PjKnm7rb0aMPJQ8vTb9mYa2Es4DEJ2xSoM"
+ 
+[[proxies]]
+name = "https"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 443
+remotePort = 443
+
+[[proxies]]
+name = "http"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 80
+remotePort = 80
