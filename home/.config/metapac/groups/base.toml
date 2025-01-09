@@ -26,26 +26,6 @@ arch = [
 	"dotter-rs-bin",
 	"downgrade",
 
-	# fonts
-	"noto-fonts",
-	"noto-fonts-emoji",
-	"ttf-fira-code",
-	"ttf-firacode-nerd",
-	"ttf-nerd-fonts-symbols",
-	"ttf-font-awesome",
-	"nerd-fonts",
-
-	# dev
-	"rust-analyzer",
-	"gnuplot",
-	"mosquitto",
-	"npm",
-	"opencv",
-	"python-opencv",
-	"tokei",
-	"python-black",
-	"clang",
-
 	# cli
 	"skim",
 	"nmap",
@@ -80,10 +60,6 @@ arch = [
 	"trippy",
 	"git-cliff",
 
-	# lsp
-	"typos",
-	"typos-lsp-bin",
-
 	# shell
 	"nushell",
 	"starship",
@@ -93,12 +69,7 @@ arch = [
 	"docker",
 	"docker-compose",
 
-	# formatters
-	"lua-format",
-	"mdformat",
-	"shfmt",
-
-	# drivers
+	# generic drivers
 	"libva-utils",
 	"vulkan-tools",
 	"vulkan-icd-loader",
@@ -106,17 +77,17 @@ arch = [
 	"mesa",
 	"lib32-mesa",
 
-	# amd
+	# amd drivers
 	"amd-ucode",
 	"vulkan-radeon",
 	"lib32-vulkan-radeon",
 
-	# intel
+	# intel drivers
 	"intel-ucode",
 	"vulkan-intel",
 	"lib32-vulkan-intel",
 
-	# nvidia
+	# nvidia drivers
 	"nvidia-dkms",
 	"nvidia-utils",
 	"lib32-nvidia-utils",
