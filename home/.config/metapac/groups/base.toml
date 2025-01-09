@@ -4,6 +4,7 @@ arch = [
 	"dnsmasq",
 	"linux",
 	"linux-firmware",
+	"efibootmgr",
 	"base",
 	"base-devel",
 	"gcc",
