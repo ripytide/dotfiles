@@ -1,0 +1,25 @@
+homeassistant:
+  legacy_triggers: false
+frontend:
+  port: 1234
+  host: 0.0.0.0
+mqtt:
+  base_topic: zigbee2mqtt
+  server: mqtt://localhost:1883
+  client_id: z2m
+serial:
+  port: tcp://192.168.188.18:6638
+advanced:
+  homeassistant_legacy_entity_attributes: false
+  legacy_api: false
+  legacy_availability_payload: false
+device_options:
+  legacy: false
+availability: true
+devices:
+  '0xa4c138c14fa94479':
+    friendly_name: tuya1
+  '0xa4c138d666b68f0e':
+    friendly_name: tuya2
+  '0xa4c138aae0899d06':
+    friendly_name: tuya3
