@@ -1,3 +1,3 @@
 #! /bin/env sh
 
-rsync -r root /
+rsync -r root/ /
