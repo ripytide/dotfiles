@@ -4,4 +4,5 @@ arch = [
 	"zigbee2mqtt",
 	"mosquitto",
 	"openssh",
+	"caddy",
 ]
