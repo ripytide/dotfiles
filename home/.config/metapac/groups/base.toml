@@ -23,6 +23,7 @@ arch = [
 	"zram-generator",
 	"cifs-utils",
 	"ffmpeg",
+	"avahi",
 
 	# package/dotfile management
 	"reflector",
