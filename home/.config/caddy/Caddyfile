@@ -1,0 +1,19 @@
+cctv.oxlet.org {
+	reverse_proxy :8971
+}
+
+z2m.oxlet.org {
+	reverse_proxy :1234
+}
+
+lms.oxlet.org {
+	reverse_proxy :9000
+}
+
+router.oxlet.org {
+	reverse_proxy 192.168.188.1:80
+}
+
+slzb.oxlet.org {
+	reverse_proxy 192.168.188.18:80
+}
