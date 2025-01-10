@@ -5,10 +5,9 @@ Wants=network.target
 
 [Service]
 Type=exec
-DynamicUser=yes
 Restart=on-failure
 RestartSec=5s
-ExecStart=/usr/bin/frpc -c /home/ripytide/dotfiles/home/.config/frp/frpc.toml
+ExecStart=/usr/bin/frpc -c /home/ripytide/.config/frp/frpc.toml
 
 [Install]
 WantedBy=multi-user.target
