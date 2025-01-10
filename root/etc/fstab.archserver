@@ -1,13 +1,5 @@
-# Static information about the filesystems.
-# See fstab(5) for details.
-
-# <file system> <dir> <type> <options> <dump> <pass>
-# /dev/sda2
-UUID=1b3d3280-8a28-4a0b-85e7-e935f4a53d41 / ext4 rw,relatime 0 1
-
-# /dev/sda1
-UUID=CAF8-5BCA /boot vfat rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro 0 2
-
-//192.168.188.3/SDD-2TB-A /mnt/SDD-2TB-A cifs username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
-//192.168.188.3/SDD-2TB-B /mnt/SDD-2TB-B cifs username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
-//192.168.188.3/HDD-4TB /mnt/HDD-4TB cifs username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+UUID=add123fc-f189-40e7-8548-525a8361d561 /mnt/SSD-2TB-A auto defaults 0 0
+UUID=777d5acc-f123-410f-9fc6-2175d518e796 /mnt/SSD-2TB-B auto defaults 0 0
+UUID=1b5fde5b-8ecc-4990-86be-fea97f138067 /mnt/HDD-4TB auto defaults 0 0
+UUID=5ba56bec-c3de-43c7-9811-2f2a47862100 /mnt/HDD-1.5TB auto defaults 0 0
+UUID=59b63fdd-5de9-47e6-9b5d-8cf45b9313cc /mnt/HDD-20TB auto defaults 0 0
