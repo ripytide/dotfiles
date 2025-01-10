@@ -1,1 +1,2 @@
-main = { files = { home = "~" } }
+[main.files]
+"home" = "~"
