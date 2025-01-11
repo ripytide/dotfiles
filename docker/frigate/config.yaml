@@ -25,10 +25,10 @@ record:
     post_capture: 5
 
 ffmpeg:
-  hwaccel_args: auto
+  hwaccel_args: preset-vaapi
 
 birdseye:
-  enabled: true
+  enabled: false
   mode: continuous
   width: 3840
   height: 2160
