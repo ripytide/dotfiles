@@ -3,7 +3,7 @@ tls:
 
 mqtt:
   enabled: true
-  host: 192.168.188.4
+  host: 192.168.188.2
 
 auth:
   session_length: 2592000
