@@ -32,6 +32,9 @@ arch = [
 	"dotter-rs-bin",
 	"downgrade",
 
+	# services
+	"syncthing",
+
 	# cli
 	"skim",
 	"nmap",
