@@ -3,4 +3,11 @@ arch = [
     "lib32-mangohud",
     "lutris",
     "mangohud",
+
+	# lib32 drivers
+	"lib32-mesa",
+	"lib32-vulkan-icd-loader",
+	"lib32-vulkan-radeon",
+	"lib32-vulkan-intel",
+	"lib32-nvidia-utils",
 ]
