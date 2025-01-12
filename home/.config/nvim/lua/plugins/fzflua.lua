@@ -54,6 +54,7 @@ return {
 		fzf_opts = {
 			["--header"] = "",
 			["--layout"] = "default",
+			["--cycle"] = "",
 		},
 		files = {
 			fd_opts = [[--type file --hidden --follow --color=never]],

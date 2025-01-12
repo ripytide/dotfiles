@@ -6,7 +6,6 @@ arch = [
 	"python-opencv",
 	"tokei",
 	"python-black",
-	"clang",
 	"typos",
 	"typos-lsp-bin",
 
