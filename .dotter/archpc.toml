@@ -3,3 +3,4 @@ packages = ["main"]
 [variables]
 personalmode = true
 workmode = false
+archpc = true
