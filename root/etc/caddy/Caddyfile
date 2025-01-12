@@ -3,10 +3,18 @@ cctv.oxlet.org {
 }
 
 z2m.oxlet.org {
+	basic_auth {
+		ripytide $2a$14$M05UcvxHxty2JXKQFvBMu.g.hWlxJcpni/I1Po6hmimb2hJdn0doW
+	}
+
 	reverse_proxy :1234
 }
 
 lms.oxlet.org {
+	basic_auth {
+		ripytide $2a$14$M05UcvxHxty2JXKQFvBMu.g.hWlxJcpni/I1Po6hmimb2hJdn0doW
+	}
+
 	reverse_proxy :9000
 }
 
@@ -15,5 +23,9 @@ router.oxlet.org {
 }
 
 slzb.oxlet.org {
+	basic_auth {
+		ripytide $2a$14$M05UcvxHxty2JXKQFvBMu.g.hWlxJcpni/I1Po6hmimb2hJdn0doW
+	}
+
 	reverse_proxy 192.168.188.18:80
 }
