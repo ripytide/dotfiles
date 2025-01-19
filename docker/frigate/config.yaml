@@ -16,11 +16,12 @@ record:
   retain:
     # this is intentionally way over what we can store frigate
     # automatically deletes the oldest recordings when it runs out of space
-    days: 1000
+    days: 60
     mode: all
   events:
     retain:
-      default: 40
+      default: 100
+      mode: motion
     pre_capture: 3
     post_capture: 5
 
