@@ -46,8 +46,8 @@ return {
 			fzf = {
 				["tab"] = "up",
 				["btab"] = "down",
-				["up"] = "toggle+up",
-				["down"] = "toggle+down",
+				["up"] = "up",
+				["down"] = "down",
 				["ctrl-o"] = "toggle",
 			},
 		},
