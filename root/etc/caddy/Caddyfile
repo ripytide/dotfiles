@@ -2,6 +2,10 @@ cctv.oxlet.org {
 	reverse_proxy :8971
 }
 
+ha.oxlet.org {
+	reverse_proxy :8123
+}
+
 z2m.oxlet.org {
 	basic_auth {
 		ripytide $2a$14$M05UcvxHxty2JXKQFvBMu.g.hWlxJcpni/I1Po6hmimb2hJdn0doW
