@@ -12,5 +12,16 @@
       "}",
       "$0"
     ]
+  },
+  "DesignerProperty": {
+    "prefix": "dp",
+    "body": [
+      "public static string ${1:Name} {",
+      "    get {",
+      "        return ResourceManager.GetString(\"${1:Name}\", resourceCulture);",
+      "    }",
+      "}",
+      "$0"
+    ]
   }
 }
