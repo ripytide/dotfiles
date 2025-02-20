@@ -40,6 +40,9 @@ return {
 				border = "rounded",
 			},
 		},
+		cmdline = {
+			enabled = true,
+		},
 		sources = {
 			cmdline = function()
 				local type = vim.fn.getcmdtype()

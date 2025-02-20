@@ -6,7 +6,6 @@ return {
 			cs = { "csharpier" },
 			xml = { "prettier", lsp_format = "fallback" },
 		},
-		formatters = { csharpier = { command = "dotnet-csharpier" } },
 	},
 	keys = {
 		{ "<leader>cf", function() end, ft = "cpp"},
