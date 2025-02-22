@@ -1,5 +1,5 @@
 UUID=add123fc-f189-40e7-8548-525a8361d561 /mnt/SSD-2TB-A auto defaults,nofail 0 0
 UUID=777d5acc-f123-410f-9fc6-2175d518e796 /mnt/SSD-2TB-B auto defaults,nofail 0 0
 UUID=1b5fde5b-8ecc-4990-86be-fea97f138067 /mnt/HDD-4TB auto defaults,nofail 0 0
-UUID=5ba56bec-c3de-43c7-9811-2f2a47862100 /mnt/HDD-1.5TB auto defaults,nofail 0 0
+UUID=52a4653d-eddc-47db-a0f5-1f9b45a9ebd7 /mnt/HDD-28TB auto defaults,nofail 0 0
 UUID=59b63fdd-5de9-47e6-9b5d-8cf45b9313cc /mnt/HDD-20TB auto defaults,nofail 0 0
