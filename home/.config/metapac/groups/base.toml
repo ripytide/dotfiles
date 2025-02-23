@@ -69,6 +69,7 @@ arch = [
 	"jq",
 	"trippy",
 	"git-cliff",
+	"restic",
 
 	# shell
 	"nushell",
