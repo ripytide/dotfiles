@@ -24,6 +24,7 @@ arch = [
 	"cifs-utils",
 	"ffmpeg",
 	"avahi",
+	"ntfs-3g",
 
 	# package/dotfile management
 	"reflector",
