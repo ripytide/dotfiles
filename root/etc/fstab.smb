@@ -10,3 +10,6 @@ UUID=310B-36DE      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,cod
 
 
 /swapfile none swap defaults 0 0
+
+//192.168.188.3/SSD-2TB-A /mnt/SSD-2TB-A cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.3/SSD-2TB-B /mnt/SSD-2TB-B cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
