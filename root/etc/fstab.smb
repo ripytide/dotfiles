@@ -1,15 +1,4 @@
-# Static information about the filesystems.
-# See fstab(5) for details.
-
-# <file system> <dir> <type> <options> <dump> <pass>
-# /dev/mapper/ainstnvme0n1p2
-UUID=c2a985f1-1f89-4dbf-9caa-6acf263e81cf	/         	ext4      	rw,relatime	0 1
-
-# /dev/nvme0n1p1
-UUID=310B-36DE      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
-
-
-/swapfile none swap defaults 0 0
-
-//192.168.188.3/SSD-2TB-A /mnt/SSD-2TB-A cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
-//192.168.188.3/SSD-2TB-B /mnt/SSD-2TB-B cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/SSD-2TB-A /mnt/SSD-2TB-A cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/SSD-2TB-B /mnt/SSD-2TB-B cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/HDD-28TB /mnt/HDD-28TB cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/HDD-4TB /mnt/HDD-4TB cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
