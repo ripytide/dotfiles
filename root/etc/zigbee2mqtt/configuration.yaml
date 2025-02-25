@@ -1,10 +1,19 @@
-frontend:
-  port: 1234
-  host: 0.0.0.0
+version: 4
 mqtt:
   base_topic: zigbee2mqtt
   server: mqtt://localhost:1883
   client_id: z2m
 serial:
   port: tcp://192.168.188.18:6638
-availability: true
+  adapter: zstack
+advanced:
+  channel: 11
+  network_key: GENERATE
+  pan_id: GENERATE
+  ext_pan_id: GENERATE
+frontend:
+  enabled: true
+  port: 1234
+  host: 0.0.0.0
+homeassistant:
+  enabled: true
