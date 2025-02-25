@@ -51,7 +51,7 @@ return {
 				end
 				-- Commands
 				if type == ":" or type == "@" then
-					return { "cmdline" }
+					return { "cmdline", "path" }
 				end
 				return {}
 			end,
