@@ -3,6 +3,7 @@ packages = ["main"]
 [variables]
 workmode = true
 personalmode = false
+gpgsign = false
 
 [files]
 "home/.config" = "~/AppData/Local"

@@ -4,3 +4,4 @@ packages = ["main"]
 personalmode = true
 workmode = false
 archpc = true
+gpgsign = true

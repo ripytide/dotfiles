@@ -24,7 +24,7 @@
 	name = ripytide
 	signingkey = 459BC3A0DE88C984
 [commit]
-	gpgsign = true
+	gpgsign = {{gpgsign}}
 [name]
 	email = james.forster@renishaw.com
 [credential]
@@ -36,7 +36,7 @@
 	name = James Forster
 	email = jf154126@renishaw.com
 [commit]
-	gpgsign = false
+	gpgsign = {{gpgsign}}
 [credential]
 	helper = manager
 	provider = generic
