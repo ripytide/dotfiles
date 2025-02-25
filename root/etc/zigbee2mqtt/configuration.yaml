@@ -8,12 +8,46 @@ serial:
   adapter: zstack
 advanced:
   channel: 11
-  network_key: GENERATE
-  pan_id: GENERATE
-  ext_pan_id: GENERATE
+  network_key:
+    - 151
+    - 183
+    - 164
+    - 45
+    - 172
+    - 131
+    - 34
+    - 40
+    - 39
+    - 68
+    - 167
+    - 246
+    - 15
+    - 131
+    - 226
+    - 9
+  pan_id: 56392
+  ext_pan_id:
+    - 155
+    - 255
+    - 66
+    - 11
+    - 2
+    - 155
+    - 88
+    - 154
 frontend:
   enabled: true
   port: 1234
   host: 0.0.0.0
 homeassistant:
   enabled: true
+  legacy_action_sensor: true
+devices:
+  '0xa4c138aae0899d06':
+    friendly_name: '0xa4c138aae0899d06'
+  '0xa4c138d666b68f0e':
+    friendly_name: '0xa4c138d666b68f0e'
+  '0xa4c138c14fa94479':
+    friendly_name: '0xa4c138c14fa94479'
+  '0x7cc6b6fffe39eb33':
+    friendly_name: Sonoff Button
