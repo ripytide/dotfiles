@@ -1,4 +1,4 @@
-version: 0.14
+version: 0.15-1
 
 tls:
   enabled: false
@@ -18,13 +18,16 @@ record:
     # automatically deletes the oldest recordings when it runs out of space
     days: 110
     mode: all
-  events:
+  alerts:
     retain:
-      default: 300
-      mode: motion
+      days: 300
     pre_capture: 3
     post_capture: 5
-
+  detections:
+    retain:
+      days: 300
+    pre_capture: 3
+    post_capture: 5
 ffmpeg:
   hwaccel_args: preset-vaapi
 
