@@ -51,3 +51,7 @@ devices:
     friendly_name: '0xa4c138c14fa94479'
   '0x7cc6b6fffe39eb33':
     friendly_name: Sonoff Button
+  '0x0ceff6fffe59a108':
+    friendly_name: Upstairs Climate
+  '0x0ceff6fffe6a8d67':
+    friendly_name: Downstairs Climate
