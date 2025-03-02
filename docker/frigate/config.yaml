@@ -63,18 +63,18 @@ objects:
     person:
       threshold: 0.9
 
-go2rtc:
-  streams:
-    back_of_number_6:
-      - rtsp://admin:Oxlett99@192.168.188.41:554/Streaming/Channels/101/
-    turning_circle:
-      - rtsp://admin:Oxlett99@192.168.188.42:554/Streaming/Channels/101/
-    front_of_number_6:
-      - rtsp://admin:Oxlett99@192.168.188.43:554/Streaming/Channels/101/
-    driveway:
-      - rtsp://admin:Oxlett99@192.168.188.44:554/Streaming/Channels/101/
-    front_of_house:
-      - rtsp://admin:Oxlett99@192.168.188.45:554/Streaming/Channels/101/
+# go2rtc:
+#   streams:
+#     back_of_number_6:
+#       - rtsp://admin:Oxlett99@192.168.188.41:554/Streaming/Channels/101/
+#     turning_circle:
+#       - rtsp://admin:Oxlett99@192.168.188.42:554/Streaming/Channels/101/
+#     front_of_number_6:
+#       - rtsp://admin:Oxlett99@192.168.188.43:554/Streaming/Channels/101/
+#     driveway:
+#       - rtsp://admin:Oxlett99@192.168.188.44:554/Streaming/Channels/101/
+#     front_of_house:
+#       - rtsp://admin:Oxlett99@192.168.188.45:554/Streaming/Channels/101/
 
 cameras:
   back_of_number_6:
