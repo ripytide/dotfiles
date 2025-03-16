@@ -1,5 +1,3 @@
-disabled_backends = ["rustup"]
-
 arch_package_manager = "paru"
 
 hostname_groups_enabled = true
