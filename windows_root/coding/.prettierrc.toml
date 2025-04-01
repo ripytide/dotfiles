@@ -6,4 +6,4 @@ plugins = [
 xmlWhitespaceSensitivity = "preserve"
 singleAttributePerLine = true
 
-overrides = [{ files = "*.{xaml,xml}|*.*proj", options = { parser = "xml" } }]
+overrides = [{ files = "*.{xaml,xml}|*.*proj|*.wxs|*.wxl", options = { parser = "xml" } }]
