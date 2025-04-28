@@ -6,7 +6,7 @@ vim.g.autoformat = false
 
 vim.opt.hidden = false
 
-vim.opt.shell = "nu"
+-- vim.opt.shell = "nu"
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
