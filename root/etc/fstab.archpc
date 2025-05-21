@@ -1,0 +1,16 @@
+# Static information about the filesystems.
+# See fstab(5) for details.
+
+# <file system> <dir> <type> <options> <dump> <pass>
+# /dev/nvme0n1p4
+UUID=8b474a79-4840-4731-ac6e-5039c47ef720	/         	ext4      	rw,relatime	0 1
+
+# /dev/nvme0n1p1 LABEL=SYSTEM
+UUID=68C2-E37D      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+UUID=80A83D08A83CFE6A /mnt/gaming_drive auto defaults,nofail,uid=ripytide,gid=ripytide 0 0
+
+//192.168.188.4/SSD-2TB-A /mnt/SSD-2TB-A cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/SSD-2TB-B /mnt/SSD-2TB-B cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/HDD-28TB /mnt/HDD-28TB cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
+//192.168.188.4/HDD-4TB /mnt/HDD-4TB cifs nofail,username=user,pass=fanta,uid=ripytide,gid=ripytide,file_mode=0777,dir_mode=0777 0 0
