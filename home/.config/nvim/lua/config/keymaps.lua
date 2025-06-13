@@ -23,7 +23,7 @@ vim.keymap.set("n", "P", "P`[", { desc = "Paste without moving the cursor" })
 
 vim.keymap.set("x", "p", "P", { desc = "Paste without overwriting the buffer" })
 
-vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
+-- vim.keymap.set({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>jk", { desc = "Escape and clear hlsearch" })
 
 local substitute_config = { register = "" }
 vim.keymap.set("n", "s", function()
