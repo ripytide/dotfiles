@@ -26,7 +26,7 @@ return {
 		"williamboman/mason.nvim",
 		opts = {
 			ensure_installed = {
-				"typst-lsp",
+				"tinymist",
 				"typos-lsp",
 				"bash-language-server",
 				"clangd",
@@ -42,7 +42,6 @@ return {
 				"prettier",
 				"pyright",
 				"ruff",
-				"ruff-lsp",
 				"shellcheck",
 				"shfmt",
 				"sqlfluff",
