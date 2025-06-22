@@ -5,5 +5,5 @@ hostname_groups_enabled = true
 [hostname_groups]
 UKNML14830 = ["windows"]
 sipper = ["base", "gui", "laptop", "cargo", "hyprland", "fonts", "dev"]
-archpc = ["base", "gui", "cargo", "hyprland", "fonts", "dev"]
+archpc = ["base", "gui", "cargo", "hyprland", "fonts", "dev", "dioxus"]
 archserver = ["base", "archserver"]
