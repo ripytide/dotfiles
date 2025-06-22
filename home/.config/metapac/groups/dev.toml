@@ -1,16 +1,5 @@
 arch = [
 	"rust-analyzer",
-	"gnuplot",
-	"mosquitto",
 	"npm",
-	"python-opencv",
 	"tokei",
-	"python-black",
-	"typos",
-	"typos-lsp-bin",
-
-	# formatters
-	"lua-format",
-	"mdformat",
-	"shfmt",
 ]
