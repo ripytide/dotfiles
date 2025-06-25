@@ -46,7 +46,7 @@ return {
 				"shfmt",
 				"sqlfluff",
 				"stylua",
-				"taplo",
+				"tombi",
 				"yaml-language-server",
 			},
 		},
