@@ -5,10 +5,18 @@ return {
 		formatters_by_ft = {
 			cs = { "csharpier" },
 			xml = { "prettier", lsp_format = "fallback" },
+			rust = { "dx_fmt", lsp_format = "first" },
 		},
+		formatters = {
+			dx_fmt = {
+				command = "dx",
+				args = {"fmt", "--file", "$FILENAME"},
+				stdin = false,
+			}
+		}
 	},
 	keys = {
+		-- disable formatting for cpp
 		{ "<leader>cf", function() end, ft = "cpp"},
-
 	},
 }
