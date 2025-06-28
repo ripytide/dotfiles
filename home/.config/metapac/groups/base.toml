@@ -56,6 +56,8 @@ arch = [
 	"git-delta",
 	"bottom",
 	"neovim",
+	# required for image viewing in neovim
+	"imagemagick",
 	"zoxide",
 	"lazygit",
 	"ripgrep",
