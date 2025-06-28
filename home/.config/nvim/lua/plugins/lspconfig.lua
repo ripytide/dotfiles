@@ -48,6 +48,7 @@ return {
 				"stylua",
 				"tombi",
 				"yaml-language-server",
+				"tailwindcss-language-server",
 			},
 		},
 	},
