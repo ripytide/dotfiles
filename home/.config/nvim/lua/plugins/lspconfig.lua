@@ -11,6 +11,22 @@ return {
 				virtual_text = false,
 				severity_sort = true,
 			},
+			servers = {
+				tailwindcss = {
+					filetypes = { "rust" },
+					settings = {
+						tailwindCSS = {
+							-- https://github.com/tailwindlabs/tailwindcss/discussions/7073
+							includeLanguages = {
+								rust = "html",
+							},
+							experimental = {
+								classRegex = { 'class\\s*:\\s*"([^"]*)' },
+							},
+						},
+					},
+				},
+			},
 		},
 	},
 	{
