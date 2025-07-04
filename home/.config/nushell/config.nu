@@ -30,6 +30,12 @@ $env.config = {
 }
 
 if $nu.os-info.name == "windows" {
+	$env.PATH = (
+		$env.PATH
+			| split row (char esep)
+			| append "/Program Files/Ablaze Floorp"
+			| uniq
+	)
 } else {
 	$env.TERM = "kitty"
 	$env.SSH_AUTH_SOCK = (gpgconf --list-dirs agent-ssh-socket)
