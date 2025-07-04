@@ -8,15 +8,20 @@ return {
 			rust = { "dx_fmt", lsp_format = "first" },
 		},
 		formatters = {
+			csharpier = {
+				command = "csharpier",
+				args = { "format", "$FILENAME" },
+				stdin = false,
+			},
 			dx_fmt = {
 				command = "dx",
-				args = {"fmt", "--file", "$FILENAME"},
+				args = { "fmt", "--file", "$FILENAME" },
 				stdin = false,
-			}
-		}
+			},
+		},
 	},
 	keys = {
 		-- disable formatting for cpp
-		{ "<leader>cf", function() end, ft = "cpp"},
+		{ "<leader>cf", function() end, ft = "cpp" },
 	},
 }
