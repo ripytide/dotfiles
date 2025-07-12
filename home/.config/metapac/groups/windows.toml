@@ -26,7 +26,7 @@ cargo = [
     "whkd",
     "zoxide",
 	"metapac",
-	{ package = "kanata", version = "1.7.0-prerelease-2" },
+	"kanata",
 ]
 
 winget = [
