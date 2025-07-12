@@ -34,7 +34,13 @@ arch = [
 	"downgrade",
 
 	# services
-	"syncthing",
+	{ package = "syncthing", hooks = { after_install = [
+		"sudo",
+		"systemctl",
+		"enable",
+		"--now",
+		"syncthing@ripytide",
+	] } },
 
 	# cli
 	"skim",
@@ -55,7 +61,7 @@ arch = [
 	"sxiv",
 	"git-delta",
 	"bottom",
-	"neovim",
+	"neovim-nightly-bin",
 	# required for image viewing in neovim
 	"imagemagick",
 	"zoxide",
@@ -67,7 +73,6 @@ arch = [
 	"7zip",
 	"unrar",
 	"zip",
-	"unzip",
 	"fastfetch",
 	"jq",
 	"trippy",

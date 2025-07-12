@@ -1,6 +1,5 @@
 arch = [
   "webkit2gtk-4.1",
-  "base-devel",
   "curl",
   "wget",
   "file",

@@ -5,4 +5,5 @@ arch = [
 	"ttf-fira-code",
 	"ttf-font-awesome",
 	"nerd-fonts",
+	"ttf-roboto",
 ]

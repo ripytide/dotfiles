@@ -16,19 +16,19 @@ return {
 			["<C-e>"] = { "hide" },
 			["<C-y>"] = { "select_and_accept" },
 
-			["<C-k>"] = { "select_prev", "fallback" },
 			["<C-j>"] = { "select_next", "fallback" },
+			["<C-k>"] = { "select_prev", "fallback" },
 
 			["<C-b>"] = { "scroll_documentation_up", "fallback" },
 			["<C-f>"] = { "scroll_documentation_down", "fallback" },
 
-			["<Tab>"] = { "snippet_forward", "fallback" },
+			["<Tab>"] = { "select_and_accept", "snippet_forward", "fallback" },
 			["<S-Tab>"] = { "snippet_backward", "fallback" },
 		},
 		completion = {
 			list = {
 				selection = {
-					preselect = false,
+					preselect = true,
 					auto_insert = true,
 				},
 			},
