@@ -29,7 +29,7 @@ arch = [
 	# package/dotfile management
 	"reflector",
 	"paru-bin",
-	"metapac-bin",
+	"metapac",
 	"dotter-rs-bin",
 	"downgrade",
 
