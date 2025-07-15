@@ -37,4 +37,5 @@ vim.keymap.set("n", "0", "^")
 
 vim.keymap.set("i", "<C-e>", "<End>", { noremap = true })
 vim.keymap.set("i", "<C-a>", "<Home>", { noremap = true })
-vim.keymap.set("i", "<C-k>", "<Esc>lDa", { noremap = true })
+
+vim.keymap.del({ "i", "x", "n", "s" }, "<C-s>")
