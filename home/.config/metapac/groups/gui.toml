@@ -23,7 +23,7 @@ arch = [
 
 	# core apps
 	"kitty",
-	"firefox",
+	"zen-browser-bin",
 	"bitwarden",
 	"chromium",
 	"network-manager-applet",

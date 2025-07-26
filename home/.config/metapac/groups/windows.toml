@@ -63,7 +63,7 @@ winget = [
 	"Microsoft.WindowsSDK.10.0.19041",
 	"Microsoft.WindowsTerminal",
 	"Microsoft.msodbcsql.17",
-	"Mozilla.Firefox",
+	"Zen-Team.Zen-Browser",
 	"NSIS.NSIS",
 	"Neovim.Neovim",
 	"Notepad++.Notepad++",
