@@ -35,9 +35,9 @@ return {
 			local keys = require("lazyvim.plugins.lsp.keymaps").get()
 			keys[#keys + 1] = { "gy", vim.lsp.buf.hover }
 			keys[#keys + 1] = { "gt", vim.lsp.buf.type_definition }
-			keys[#keys + 1] = { "gi", vim.lsp.buf.implementation }
+			keys[#keys + 1] = { "gi", "<cmd>FzfLua lsp_implementations jump1=true ignore_current_line=true<CR>" }
 			keys[#keys + 1] = { "<C-k>", false, mode = { "i" } }
-			keys[#keys + 1] = { "<C-s>", vim.lsp.buf.signature_help, mode = { "i" } }
+			keys[#keys + 1] = { "<C-S>", vim.lsp.buf.signature_help, mode = { "i" } }
 		end,
 	},
 	{
