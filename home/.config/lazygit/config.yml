@@ -1,5 +1,6 @@
 promptToReturnFromSubprocess: false
 git:
+  autoForwardBranches: none
   overrideGpg: true
   paging:
     colorArg: always
@@ -8,3 +9,5 @@ gui:
   switchTabsWithPanelJumpKeys: false
   showCommandLog: false
   skipDiscardChangeWarning: true
+refresher:
+  fetchInterval: 30
