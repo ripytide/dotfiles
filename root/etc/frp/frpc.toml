@@ -1,7 +1,9 @@
 serverAddr = "128.140.78.174"
 serverPort = 7000
 
-auth.token = ""
+auth.method = "token"
+auth.tokenSource.type = "file"
+auth.tokenSource.file.path = "/etc/frp/token"
  
 [[proxies]]
 name = "https"
