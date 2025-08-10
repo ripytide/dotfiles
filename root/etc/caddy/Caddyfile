@@ -37,3 +37,7 @@ slzb.oxlet.org {
 photos.oxlet.org {
 	reverse_proxy :2283
 }
+
+gotify.oxlet.org {
+	reverse_proxy :8484
+}
