@@ -1,6 +1,7 @@
 cargo = [
 	# "skim",
     "cargo-binstall",
+	"bacon",
     "bat",
     "bottom",
     "difftastic",
@@ -8,7 +9,7 @@ cargo = [
     "eza",
     "fd-find",
     "git-delta",
-    # "komorebi",
+    "komorebi",
     # "komorebi-bar",
     # "komorebi-gui",
     # "komorebic",
