@@ -1,0 +1,17 @@
+services:
+  lms:
+    container_name: lms
+    image: lmscommunity/lyrionmusicserver
+    volumes:
+      - ./config:/config:rw
+      - /mnt/SSD-2TB-A/Music:/music:ro
+      - /mnt/SSD-2TB-A/Playlists:/playlist:rw
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - 9000:9000/tcp
+      - 9090:9090/tcp
+      - 3483:3483/tcp
+      - 3483:3483/udp
+    environment:
+      - HTTP_PORT=9000
+    restart: always
