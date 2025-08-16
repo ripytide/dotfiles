@@ -90,18 +90,27 @@ cameras:
     motion:
       mask: 
         1,0.475,1,0,0,0,0,0.321,0.118,0.437,0.21,0.427,0.278,0.435,0.35,0.461,0.51,0.509,0.516,0.39,0.729,0.331,0.834,0.254,0.846,0.136,0.909,0.134,0.937,0.203,0.955,0.389
+      threshold: 50
+      contour_area: 50
+      improve_contrast: true
   turning_circle:
     ffmpeg:
       inputs:
         - path: rtsp://admin:Oxlett99@192.168.188.42:554/Streaming/Channels/101/
     motion:
       mask: 0.549,0,1,0.477,1,0
+      threshold: 50
+      contour_area: 50
+      improve_contrast: true
   front_of_number_6:
     ffmpeg:
       inputs:
         - path: rtsp://admin:Oxlett99@192.168.188.43:554/Streaming/Channels/101/
     motion:
       mask: 0.41,0,0.411,0.038,0.709,0.04,0.71,0
+      threshold: 50
+      contour_area: 50
+      improve_contrast: true
   driveway:
     ffmpeg:
       inputs:
@@ -110,6 +119,9 @@ cameras:
       mask:
         - 0,0.341,0.305,0.406,0.31,0.228,0.331,0.084,0.444,0,0,0
         - 0.639,0,0.64,0.047,0.944,0.045,0.944,0
+      threshold: 50
+      contour_area: 50
+      improve_contrast: true
   front_of_house:
     ffmpeg:
       inputs:
@@ -117,5 +129,8 @@ cameras:
     motion:
       mask: 
         0,1,0.412,0.995,0.365,0.916,0.374,0.822,0.38,0.728,0.352,0.618,0.319,0.542,0.267,0.493,0.218,0.47,0.169,0.444,0.184,0.357,0.344,0.305,0.393,0.221,0.441,0.205,0.477,0.212,0.579,0.199,0.617,0.341,0.682,0.361,1,0.552,1,0,0,0
+      threshold: 50
+      contour_area: 50
+      improve_contrast: true
     objects:
       mask: 0.307,0.462,0.379,0.465,0.357,0.32,0.298,0.327
